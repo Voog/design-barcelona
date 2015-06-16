@@ -493,7 +493,7 @@ a:hover {
 }
 .header .main-menu-toggler span {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.7;
   display: block;
   padding-left: 36px;
 }
@@ -1196,7 +1196,7 @@ a:hover {
   margin-bottom: 20px;
 }
 .formatted span[style*="font-size"] {
-  line-height: 1.7em;
+  line-height: 1.7;
 }
 .formatted iframe {
   max-width: 100%;
@@ -1405,7 +1405,7 @@ a:hover {
   padding-top: 5px;
   color: #818181;
   height: 23px;
-  line-height: 23px;
+  line-height: 2.3;
 }
 .comment .comment-info .edy-site-btn-removecomment {
   vertical-align: -2px;

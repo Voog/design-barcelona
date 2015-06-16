@@ -551,7 +551,7 @@ $break-small: 500px;
 
       span {
         font-size: 18px;
-        line-height: $header-inner-height;
+        line-height: 1.7;
         display: block;
         padding-left: 36px;
       }
@@ -1308,7 +1308,7 @@ $break-small: 500px;
     }
 
     span[style*="font-size"] {
-      line-height: 1.7em;
+      line-height: 1.7;
     }
 
     iframe {
@@ -1529,7 +1529,7 @@ $break-small: 500px;
       padding-top: 5px;
       color: $third-color;
       height: 23px;
-      line-height: 23px;
+      line-height: 2.3;
 
       .edy-site-btn-removecomment {
         vertical-align: -2px;
