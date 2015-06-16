@@ -2048,6 +2048,11 @@ a:hover {
   .main-menu ul a {
     font-size: 20px;
     line-height: 1.05;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     color: white;
     color: rgba(255, 255, 255, 0.5);
   }
@@ -2082,6 +2087,11 @@ a:hover {
     text-align: left;
   }
   .sub-menu a {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     line-height: 1.05;
     display: block;
   }
