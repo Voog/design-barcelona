@@ -61,7 +61,7 @@
   {% include "footer" %}
   {% include "langmenu-mobile" %}
   {% include "javascripts" %}
-  {% include "bg-picker" %}
+  {% include "edicy-tools" %}
 
   <script>
     $(window).load(function() {
