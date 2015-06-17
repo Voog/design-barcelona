@@ -886,6 +886,7 @@ $break-small: 500px;
       }
 
       a {
+        @include hyphenate(true);
         font-size: 16px;
         line-height: 1.1;
         color: $third-color;
@@ -927,6 +928,7 @@ $break-small: 500px;
       }
     }
     a {
+      @include hyphenate(true);
       display: inline-block;
       color: $third-color;
 
@@ -2178,7 +2180,6 @@ $break-small: 500px;
       a {
         font-size: 20px;
         line-height: 1.05;
-        @include hyphenate(true);
         @include color($fourth-color, .5);
 
         &:hover, &.active {
@@ -2221,7 +2222,6 @@ $break-small: 500px;
     }
 
     a {
-      @include hyphenate(true);
       line-height: 1.05;
       display: block;
       &.active {
