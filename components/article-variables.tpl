@@ -8,8 +8,8 @@
     {% assign bg_color = 'none' %}
     {% assign bg_color_style = 'background: none' %}
   {% else %}
+    {% assign bg_color_data = article.data.background.colorData | json %}
     {% assign bg_color = article.data.background.color %}
-    {% assign bg_color_data = article.data.background.colorData %}
     {% assign bg_color_style = 'background-color: ' | append: article.data.background.color %}
   {% endif%}
 {% endcapture %}

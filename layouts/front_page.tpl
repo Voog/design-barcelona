@@ -50,7 +50,7 @@
               <div class="article-bg-color" style="{{ bg_color_style }}"></div>
               <div class="article-inner">
                 {% if editmode %}
-                  <button class="voog-bg-picker-btn js-bg-picker-settings" data-bg-image="{{ article.data.background.image }}" data-bg-color="{{ bg_color }}" data-bg-color-data="{{ bg_color_data | json | escape }}"></button>
+                  <button class="voog-bg-picker-btn js-bg-picker-settings" data-bg-image="{{ article.data.background.image }}" data-bg-color="{{ bg_color }}" data-bg-color-data="{{ bg_color_data | escape }}"></button>
                 {% endif %}
                 <div class="article-content">
                   <h2>{{ article.title }}</h2>
