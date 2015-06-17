@@ -8,9 +8,9 @@
 <body class="main-menu-fits{% if site.search.enabled %} search-enabled{% endif %}">
 
   <div class="holder">
-  
+
     {% include "header" %}
-  
+
     <main class="main" data-search-indexing-allowed="true">
       <a href="#" class="scroller-arrow "><span class="animated-bounce"></span></a>
       <div class="main-inner">
@@ -42,32 +42,14 @@
             {% endif %}
           {% endfor %}
         {% endif %}
-    
+
         {% for article in site.latest_articles %}
-        
-          {% capture dont_render %}
-          
-            {% if article.data.background.color == nil %}
-              {% assign bg_color_data = '{"r"=>43, "g"=>43, "b"=>43, "a"=>0.9, "lightness"=>0.01}' %}
-              {% assign bg_color = 'rgba(43,43,43,0.9)' %}
-              {% assign bg_color_style = 'background-color: rgba(43,43,43,0.9); background-color: rgba(43,43,43,0.9)' %}
-            {% elsif article.data.background.color == "" %}
-              {% assign bg_color_data = '' %}
-              {% assign bg_color = 'none' %}
-              {% assign bg_color_style = 'background: none' %}
-            {% else %}
-              {% assign bg_color = article.data.background.color %}
-              {% assign bg_color_data = article.data.background.colorData %}
-              {% assign bg_color_style = 'background-color: ' | append: article.data.background.color %}
-            {% endif%}
-  
-          {% endcapture %}
-          
+          {% include "article-variables" %}
           <article class="article" data-article-id="{{ article.id }}">
             <div data-href="{{ article.url }}" class="--lazy link" {% if article.data.background.image %}{% if forloop.index < 6 %} style="background-image: url('{{ article.data.background.image }}');" data-lazy-loaded="true"{% else %} data-article-image="{{ article.data.background.image }}" {% endif %}{% endif %} >
               <div class="article-bg-color" style="{{ bg_color_style }}"></div>
               <div class="article-inner">
-                {% if editmode %}                
+                {% if editmode %}
                   <button class="voog-bg-picker-btn js-bg-picker-settings" data-bg-image="{{ article.data.background.image }}" data-bg-color="{{ bg_color }}" data-bg-color-data="{{ bg_color_data | json | escape }}"></button>
                 {% endif %}
                 <div class="article-content">
@@ -81,12 +63,12 @@
       </div>
     </main>
   </div>
-  
+
   {% include "footer" %}
   {% include "langmenu-mobile" %}
   {% include "javascripts" %}
   {% include "bg-picker" %}
-  
+
   <script>
     $(window).load(function() {
       $('.main').lazyLoad({
