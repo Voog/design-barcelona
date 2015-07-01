@@ -446,6 +446,7 @@ a:hover {
   transform: translateY(0%);
 }
 .header .header-inner {
+  display: block;
   float: right;
   padding: 37px 50px 0 20px;
   position: relative;
@@ -453,7 +454,7 @@ a:hover {
   min-width: 24px;
   min-height: 24px;
 }
-.main-menu-fits .header .header-inner {
+.main-menu-not-fitting .header .header-inner {
   display: none;
 }
 .main-menu-open .header .header-inner {
@@ -469,7 +470,7 @@ a:hover {
   padding-top: 25px;
 }
 .header .main-menu-toggler {
-  display: block;
+  display: none;
   float: left;
   height: 28px;
   margin-left: 10px;
@@ -479,8 +480,11 @@ a:hover {
   text-transform: uppercase;
   position: relative;
 }
-.main-menu-fits .header .main-menu-toggler {
-  display: none;
+.header .main-menu-toggler.menu-not-visible {
+  display: block;
+}
+.main-menu-not-fitting .header .main-menu-toggler {
+  display: block;
 }
 .main-menu-open .header .main-menu-toggler {
   display: none;
@@ -750,7 +754,7 @@ a:hover {
 
 /* main-menu */
 .main-menu {
-  display: none;
+  display: block;
   position: absolute;
   z-index: 0;
   top: 0;
@@ -764,8 +768,8 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.main-menu-fits .main-menu {
-  display: block;
+.main-menu-not-fitting .main-menu {
+  display: none;
 }
 .main-menu-open .main-menu {
   display: block;
@@ -1215,22 +1219,6 @@ a:hover {
 .formatted .overthrow {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
-.formatted .edys-gallery-area,
-.formatted .edy-gallery-area {
-  margin-left: -6px;
-  font-size: 0;
-  line-height: 1;
-}
-.formatted .edys-gallery-area .edys-gallery-item,
-.formatted .edys-gallery-area .edy-gallery-item,
-.formatted .edys-gallery-area .edy-gallery-sortable-placeholder,
-.formatted .edy-gallery-area .edys-gallery-item,
-.formatted .edy-gallery-area .edy-gallery-item,
-.formatted .edy-gallery-area .edy-gallery-sortable-placeholder {
-  display: inline-block;
-  float: none;
-  margin: 3px 0 3px 6px;
 }
 
 /* new-article */
