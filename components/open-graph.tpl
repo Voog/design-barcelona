@@ -59,6 +59,7 @@
 {% endif %}
 
 {% if description != nil and description != '' %}
-  <meta property="og:description" content="{{ description }}">
-  <meta name="description" content="{{ description }}">
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta name="description" content="{{ description | escape }}">
 {% endif %}
+
