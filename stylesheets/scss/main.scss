@@ -503,16 +503,16 @@ $header-inner-height: 28px;
   }
 
   .header-inner {
-    display: block;
+    display: none;
     float: right;
-    padding: 37px 50px 0 20px;
+    padding: 36px 50px 0 20px;
     position: relative;
     z-index: 20;
     min-width: 24px;
     min-height: 24px;
 
     .main-menu-not-fitting & {
-      display: none;
+      display: block;
     }
     .main-menu-open & {
       display: none;
@@ -544,9 +544,6 @@ $header-inner-height: 28px;
       display: block;
     }
 
-    .main-menu-not-fitting & {
-      display: block;
-    }
     .main-menu-open & {
       display: none;
     }
@@ -561,7 +558,7 @@ $header-inner-height: 28px;
 
     span {
       font-size: 18px;
-      line-height: 1.7;
+      line-height: $header-inner-height;
       display: block;
       padding-left: 36px;
     }
