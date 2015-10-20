@@ -39,8 +39,6 @@
   {% endif %}
 {% endif %}
 
-{{}}
-
 {% if og_image %}
   {% if og_image.image %}
     <meta property="og:image" content="{{ og_image.image }}">
