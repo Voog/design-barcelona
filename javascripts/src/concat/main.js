@@ -283,6 +283,19 @@ var initMobileSwipe = function() {
   }
 };
 
+var editmode = function () {
+  return $('html').hasClass('editmode');
+};
+
+var bindCustomTexteditorStyles = function() {
+  window.edy = window.edy || [];
+  edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+};
+
+if (editmode()) {
+  bindCustomTexteditorStyles();
+}
+
 var setLayout = function() {
   var $m = $('.main-inner'),
   $bm = $('.blog-list-page .main-inner'),

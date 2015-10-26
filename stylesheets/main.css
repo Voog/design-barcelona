@@ -144,6 +144,23 @@ blockquote {
   text-align: center;
 }
 
+.custom-btn {
+  display: inline-block;
+  padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  background: #2b2b2b;
+}
+.custom-btn, .custom-btn:hover {
+  color: white;
+}
+.custom-btn:hover {
+  background-color: #2b2b2b;
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
 /* select */
 .jq-select {
   position: relative;
@@ -1171,7 +1188,8 @@ a:hover {
 .formatted ul:first-child,
 .formatted ol:first-child,
 .formatted pre:first-child,
-.formatted code:first-child {
+.formatted code:first-child,
+.formatted .custom-btn:first-child {
   margin-top: 0;
 }
 .formatted h1:last-child,
@@ -1184,7 +1202,8 @@ a:hover {
 .formatted ul:last-child,
 .formatted ol:last-child,
 .formatted pre:last-child,
-.formatted code:last-child {
+.formatted code:last-child,
+.formatted .custom-btn:last-child {
   margin-bottom: 0;
 }
 .formatted pre,

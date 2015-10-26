@@ -18,7 +18,7 @@
             <div class="content formatted cfx">
               <div class="content-header">{% contentblock name="content_header" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
               {% include "submenu" %}
-              {% content %}
+              <div class="content-body">{% content %}</div>
             </div>
           </div>
         </div>
