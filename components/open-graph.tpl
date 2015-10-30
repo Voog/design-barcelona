@@ -9,7 +9,7 @@
 {% comment %}Open Graph image{% endcomment %}
 {% if front_page %}
   {% if page.image != nil %}
-    {% assign og_image = page.image %}
+    {% assign og_image = page.image.for-width-1200 %}
   {% else %}
     {% for article in site.latest_articles %}
       {% if article.data.background.image and article.data.background.image != '' %}
@@ -20,7 +20,7 @@
   {% endif %}
 {% elsif blog_page %}
   {% if page.image != nil %}
-    {% assign og_image = page.image %}
+    {% assign og_image = page.image.for-width-1200 %}
   {% else %}
     {% for article in articles %}
       {% if article.data.background.image %}
@@ -32,10 +32,10 @@
 {% else %}
   {% if article %}
     {% if article.image? %}
-      {% assign og_image = article.image %}
+      {% assign og_image = article.image.for-width-1200 %}
     {% endif %}
   {% elsif page.image? %}
-    {% assign og_image = page.image %}
+    {% assign og_image = page.image.for-width-1200 %}
   {% endif %}
 {% endif %}
 
