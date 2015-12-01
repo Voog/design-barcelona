@@ -42,8 +42,8 @@
 {% if og_image %}
   {% if og_image.image %}
     <meta property="og:image" content="{{ og_image.image }}">
-    {% if og_image.imageSizes[0].width %}<meta property="og:image:width" content="{{ og_image.imageSizes[0].width }}">{% endif %}
-    {% if og_image.imageSizes[0].height %}<meta property="og:image:height" content="{{ og_image.imageSizes[0].height }}">{% endif %}
+    {% if og_image.imagesizes[2].width %}<meta property="og:image:width" content="{{ og_image.imagesizes[2].width }}">{% endif %}
+    {% if og_image.imagesizes[2].height %}<meta property="og:image:height" content="{{ og_image.imagesizes[2].height }}">{% endif %}
   {% elsif og_image.url %}
     {% if og_image.url %}<meta property="og:image" content="{{ og_image.url }}">{% endif %}
     {% if og_image.content_type %}<meta property="og:image:type" content="{{ og_image.content_type }}">{% endif %}
