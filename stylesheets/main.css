@@ -308,6 +308,7 @@ blockquote {
 .form_submit input,
 .submit {
   height: 45px;
+  padding: 0 12px;
   font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
   cursor: pointer;
   border: 0;
