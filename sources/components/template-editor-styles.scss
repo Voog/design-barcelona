@@ -7,12 +7,76 @@
 // The output component can be included in any "layout" or "component".
 // =============================================================================
 
+// MODULES
+@import '../stylesheets/modules/variables';
+
 :root {
-  /* VoogStyle
+  // scss-lint:disable Comment, Indentation
+
+  // ===========================================================================
+  // Global layout styles.
+  // ===========================================================================
+
+	/* VoogStyle
      "path": ["Main Styles"],
-     "title": "Bg color",
+     "title": "Site background",
      "editor": "colorPicker",
-     "scope": "page"
+     "scope": "global"
   */
-  --page-color: red;
+	--global-background-color: $bg-color;
+
+	/* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Main color",
+     "editor": "colorPicker",
+     "scope": "global"
+  */
+	--main-color: $main-color;
+
+	/* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Second color",
+     "editor": "colorPicker",
+     "scope": "global"
+  */
+	--second-color: $second-color;
+
+	/* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Third color",
+     "editor": "colorPicker",
+     "scope": "global"
+  */
+	--third-color: $third-color;
+
+	/* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Fourth color",
+     "editor": "colorPicker",
+     "scope": "global"
+  */
+	--fourth-color: $fourth-color;
+
+	/* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {% include "template-fonts" %},
+    "featured": true,
+    "scope": "global"
+  */
+	--font-main: $font-main;
+
+	/* VoogStyle
+    "path": ["Content"],
+    "title": "Page padding",
+    "editor": "rangePicker",
+    "min": 400,
+    "max": 999,
+    "unit": "px",
+    "scope": "global"
+  */
+  --main-width: $main-width;
+
 }
+

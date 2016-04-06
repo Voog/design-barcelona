@@ -1,0 +1,33 @@
+// table
+.table-holder {
+  max-width: 100%;
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+
+  td,
+  th {
+    border: 1px solid $third-color;
+    border-color: rgba($third-color, .9);
+    padding: 10px;
+  }
+
+  th {
+    font-weight: bold;
+  }
+}
+
+// tbl
+.tbl {
+  display: table;
+
+  .tbl-row {
+    display: table-row;
+  }
+
+  .tbl-cell {
+    display: table-cell;
+  }
+}
