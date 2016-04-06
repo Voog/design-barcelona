@@ -1,29 +1,29 @@
 {
-  "description": "An array of beautiful stories",
-  "name": "Barcelona",
+  "description": "New design",
+  "name": "New design",
   "preview_medium": "",
   "preview_small": "",
-  "author": "Tõnu Runnel",
+  "author": "",
   "layouts": [
     {
       "content_type": "page",
       "component": false,
       "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
+      "layout_name": "front_page",
       "title": "Front page"
     },
     {
       "content_type": "page",
       "component": false,
       "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
+      "layout_name": "common_page",
       "title": "Common page"
     },
     {
       "content_type": "blog",
       "component": false,
       "file": "layouts/blog___news.tpl",
-      "layout_name": "blog",
+      "layout_name": "blog___news",
       "title": "Blog & News"
     },
     {
@@ -36,9 +36,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/footer.tpl",
-      "layout_name": "footer",
-      "title": "footer"
+      "file": "components/header.tpl",
+      "layout_name": "header",
+      "title": "header"
     },
     {
       "content_type": "component",
@@ -46,6 +46,13 @@
       "file": "components/article-variables.tpl",
       "layout_name": "article-variables",
       "title": "article-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/bg-picker.tpl",
+      "layout_name": "bg-picker",
+      "title": "bg-picker"
     },
     {
       "content_type": "component",
@@ -78,16 +85,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/article-image.tpl",
-      "layout_name": "article-image",
-      "title": "article-image"
+      "file": "components/footer.tpl",
+      "layout_name": "footer",
+      "title": "footer"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/header.tpl",
-      "layout_name": "header",
-      "title": "header"
+      "file": "components/article-image.tpl",
+      "layout_name": "article-image",
+      "title": "article-image"
     },
     {
       "content_type": "component",
@@ -151,151 +158,165 @@
       "file": "components/submenu.tpl",
       "layout_name": "submenu",
       "title": "submenu"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-editor-styles.tpl",
+      "layout_name": "template-editor-styles",
+      "title": "template-editor-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-fonts.tpl",
+      "layout_name": "template-fonts",
+      "title": "template-fonts"
     }
   ],
   "assets": [
     {
       "content_type": "image/svg+xml",
       "file": "assets/ico-flags.svg",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "ico-flags.svg"
     },
     {
       "content_type": "image/svg+xml",
       "file": "assets/loader.svg",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "loader.svg"
     },
     {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/montserrat-bold.eot",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-bold.eot"
     },
     {
       "content_type": "image/svg+xml",
       "file": "assets/montserrat-bold.svg",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-bold.svg"
     },
     {
       "content_type": "application/x-font-truetype",
       "file": "assets/montserrat-bold.ttf",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-bold.ttf"
     },
     {
       "content_type": "application/font-woff",
       "file": "assets/montserrat-bold.woff",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-bold.woff"
     },
     {
       "content_type": "text/unknown",
       "file": "assets/montserrat-bold.woff2",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-bold.woff2"
     },
     {
       "content_type": "application/vnd.ms-fontobject",
       "file": "assets/montserrat-regular.eot",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-regular.eot"
     },
     {
       "content_type": "image/svg+xml",
       "file": "assets/montserrat-regular.svg",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-regular.svg"
     },
     {
       "content_type": "application/x-font-truetype",
       "file": "assets/montserrat-regular.ttf",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-regular.ttf"
     },
     {
       "content_type": "application/font-woff",
       "file": "assets/montserrat-regular.woff",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-regular.woff"
     },
     {
       "content_type": "text/unknown",
       "file": "assets/montserrat-regular.woff2",
-      "kind": "assets",
+      "kind": "asset",
       "filename": "montserrat-regular.woff2"
     },
     {
       "content_type": "image/png",
       "file": "images/check.png",
-      "kind": "images",
+      "kind": "image",
       "filename": "check.png"
     },
     {
       "content_type": "image/png",
       "file": "images/check_small.png",
-      "kind": "images",
+      "kind": "image",
       "filename": "check_small.png"
     },
     {
       "content_type": "image/png",
       "file": "images/close.png",
-      "kind": "images",
+      "kind": "image",
       "filename": "close.png"
     },
     {
       "content_type": "image/png",
       "file": "images/ico-flags.png",
-      "kind": "images",
+      "kind": "image",
       "filename": "ico-flags.png"
     },
     {
       "content_type": "image/png",
       "file": "images/ico-search-black.png",
-      "kind": "images",
+      "kind": "image",
       "filename": "ico-search-black.png"
     },
     {
       "content_type": "image/png",
       "file": "images/new_article.png",
-      "kind": "images",
+      "kind": "image",
       "filename": "new_article.png"
     },
     {
       "content_type": "application/javascript",
       "file": "javascripts/application.js",
-      "kind": "javascripts",
+      "kind": "javascript",
       "filename": "application.js"
     },
     {
       "content_type": "application/javascript",
       "file": "javascripts/application.min.js",
-      "kind": "javascripts",
+      "kind": "javascript",
       "filename": "application.min.js"
     },
     {
       "content_type": "application/javascript",
       "file": "javascripts/modernizr.js",
-      "kind": "javascripts",
+      "kind": "javascript",
       "filename": "modernizr.js"
     },
     {
       "content_type": "application/javascript",
       "file": "javascripts/modernizr.min.js",
-      "kind": "javascripts",
+      "kind": "javascript",
       "filename": "modernizr.min.js"
     },
     {
       "content_type": "text/css",
       "file": "stylesheets/main.css",
-      "kind": "stylesheets",
+      "kind": "stylesheet",
       "filename": "main.css"
     },
     {
       "content_type": "text/css",
       "file": "stylesheets/main.min.css",
-      "kind": "stylesheets",
+      "kind": "stylesheet",
       "filename": "main.min.css"
     }
   ]
