@@ -6,6 +6,20 @@ Adds template design editor style overrides.
 {% endcomment %}
 <style data-voog-style>
 :root {
+  /* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global",
+     "boundVariables": [
+      "--global-site-title-font-family",
+      "--global-main-menu-font-family",
+      "--blog-list-headings-font-family"
+     ]
+  */
+  --font-main: "Montserrat", Helvetica, Arial, sans-serif;
   	/* VoogStyle
        "path": ["Main Styles"],
        "title": "Site background",
@@ -17,20 +31,14 @@ Adds template design editor style overrides.
       ]
     */
   --global-background-color: #f4f4f4;
-  	/* VoogStyle
-       "path": ["Main Styles"],
-       "title": "Font family",
-       "editor": "listPicker",
-       "list": {% include "template-fonts" %},
-       "featured": true,
-       "scope": "global"
-    */
-  --font-main: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Main Styles"],
      "title": "Primary color",
      "editor": "colorPicker",
-     "scope": "global"
+     "scope": "global",
+     "boundVariables": [
+        "--global-site-title-color"
+     ]
   */
   --second-color: black;
   /* VoogStyle
@@ -44,7 +52,10 @@ Adds template design editor style overrides.
      "path": ["Main Styles"],
      "title": "Third color",
      "editor": "colorPicker",
-     "scope": "global"
+     "scope": "global",
+     "boundVariables": [
+      "--global-main-menu-color"
+     ]
   */
   --third-color: #818181;
   /* VoogStyle
@@ -87,27 +98,204 @@ Adds template design editor style overrides.
   --global-paddinog-lr: 50px;
   /* VoogStyle
      "path": ["Header", "Site title"],
-     "title": "Color",
-     "type": "Button"
-     "editor": "colorPicker",
-     "scope": "global",
-     "featured": true
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global"
   */
-  --roiwqeoriero: #fff;
+  --global-site-title-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Header", "Site title"],
-     "title": "Color",
-     "editor": "colorPicker",
+     "title": "Letter spacing",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 20,
+     "unit": "px",
      "scope": "global"
   */
-  --roiwqpoeoriero: #fff;
+  --global-site-title-letter-spacing: 0;
   /* VoogStyle
-     "path": ["Header"],
-     "title": "Main menu links",
-     "editor": "colorPicker",
+    "path": ["Header", "Site title"],
+    "title": "Size",
+    "type": "button",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --global-site-title-font-size: 24px;
+  /* VoogStyle
+    "path": ["Header", "Site title"],
+    "title": "Font weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  --global-site-title-font-weight: 400;
+  /* VoogStyle
+    "path": ["Header", "Site title"],
+    "title": "Font style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  --global-site-title-font-style: normal;
+  /* VoogStyle
+    "path": ["Header", "Site title"],
+    "title": "Text decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  --global-site-title-text-decoration: none;
+  /* VoogStyle
+    "path": ["Header", "Site title"],
+    "title": "Text transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --global-site-title-text-transform: uppercase;
+  /* VoogStyle
+    "path": ["Header", "Site title"],
+    "title": "Color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --global-site-title-color: black;
+  /* VoogStyle
+     "path": ["Header", "Main menu links", "Normal"],
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
      "scope": "global"
   */
-  --roiwo9u9uqeoriero: #fff;
+  --global-main-menu-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  /* VoogStyle
+     "path": ["Header", "Main menu links", "Normal"],
+     "title": "Letter spacing",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 20,
+     "unit": "px",
+     "scope": "global"
+  */
+  --global-main-menu-letter-spacing: 0;
+  /* VoogStyle
+    "path": ["Header", "Main menu links", "Normal"],
+    "title": "Size",
+    "type": "button",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --global-main-menu-font-size: 16px;
+  /* VoogStyle
+    "path": ["Header", "Main menu links", "Normal"],
+    "title": "Font weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  --global-main-menu-font-weight: 400;
+  /* VoogStyle
+    "path": ["Header", "Main menu links", "Normal"],
+    "title": "Font style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  --global-main-menu-font-style: normal;
+  /* VoogStyle
+    "path": ["Header", "Main menu links", "Normal"],
+    "title": "Text decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  --global-main-menu-text-decoration: none;
+  /* VoogStyle
+    "path": ["Header", "Main menu links", "Normal"],
+    "title": "Text transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --global-main-menu-text-transform: uppercase;
+  /* VoogStyle
+    "path": ["Header", "Main menu links", "Normal"],
+    "title": "Color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --global-main-menu-color: #818181;
+ /* VoogStyle
+  "path": ["Header", "Main menu links", "Hover"],
+  "title": "Color",
+  "type": "button",
+  "editor": "colorPicker",
+  "scope": "global"
+*/
+  --global-main-menu-hover: black;
+ /* VoogStyle
+  "path": ["Header", "Main menu links", "Active"],
+  "title": "Color",
+  "type": "button",
+  "editor": "colorPicker",
+  "scope": "global"
+*/
+  --global-main-menu-active-color: black;
   /* VoogStyle
      "path": ["Blog list"],
      "title": "Width",
@@ -120,25 +308,9 @@ Adds template design editor style overrides.
   --blog-list-article-width: 300px;
   /* VoogStyle
      "path": ["Blog list"],
-     "title": "Bottom / top",
-     "editor": "toggleIcon",
-     "states": {
-        "on": "unset",
-        "off": "50px"
-        },
-      "icon": "plus-large",
-     "scope": "global"
-  */
-  --topbottom: 66;
-  /* VoogStyle
-     "path": ["Blog list"],
      "title": "Area alignment",
      "editor": "listPicker",
-     "list": [
-      {"title": "Left", "value": "left"},
-      {"title": "Center", "value": "center"},
-      {"title": "Right", "value": "right"}
-     ],
+     "list": {{ base_alignment_set }},
      "scope": "global"
   */
   --blog-list-alignment: left;
@@ -152,6 +324,18 @@ Adds template design editor style overrides.
      "scope": "global"
   */
   --blog-list-padding: 30px;
+  /* VoogStyle
+     "path": ["Blog list", "Headings"],
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global",
+     "boundVariables": [
+     "--blog-list-date-font-family"
+     ]
+  */
+  --blog-list-headings-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Blog list", "Headings"],
      "title": "Letter spacing",
@@ -250,7 +434,16 @@ Adds template design editor style overrides.
   */
   --blog-list-headings-color: white;
   /* VoogStyle
-     "path": ["Blog list", "Text"],
+     "path": ["Blog list", "Date"],
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global"
+  */
+  --blog-list-date-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  /* VoogStyle
+     "path": ["Blog list", "Date"],
      "title": "Character spacing",
      "editor": "rangePicker",
      "min": 0,
@@ -260,7 +453,7 @@ Adds template design editor style overrides.
   */
   --blog-list-date-letter-spacing: 0;
   /* VoogStyle
-     "path": ["Blog list", "Text"],
+     "path": ["Blog list", "Date"],
      "title": "Padding top",
      "editor": "rangePicker",
      "min": 0,
@@ -271,7 +464,7 @@ Adds template design editor style overrides.
   */
   --blog-list-date-padding-top: 8px;
   /* VoogStyle
-    "path": ["Blog list", "Text"],
+    "path": ["Blog list", "Date"],
     "title": "Size",
     "type": "button",
     "editor": "rangePicker",
@@ -283,7 +476,7 @@ Adds template design editor style overrides.
   */
   --blog-list-date-font-size: 12px;
   /* VoogStyle
-    "path": ["Blog list", "Text"],
+    "path": ["Blog list", "Date"],
     "title": "Font weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -296,7 +489,7 @@ Adds template design editor style overrides.
   */
   --blog-list-date-font-weight: 400;
   /* VoogStyle
-    "path": ["Blog list", "Text"],
+    "path": ["Blog list", "Date"],
     "title": "Font style",
     "type": "button",
     "editor": "toggleIcon",
@@ -309,7 +502,7 @@ Adds template design editor style overrides.
   */
   --blog-list-date-font-style: normal;
   /* VoogStyle
-    "path": ["Blog list", "Text"],
+    "path": ["Blog list", "Date"],
     "title": "Text decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -322,7 +515,7 @@ Adds template design editor style overrides.
   */
   --blog-list-date-text-decoration: none;
   /* VoogStyle
-    "path": ["Blog list", "Text"],
+    "path": ["Blog list", "Date"],
     "title": "Text transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -335,7 +528,7 @@ Adds template design editor style overrides.
   */
   --blog-list-date-text-transform: none;
   /* VoogStyle
-    "path": ["Blog list", "Text"],
+    "path": ["Blog list", "Date"],
     "title": "Color",
     "type": "button",
     "editor": "colorPicker",
@@ -408,17 +601,16 @@ textarea,
 }
 
 body,
-.header .main-menu-toggler,
-.site-title {
+.header .main-menu-toggler {
   color: var(--main-color);
 }
 
-h1, h2, h3, .site-title, .site-title a, .main-menu ul a:hover, .main-menu ul a.active, .sub-menu a:hover, .sub-menu a.active,
+h1, h2, h3, .main-menu ul a:hover, .main-menu ul a.active, .sub-menu a:hover, .sub-menu a.active,
 .voog-search-modal-results h3, .voog-search-modal-results a {
   color: var(--second-color);
 }
 
-a, .option-btn, blockquote, .voog-search-modal-result, .main-menu ul a, .sub-menu a, .post-header .post-date, .post-cover .post-cover-inner .edy-img-drop-area-placeholder, .comment .comment-info {
+a, .option-btn, blockquote, .voog-search-modal-result, .sub-menu a, .post-header .post-date, .post-cover .post-cover-inner .edy-img-drop-area-placeholder, .comment .comment-info {
   color: var(--third-color);
 }
 
@@ -426,20 +618,58 @@ a, .option-btn, blockquote, .voog-search-modal-result, .main-menu ul a, .sub-men
   max-width: var(--main-width);
 }
 
-.blog-list-page .main .article,
-.blog-list-page .main .new-article {
-  width: var(--blog-list-article-width);
+.site-title {
+  color: var(--global-site-title-color);
+  font-family: var(--global-site-title-font-family);
+  font-style: var(--global-site-title-font-style);
+  font-weight: var(--global-site-title-font-weight);
+  letter-spacing: var(--global-site-title-letter-spacing);
+  text-transform: var(--global-site-title-text-transform);
+}
+.site-title .site-title-inner {
+  text-decoration: var(--global-site-title-text-decoration);
+}
+.site-title a {
+  color: black;
+}
+
+.main-menu ul a {
+  color: var(--global-main-menu-color);
+  font-family: var(--global-main-menu-font-family);
+  font-size: var(--global-main-menu-font-size);
+  font-style: var(--global-main-menu-font-style);
+  font-weight: var(--global-main-menu-font-weight);
+  letter-spacing: var(--global-main-menu-letter-spacing);
+  text-decoration: var(--global-main-menu-text-decoration);
+  text-transform: var(--global-main-menu-text-transform);
+}
+.main-menu ul a:hover {
+  color: var(--global-main-menu-hover-color);
+}
+.main-menu ul a.active {
+  color: var(--global-main-menu-active-color);
+}
+
+@media screen and (min-width: 500px) {
+  .site-title {
+    font-size: var(--global-site-title-font-size);
+  }
+
+  .blog-list-page .main .article,
+  .blog-list-page .main .new-article {
+    width: var(--blog-list-article-width);
+  }
 }
 .blog-list-page .main .article .article-content,
 .blog-list-page .main .new-article .article-content {
   text-align: var(--blog-list-alignment);
-  top: var(--topbottom);
   left: var(--blog-list-padding);
   right: var(--blog-list-padding);
 }
 .blog-list-page .main .article h2,
 .blog-list-page .main .new-article h2 {
   color: var(--blog-list-headings-color);
+  font-family: var(--blog-list-headings-font-family);
   font-size: var(--blog-list-headings-font-size);
   font-style: var(--blog-list-headings-font-style);
   font-weight: var(--blog-list-headings-font-weight);
@@ -451,6 +681,7 @@ a, .option-btn, blockquote, .voog-search-modal-result, .main-menu ul a, .sub-men
 .blog-list-page .main .article .article-date,
 .blog-list-page .main .new-article .article-date {
   color: var(--blog-list-date-color);
+  font-family: var(--blog-list-date-font-family);
   font-size: var(--blog-list-date-font-size);
   font-style: var(--blog-list-date-font-style);
   font-weight: var(--blog-list-date-font-weight);

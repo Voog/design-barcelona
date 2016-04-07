@@ -139,7 +139,7 @@ label {
 
   .form_field_checkbox {
     + .form_control_indicator::before {
-      background: $color-white;
+      background: $fourth-color;
     }
 
     // scss-lint:disable NestingDepth
