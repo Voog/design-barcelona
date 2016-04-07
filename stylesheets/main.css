@@ -1,3 +1,4 @@
+/* Voog.com template: Barcelona */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -556,7 +557,8 @@ h1,
 h2,
 h3 {
   color: black;
-  font: bold 40px/1.1 "Montserrat", Helvetica, Arial, sans-serif;
+  font: bold 40px "Montserrat", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
 }
 
 h1 {
@@ -733,7 +735,7 @@ body {
 }
 
 a {
-  color: #919191;
+  color: #818181;
   text-decoration: none;
 }
 a:hover {
@@ -1334,8 +1336,8 @@ a:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-color: rgba(145, 145, 145, 0.3);
-  border: 1px dashed #919191;
+  border-color: rgba(129, 129, 129, 0.3);
+  border: 1px dashed #818181;
   display: table-cell;
   vertical-align: middle;
 }
@@ -1762,7 +1764,7 @@ a:hover {
   padding: 7px 12px;
 }
 .lang-options .option-btn {
-  color: #919191;
+  color: #818181;
   font-size: 11px;
   line-height: 1.1;
 }
