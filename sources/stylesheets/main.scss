@@ -1,3 +1,5 @@
+/* Voog.com template: Barcelona */
+
 //MODULES
 @import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import 'mixins';
@@ -49,7 +51,7 @@ h2,
 h3 {
   @extend %nulling;
   color: $second-color;
-  font: bold 40px / 1.1 $font-main;
+  font: bold $h1-size / 1.1 $font-main;
 }
 
 h1 {
@@ -58,13 +60,13 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: $h2-size;
   margin: 40px 0 20px;
 }
 
 h3 {
   font-family: $font-main;
-  font-size: 20px;
+  font-size: $h3-size;
   font-weight: bold;
   margin: 40px 0 20px;
 }
@@ -86,7 +88,7 @@ form {
 pre,
 code {
   @include bg($color-white, .3);
-  font-size: 14px;
+  font-size: $font-size - 4px;
 }
 
 pre {
@@ -246,7 +248,7 @@ a {
 .wrap {
   margin: 0 auto;
   max-width: $main-width;
-  padding: 0 50px;
+  padding: 0 $pad-50;
 }
 
 // main-menu
@@ -305,7 +307,7 @@ a {
     a {
       @include hyphenate(true);
       color: $third-color;
-      font-size: 16px;
+      font-size: $font-size - 2px;
       line-height: 1.1;
       text-transform: uppercase;
 
@@ -325,7 +327,7 @@ a {
 
 // submenu
 .sub-menu {
-  font-size: 14px;
+  font-size: $font-size - 4px;
   line-height: 1.1;
   min-height: 35px;
   padding: 0 50px;
@@ -537,7 +539,7 @@ a {
       }
 
       .article-date {
-        font-size: 12px;
+        font-size: $font-size - 6px;
         padding-top: 8px;
       }
     }
@@ -776,7 +778,7 @@ a {
   .post-date {
     color: $third-color;
     display: block;
-    font-size: 18px;
+    font-size: $font-size;
     font-weight: normal;
     padding-top: 10px;
   }
@@ -802,7 +804,7 @@ a {
       background: $third-color;
       color: $color-white;
       display: inline-block;
-      font-size: 12px;
+      font-size: $font-size - 6px;
       line-height: 1.1;
       padding: 3px 10px;
     }
@@ -887,7 +889,7 @@ a {
   position: relative;
 
   .comment-form-toggler {
-    font-size: 13px;
+    font-size: $font-size - 5px;
     font-weight: bold;
   }
 
@@ -912,7 +914,7 @@ a {
 
 // comments
 .comment {
-  font-size: 14px;
+  font-size: $font-size - 4px;
   padding-bottom: 15px;
   word-wrap: break-word;
 
@@ -1211,7 +1213,7 @@ $flags:
 
   li {
     display: block;
-    font-size: 12px;
+    font-size: $font-size - 6px;
     text-align: left;
 
     &.add-lang-btn {
@@ -1257,14 +1259,14 @@ $flags:
 // lang-options
 .lang-options {
   @include bg($color-black, .09);
-  font-size: 11px;
+  font-size: $font-size - 7px;
   line-height: 1.1;
   padding: 7px 12px;
 
   .option-btn {
     @extend %button;
     color: $link-color;
-    font-size: 11px;
+    font-size: $font-size - 7px;
     line-height: 1.1;
 
     &:hover {
@@ -1299,7 +1301,7 @@ $flags:
   &::after {
     content: attr(data-title);
     display: block;
-    font-size: 11px;
+    font-size: $font-size - 7px;
     padding: 2px;
   }
 }
@@ -1348,7 +1350,7 @@ $flags:
 @media screen and (max-width: $break-medium) {
 
   blockquote {
-    font-size: 36px;
+    font-size: $h1-size - 4px;
     margin-left: 0;
     margin-right: 0;
 
@@ -1379,7 +1381,7 @@ $flags:
 
   html,
   body {
-    font-size: 16px;
+    font-size: $font-size - 2px;
     line-height: 1.75;
   }
 
@@ -1399,9 +1401,9 @@ $flags:
     }
   }
 
-  h1 { font-size: 36px; }
-  h2 { font-size: 22px; }
-  h3 { font-size: 18px; }
+  h1 { font-size: $h1-size - 4px; }
+  h2 { font-size: $h2-size - 2px; }
+  h3 { font-size: $h3-size - 2px; }
 
   iframe {
     max-width: 100%;
@@ -1482,7 +1484,7 @@ $flags:
   .site-title {
     .front-page &,
     & {
-      font-size: 18px;
+      font-size: $font-size;
       padding: 10px 45px 8px 15px !important;
     }
   }
@@ -1548,7 +1550,7 @@ $flags:
 
       a {
         @include color($fourth-color, .5);
-        font-size: 20px;
+        font-size: $h3-size;
         line-height: 1.05;
 
         &:hover, &.active {
@@ -1700,7 +1702,7 @@ $flags:
 
   .lang-menu-btn-holder {
     display: block;
-    font-size: 12px;
+    font-size: $font-size - 6px;
     left: 15px;
     line-height: 1.1;
     position: absolute;
@@ -1762,7 +1764,7 @@ $flags:
 
         a {
           @include color($fourth-color, .5);
-          font-size: 20px;
+          font-size: $h3-size;
           line-height: 1.05;
 
           &:hover,
@@ -1776,13 +1778,13 @@ $flags:
     .lang-options {
       @include color($fourth-color, .5);
       background: none;
-      font-size: 13px;
+      font-size: $font-size - 5px;
       line-height: 1.1;
       text-align: center;
 
       .option-btn {
         color: $color-white;
-        font-size: 13px;
+        font-size: $font-size - 5px;
         line-height: 1.1;
 
         // scss-lint:disable NestingDepth
