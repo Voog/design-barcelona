@@ -99,13 +99,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/helper.tpl",
-      "layout_name": "helper",
-      "title": "helper"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/html-head.tpl",
       "layout_name": "html-head",
       "title": "html-head"
@@ -179,6 +172,13 @@
       "file": "components/template-fonts.tpl",
       "layout_name": "template-fonts",
       "title": "template-fonts"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-variables.tpl",
+      "layout_name": "template-variables",
+      "title": "template-variables"
     }
   ],
   "assets": [
