@@ -47,7 +47,8 @@ Adds template design editor style overrides.
         "--main-menu-active-color",
         "--h1-color",
         "--h2-color",
-        "--h3-color"
+        "--h3-color",
+        "--content-links-hover-color"
      ]
   */
   --second-color: black;
@@ -56,7 +57,10 @@ Adds template design editor style overrides.
      "title": "Secondary color",
      "editor": "colorPicker",
      "scope": "global",
-     "featured": true
+     "featured": true,
+     "boundVariables": [
+        "--content-color"
+     ]
   */
   --main-color: #333;
   /* VoogStyle
@@ -66,7 +70,8 @@ Adds template design editor style overrides.
      "scope": "global",
      "featured": true,
      "boundVariables": [
-      "--main-menu-color"
+      "--main-menu-color",
+      "--content-links-color"
      ]
   */
   --third-color: #818181;
@@ -824,16 +829,6 @@ Adds template design editor style overrides.
   --h2-alignment: left;
   /* VoogStyle
      "path": ["Headings", "Heading"],
-     "title": "Padding",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 150,
-     "unit": "px",
-     "scope": "global"
-  */
-  --h2-padding: 20px;
-  /* VoogStyle
-     "path": ["Headings", "Heading"],
      "title": "Padding bottom",
      "editor": "rangePicker",
      "min": 0,
@@ -1068,6 +1063,17 @@ Adds template design editor style overrides.
   */
   --h3-color: black;
   /* VoogStyle
+     "path": ["Content"],
+     "title": "Width",
+     "editor": "rangePicker",
+     "min": 250,
+     "max": 1250,
+     "step": 10,
+     "unit": "px",
+     "scope": "global"
+  */
+  --main-width: 700px;
+  /* VoogStyle
      "path": ["Content", "Text"],
      "title": "Font family",
      "editor": "listPicker",
@@ -1179,6 +1185,178 @@ Adds template design editor style overrides.
   */
   --content-color: #333;
   /* VoogStyle
+    "path": ["Content", "Links", "Normal"],
+    "title": "Background",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --content-links-background-color: rgba(255, 255, 255, 0);
+  /* VoogStyle
+    "path": ["Content", "Links", "Hover"],
+    "title": "Background",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --content-links-hover-background-color: rgba(255, 255, 255, 0);
+  /* VoogStyle
+    "path": ["Content", "Links", "Normal"],
+    "title": "Size",
+    "type": "button",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "boundVariables": [
+      "--content-links-hover-font-size"
+    ]
+  */
+  --content-links-font-size: 18px;
+  /* VoogStyle
+    "path": ["Content", "Links", "Hover"],
+    "title": "Size",
+    "type": "button",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global"
+  */
+  --content-links-hover-font-size: 18px;
+  /* VoogStyle
+    "path": ["Content", "Links", "Normal"],
+    "title": "Font weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global",
+    "boundVariables": [
+      "--content-links-hover-font-weight"
+    ]
+  */
+  --content-links-font-weight: 400;
+  /* VoogStyle
+    "path": ["Content", "Links", "Hover"],
+    "title": "Font weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  --content-links-hover-font-weight: 400;
+  /* VoogStyle
+    "path": ["Content", "Links", "Normal"],
+    "title": "Font style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global",
+    "boundVariables": [
+      "--content-links-hover-font-style"
+    ]
+  */
+  --content-links-font-style: normal;
+  /* VoogStyle
+    "path": ["Content", "Links", "Hover"],
+    "title": "Font style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  --content-links-hover-font-style: normal;
+  /* VoogStyle
+    "path": ["Content", "Links", "Normal"],
+    "title": "Text decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global",
+    "boundVariables": [
+      "--content-links-hover-text-decoration"
+    ]
+  */
+  --content-links-text-decoration: none;
+  /* VoogStyle
+    "path": ["Content", "Links", "Hover"],
+    "title": "Text decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  --content-links-hover-text-decoration: none;
+  /* VoogStyle
+    "path": ["Content", "Links", "Normal"],
+    "title": "Text transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global",
+    "boundVariables": [
+      "--content-links-hover-text-transform"
+    ]
+  */
+  --content-links-text-transform: none;
+  /* VoogStyle
+    "path": ["Content", "Links", "Hover"],
+    "title": "Text transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --content-links-hover-text-transform: none;
+  /* VoogStyle
+    "path": ["Content", "Links", "Normal"],
+    "title": "Color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --content-links-color: #818181;
+ /* VoogStyle
+  "path": ["Content", "Links", "Hover"],
+  "title": "Color",
+  "type": "button",
+  "editor": "colorPicker",
+  "scope": "global"
+*/
+  --content-links-hover-color: black;
+  /* VoogStyle
      "path": ["Footer"],
      "title": "Footer background",
      "editor": "colorPicker",
@@ -1234,7 +1412,6 @@ body,
   color: var(--main-color);
 }
 
-h2, h3,
 .sub-menu a:hover,
 .sub-menu a.active,
 .voog-search-modal-results h3,
@@ -1242,7 +1419,6 @@ h2, h3,
   color: var(--second-color);
 }
 
-a,
 .option-btn,
 blockquote,
 .voog-search-modal-result,
@@ -1255,10 +1431,10 @@ blockquote,
 
 .wrap {
   max-width: var(--main-width);
-  max-width: 700px;
 }
 
-main .content-body {
+main .content-body,
+main .post-content {
   color: var(--content-color);
   font-family: var(--content-font-family);
   font-size: var(--content-font-size);
@@ -1270,6 +1446,38 @@ main .content-body {
   text-align: var(--content-alignment);
   text-decoration: var(--content-text-decoration);
   text-transform: var(--content-text-transform);
+}
+
+main .content-body a,
+main .post-content a,
+main .footer-content a {
+  background-color: var(--content-links-background-color);
+  color: var(--content-links-color);
+  font-family: var(--content-links-font-family);
+  font-style: var(--content-links-font-style);
+  font-weight: var(--content-links-font-weight);
+  letter-spacing: var(--content-links-letter-spacing);
+  text-decoration: var(--content-links-text-decoration);
+  text-transform: var(--content-links-text-transform);
+}
+main .content-body a:hover,
+main .post-content a:hover,
+main .footer-content a:hover {
+  background-color: var(--content-links-hover-background-color);
+  color: var(--content-links-hover-color);
+  font-style: var(--content-links-hover-font-style);
+  font-weight: var(--content-links-hover-font-weight);
+  text-decoration: var(--content-links-hover-text-decoration);
+  text-transform: var(--content-links-hover-text-transform);
+}
+
+main .content-body a,
+main .post-content a {
+  font-size: var(--content-links-font-size);
+}
+main .content-body a:hover,
+main .post-content a:hover {
+  font-size: var(--content-links-hover-font-size);
 }
 
 .formatted h1 {
