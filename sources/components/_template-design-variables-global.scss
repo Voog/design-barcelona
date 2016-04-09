@@ -19,7 +19,8 @@
       "--h1-font-family",
       "--h2-font-family",
       "--h3-font-family",
-      "--content-font-family"
+      "--content-font-family",
+      "--footer-font-family"
      ]
   */
   --font-main: $font-main; 
@@ -63,7 +64,8 @@
      "scope": "global",
      "featured": true,
      "boundVariables": [
-        "--content-color"
+        "--content-color",
+        "--form-field-text-color"
      ]
   */
   --main-color: $main-color;
@@ -77,7 +79,8 @@
      "boundVariables": [
       "--main-menu-color",
       "--submenu-color",
-      "--content-links-color"
+      "--content-links-color",
+      "--table-border-color"
      ]
   */
   --third-color: $third-color;
@@ -89,7 +92,8 @@
      "scope": "global",
      "featured": true,
      "boundVariables": [
-      "--blog-list-headings-color"
+      "--blog-list-headings-color",
+      "--form-field-background-color"
     ]
   */
   --fourth-color: $fourth-color;

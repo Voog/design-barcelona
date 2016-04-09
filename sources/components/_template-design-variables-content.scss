@@ -4,6 +4,25 @@
   // ===========================================================================  
 
   /* VoogStyle
+    "path": ["Content"],
+    "title": "Background",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --content-background-color: rgba($color-white, 0);
+
+  /* VoogStyle
+     "path": ["Content"],
+     "title": "Padding",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 200,
+     "unit": "px",
+     "scope": "global"
+  */
+  --content-padding: 0;
+
+  /* VoogStyle
      "path": ["Content"],
      "title": "Width",
      "editor": "rangePicker",
@@ -303,7 +322,10 @@
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
-     "scope": "global"
+     "scope": "global",
+     "boundVariables": [
+       "--form-field-text-font-family"
+     ]
   */
   --content-font-family: $font-main;
 
@@ -348,7 +370,10 @@
     "max": 80,
     "unit": "px",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--form-field-text-font-size"
+    ]
   */
   --content-font-size: $font-size;
 

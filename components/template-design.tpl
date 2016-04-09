@@ -20,7 +20,8 @@ Adds template design editor style overrides.
       "--h1-font-family",
       "--h2-font-family",
       "--h3-font-family",
-      "--content-font-family"
+      "--content-font-family",
+      "--footer-font-family"
      ]
   */
   --font-main: "Montserrat", Helvetica, Arial, sans-serif;
@@ -61,7 +62,8 @@ Adds template design editor style overrides.
      "scope": "global",
      "featured": true,
      "boundVariables": [
-        "--content-color"
+        "--content-color",
+        "--form-field-text-color"
      ]
   */
   --main-color: #333;
@@ -74,7 +76,8 @@ Adds template design editor style overrides.
      "boundVariables": [
       "--main-menu-color",
       "--submenu-color",
-      "--content-links-color"
+      "--content-links-color",
+      "--table-border-color"
      ]
   */
   --third-color: #818181;
@@ -85,7 +88,8 @@ Adds template design editor style overrides.
      "scope": "global",
      "featured": true,
      "boundVariables": [
-      "--blog-list-headings-color"
+      "--blog-list-headings-color",
+      "--form-field-background-color"
     ]
   */
   --fourth-color: white;
@@ -1068,6 +1072,23 @@ Adds template design editor style overrides.
 
 :root {
   /* VoogStyle
+    "path": ["Content"],
+    "title": "Background",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --content-background-color: rgba(255, 255, 255, 0);
+  /* VoogStyle
+     "path": ["Content"],
+     "title": "Padding",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 200,
+     "unit": "px",
+     "scope": "global"
+  */
+  --content-padding: 0;
+  /* VoogStyle
      "path": ["Content"],
      "title": "Width",
      "editor": "rangePicker",
@@ -1338,7 +1359,10 @@ Adds template design editor style overrides.
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
-     "scope": "global"
+     "scope": "global",
+     "boundVariables": [
+       "--form-field-text-font-family"
+     ]
   */
   --content-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
@@ -1379,7 +1403,10 @@ Adds template design editor style overrides.
     "max": 80,
     "unit": "px",
     "scope": "global",
-    "featured": true
+    "featured": true,
+    "boundVariables": [
+      "--form-field-text-font-size"
+    ]
   */
   --content-font-size: 18px;
   /* VoogStyle
@@ -1611,6 +1638,281 @@ Adds template design editor style overrides.
      "scope": "global"
   */
   --footer-background-color: #f4f4f4;
+  /* VoogStyle
+     "path": ["Footer", "Text"],
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global"
+  */
+  --footer-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  /* VoogStyle
+     "path": ["Footer", "Text"],
+     "title": "Alignment",
+     "editor": "listPicker",
+     "list": {{ base_alignment_set }},
+     "scope": "global"
+  */
+  --footer-alignment: center;
+  /* VoogStyle
+     "path": ["Footer", "Text"],
+     "title": "Letter spacing",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 40,
+     "unit": "px",
+     "scope": "global"
+  */
+  --footer-letter-spacing: 0;
+  /* VoogStyle
+     "path": ["Footer", "Text"],
+     "title": "Line height",
+     "editor": "rangePicker",
+     "min": 0.8,
+     "max": 3,
+     "step": 0.1,
+     "unit": "em",
+     "scope": "global"
+  */
+  --footer-line-height: 1.45 #em;
+  /* VoogStyle
+    "path": ["Footer", "Text"],
+    "title": "Size",
+    "type": "button",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --footer-font-size: 10px;
+  /* VoogStyle
+    "path": ["Footer", "Text"],
+    "title": "Font weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  --footer-font-weight: 400;
+  /* VoogStyle
+    "path": ["Footer", "Text"],
+    "title": "Font style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  --footer-font-style: normal;
+  /* VoogStyle
+    "path": ["Footer", "Text"],
+    "title": "Text decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  --footer-text-decoration: none;
+  /* VoogStyle
+    "path": ["Footer", "Text"],
+    "title": "Text transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --footer-text-transform: none;
+  /* VoogStyle
+    "path": ["Footer", "Text"],
+    "title": "Color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --footer-color: #333;
+}
+
+:root {
+  /* VoogStyle
+    "path": ["Tables"],
+    "title": "Background",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --table-background-color: black;
+  /* VoogStyle
+    "path": ["Tables"],
+    "title": "Border color",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --table-border-color: #818181;
+  /* VoogStyle
+     "path": ["Tables"],
+     "title": "Border width",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 20,
+     "unit": "px",
+     "scope": "global"
+  */
+  --table-border-width: 1px;
+  /* VoogStyle
+     "path": ["Tables"],
+     "title": "Padding",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 100,
+     "unit": "px",
+     "scope": "global"
+  */
+  --table-cell-padding: 10px;
+  /* VoogStyle
+    "path": ["Forms"],
+    "title": "Field background",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --form-field-background-color: white;
+  /* VoogStyle
+    "path": ["Forms"],
+    "title": "Field border color",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
+  --form-field-border-color: black;
+  /* VoogStyle
+     "path": ["Forms"],
+     "title": "Field border width",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 20,
+     "unit": "px",
+     "scope": "global"
+  */
+  --form-field-border-width: 0;
+  /* VoogStyle
+     "path": ["Forms"],
+     "title": "Field padding",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 100,
+     "unit": "px",
+     "scope": "global"
+  */
+  --form-field-padding: 10px;
+  /* VoogStyle
+     "path": ["Forms", "Text"],
+     "title": "Font family",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global"
+  */
+  --form-field-text-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  /* VoogStyle
+     "path": ["Forms", "Text"],
+     "title": "Line height",
+     "editor": "rangePicker",
+     "min": 0.8,
+     "max": 3,
+     "step": 0.1,
+     "unit": "em",
+     "scope": "global"
+  */
+  --form-field-text-line-height: 1.45 #em;
+  /* VoogStyle
+    "path": ["Forms", "Text"],
+    "title": "Size",
+    "type": "button",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --form-field-text-font-size: 18px;
+  /* VoogStyle
+    "path": ["Forms", "Text"],
+    "title": "Font weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global"
+  */
+  --form-field-text-font-weight: 400;
+  /* VoogStyle
+    "path": ["Forms", "Text"],
+    "title": "Font style",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "italic",
+      "off": "normal"
+    },
+    "icon": "italic",
+    "scope": "global"
+  */
+  --form-field-text-font-style: normal;
+  /* VoogStyle
+    "path": ["Forms", "Text"],
+    "title": "Text decoration",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "underline",
+      "off": "none"
+    },
+    "icon": "underline",
+    "scope": "global"
+  */
+  --form-field-text-text-decoration: none;
+  /* VoogStyle
+    "path": ["Forms", "Text"],
+    "title": "Text transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --form-field-text-text-transform: none;
+  /* VoogStyle
+    "path": ["Forms", "Text"],
+    "title": "Color",
+    "type": "button",
+    "editor": "colorPicker",
+    "scope": "global",
+    "featured": true
+  */
+  --form-field-text-color: #333;
 }
 
 .main {
@@ -1622,11 +1924,6 @@ Adds template design editor style overrides.
   background-color: var(--header-background-color);
 }
 
-.footer {
-  background-color: var(--footer-background-color);
-}
-
-html,
 body,
 .custom-btn,
 .lang-menu-btn,
@@ -1649,8 +1946,6 @@ body,
   color: var(--main-color);
 }
 
-.sub-menu a:hover,
-.sub-menu a.active,
 .voog-search-modal-results h3,
 .voog-search-modal-results a {
   color: var(--second-color);
@@ -1659,7 +1954,6 @@ body,
 .option-btn,
 blockquote,
 .voog-search-modal-result,
-.sub-menu a,
 .post-header .post-date,
 .post-cover .post-cover-inner .edy-img-drop-area-placeholder,
 .comment .comment-info {
@@ -1668,6 +1962,11 @@ blockquote,
 
 .wrap {
   max-width: var(--main-width);
+}
+
+main .content.formatted {
+  background-color: var(--content-background-color);
+  padding: var(--content-padding);
 }
 
 main .content-body,
@@ -1679,7 +1978,6 @@ main .post-content {
   font-weight: var(--content-font-weight);
   letter-spacing: var(--content-letter-spacing);
   line-height: var(--content-line-height);
-  padding-bottom: var(--content-padding-bottom);
   text-align: var(--content-alignment);
   text-decoration: var(--content-text-decoration);
   text-transform: var(--content-text-transform);
@@ -1808,6 +2106,49 @@ main .post-content a:hover {
   text-transform: var(--main-menu-active-text-transform);
 }
 
+.sub-menu a {
+  color: var(--submenu-color);
+  font-family: var(--submenu-font-family);
+  font-size: var(--submenu-font-size);
+  font-style: var(--submenu-font-style);
+  font-weight: var(--submenu-font-weight);
+  letter-spacing: var(--submenu-letter-spacing);
+  text-decoration: var(--submenu-text-decoration);
+  text-transform: var(--submenu-text-transform);
+}
+.sub-menu a:hover {
+  color: var(--submenu-hover-color);
+  font-size: var(--submenu-hover-font-size);
+  font-style: var(--submenu-hover-font-style);
+  font-weight: var(--submenu-hover-font-weight);
+  text-decoration: var(--submenu-hover-text-decoration);
+  text-transform: var(--submenu-hover-text-transform);
+}
+.sub-menu a.active {
+  color: var(--submenu-active-color);
+  font-size: var(--submenu-active-font-size);
+  font-style: var(--submenu-active-font-style);
+  font-weight: var(--submenu-active-font-weight);
+  text-decoration: var(--submenu-active-text-decoration);
+  text-transform: var(--submenu-active-text-transform);
+}
+
+.footer {
+  background-color: var(--footer-background-color);
+}
+.footer .footer-content {
+  color: var(--footer-color);
+  font-family: var(--footer-font-family);
+  font-size: var(--footer-font-size);
+  font-style: var(--footer-font-style);
+  font-weight: var(--footer-font-weight);
+  letter-spacing: var(--footer-letter-spacing);
+  line-height: var(--footer-line-height);
+  text-align: var(--footer-alignment);
+  text-decoration: var(--footer-text-decoration);
+  text-transform: var(--footer-text-transform);
+}
+
 @media screen and (min-width: 500px) {
   .site-title {
     font-size: var(--site-title-font-size);
@@ -1849,20 +2190,34 @@ main .post-content a:hover {
   text-transform: var(--blog-list-date-text-transform);
 }
 
-.form_submit input,
-.submit,
-.custom-button,
-.custom-button:hover {
-  color: var(--fourth-color);
+textarea {
+  font-family: var(--form-field-text-font-family);
 }
 
 .form_field_textfield,
 .form_field_textarea {
-  background-color: var(--fourth-color);
+  background-color: var(--form-field-background-color);
+  border: var(--form-field-border-width) var(--form-field-border-color) solid;
+  color: var(--form-field-text-color);
+  font-family: var(--form-field-text-font-family);
+  font-size: var(--form-field-text-font-size);
+  line-height: var(--form-field-text-line-height);
+  font-style: var(--form-field-text-font-style);
+  font-weight: var(--form-field-text-font-weight);
+  padding-left: var(--form-field-padding);
+  padding-right: var(--form-field-padding);
+  text-decoration: var(--form-field-text-text-decoration);
+  text-transform: var(--form-field-text-text-transform);
 }
 
-label .form_field_checkbox {
-  background-color: var(--fourth-color);
+label .form_field_checkbox + .form_control_indicator::before {
+  background: var(--form-field-background-color);
+}
+label .form_field_radio + .form_control_indicator::before {
+  border-color: var(--form-field-background-color);
+}
+label .form_field_radio:checked + .form_control_indicator::before {
+  background-color: var(--form-field-text-color);
 }
 </style>
 
