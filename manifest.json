@@ -162,16 +162,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-editor-styles.tpl",
-      "layout_name": "template-editor-styles",
-      "title": "template-editor-styles"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-fonts.tpl",
-      "layout_name": "template-fonts",
-      "title": "template-fonts"
+      "file": "components/template-design.tpl",
+      "layout_name": "template-design",
+      "title": "template-design"
     },
     {
       "content_type": "component",
@@ -179,6 +172,13 @@
       "file": "components/template-variables.tpl",
       "layout_name": "template-variables",
       "title": "template-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/test.tpl",
+      "layout_name": "test",
+      "title": "test"
     }
   ],
   "assets": [

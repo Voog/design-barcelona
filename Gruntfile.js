@@ -189,8 +189,8 @@ module.exports = function(grunt) {
           {
             prepend: "{% comment %}\n================================================================================\nTEMPLATE DESIGN EDITOR STYLES.\nAdds template design editor style overrides.\n================================================================================\n{% endcomment %}\n<style data-voog-style>\n",
             append: "</style>\n\n{{ site.style_tag }}",
-            input: 'components/template-editor-styles.tpl',
-            output: 'components/template-editor-styles.tpl'
+            input: 'components/template-design.tpl',
+            output: 'components/template-design.tpl'
           }
         ]
       }
@@ -254,8 +254,8 @@ module.exports = function(grunt) {
         tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest']
       },
 
-      template_editor_styles: {
-        files: 'sources/components/template-editor-styles.scss',
+      template_design: {
+        files: 'sources/components/*.scss',
         tasks: ['sass:build_components', 'copy:components', 'clean:remove', 'file_append:template_editor', 'exec:kitmanifest']
       },
 
