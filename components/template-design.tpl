@@ -14,8 +14,8 @@ Adds template design editor style overrides.
      "featured": true,
      "scope": "global",
      "boundVariables": [
-      "--site-title-font-family",
-      "--main-menu-font-family",
+      "--header-site-title-font-family",
+      "--header-mainmenu-font-family",
       "--blog-list-headings-font-family",
       "--h1-font-family",
       "--h2-font-family",
@@ -36,7 +36,7 @@ Adds template design editor style overrides.
       "--footer-background-color"
     ]
   */
-  --global-background-color: #f4f4f4;
+  --bg-color: #f4f4f4;
   /* VoogStyle
      "path": ["Main Styles", "Colors"],
      "title": "Primary color",
@@ -44,11 +44,11 @@ Adds template design editor style overrides.
      "scope": "global",
      "featured": true,
      "boundVariables": [
-        "--site-title-color",
-        "--main-menu-hover-color",
-        "--main-menu-active-color",
-        "--submenu-hover-color",
-        "--submenu-active-color",
+        "--header-site-title-color",
+        "--header-mainmenu-hover-color",
+        "--header-mainmenu-active-color",
+        "--content-submenu--hover-color",
+        "--content-submenu--active-color",
         "--h1-color",
         "--h2-color",
         "--h3-color",
@@ -76,8 +76,8 @@ Adds template design editor style overrides.
      "scope": "global",
      "featured": true,
      "boundVariables": [
-      "--main-menu-color",
-      "--submenu-color",
+      "--header-mainmenu-color",
+      "--content-submenu--color",
       "--content-links-color",
       "--table-border-color"
      ]
@@ -113,7 +113,7 @@ Adds template design editor style overrides.
      "featured": true,
      "scope": "global"
   */
-  --site-title-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  --header-site-title-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Header", "Site title"],
      "title": "Letter spacing",
@@ -123,7 +123,7 @@ Adds template design editor style overrides.
      "unit": "px",
      "scope": "global"
   */
-  --site-title-letter-spacing: 0;
+  --header-site-title-letter-spacing: 0;
   /* VoogStyle
     "path": ["Header", "Site title"],
     "title": "Size",
@@ -135,7 +135,7 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true
   */
-  --site-title-font-size: 24px;
+  --header-site-title-font-size: 24px;
   /* VoogStyle
     "path": ["Header", "Site title"],
     "title": "Font weight",
@@ -148,7 +148,7 @@ Adds template design editor style overrides.
     "icon": "bold",
     "scope": "global"
   */
-  --site-title-font-weight: 400;
+  --header-site-title-font-weight: 400;
   /* VoogStyle
     "path": ["Header", "Site title"],
     "title": "Font style",
@@ -161,7 +161,7 @@ Adds template design editor style overrides.
     "icon": "italic",
     "scope": "global"
   */
-  --site-title-font-style: normal;
+  --header-site-title-font-style: normal;
   /* VoogStyle
     "path": ["Header", "Site title"],
     "title": "Text decoration",
@@ -174,7 +174,7 @@ Adds template design editor style overrides.
     "icon": "underline",
     "scope": "global"
   */
-  --site-title-text-decoration: none;
+  --header-site-title-text-decoration: none;
   /* VoogStyle
     "path": ["Header", "Site title"],
     "title": "Text transform",
@@ -187,7 +187,7 @@ Adds template design editor style overrides.
     "icon": "uppercase",
     "scope": "global"
   */
-  --site-title-text-transform: uppercase;
+  --header-site-title-text-transform: uppercase;
   /* VoogStyle
     "path": ["Header", "Site title"],
     "title": "Color",
@@ -196,7 +196,7 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true
   */
-  --site-title-color: black;
+  --header-site-title-color: black;
   /* VoogStyle
      "path": ["Header", "Main menu links", "Normal"],
      "title": "Font family",
@@ -205,7 +205,7 @@ Adds template design editor style overrides.
      "featured": true,
      "scope": "global"
   */
-  --main-menu-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  --header-mainmenu-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Header", "Main menu links", "Normal"],
      "title": "Letter spacing",
@@ -215,7 +215,7 @@ Adds template design editor style overrides.
      "unit": "px",
      "scope": "global"
   */
-  --main-menu-letter-spacing: 0;
+  --header-mainmenu-letter-spacing: 0;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Normal"],
     "title": "Size",
@@ -227,11 +227,11 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true,
     "boundVariables": [
-      "--main-menu-hover-font-size",
-      "--main-menu-active-font-size"
+      "--header-mainmenu-hover-font-size",
+      "--header-mainmenu-active-font-size"
     ]
   */
-  --main-menu-font-size: 16px;
+  --header-mainmenu-font-size: 16px;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Hover"],
     "title": "Size",
@@ -242,7 +242,7 @@ Adds template design editor style overrides.
     "unit": "px",
     "scope": "global"
   */
-  --main-menu-hover-font-size: 16px;
+  --header-mainmenu-hover-font-size: 16px;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Active"],
     "title": "Size",
@@ -253,7 +253,7 @@ Adds template design editor style overrides.
     "unit": "px",
     "scope": "global"
   */
-  --main-menu-active-font-size: 16px;
+  --header-mainmenu-active-font-size: 16px;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Normal"],
     "title": "Font weight",
@@ -266,11 +266,11 @@ Adds template design editor style overrides.
     "icon": "bold",
     "scope": "global",
     "boundVariables": [
-      "--main-menu-hover-font-weight",
-      "--main-menu-active-font-weight"
+      "--header-mainmenu-hover-font-weight",
+      "--header-mainmenu-active-font-weight"
     ]
   */
-  --main-menu-font-weight: 400;
+  --header-mainmenu-font-weight: 400;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Hover"],
     "title": "Font weight",
@@ -283,7 +283,7 @@ Adds template design editor style overrides.
     "icon": "bold",
     "scope": "global"
   */
-  --main-menu-hover-font-weight: 400;
+  --header-mainmenu-hover-font-weight: 400;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Active"],
     "title": "Font weight",
@@ -296,7 +296,7 @@ Adds template design editor style overrides.
     "icon": "bold",
     "scope": "global"
   */
-  --main-menu-active-font-weight: 400;
+  --header-mainmenu-active-font-weight: 400;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Normal"],
     "title": "Font style",
@@ -309,11 +309,11 @@ Adds template design editor style overrides.
     "icon": "italic",
     "scope": "global",
     "boundVariables": [
-      "--main-menu-hover-font-style",
-      "--main-menu-active-font-style"
+      "--header-mainmenu-hover-font-style",
+      "--header-mainmenu-active-font-style"
     ]
   */
-  --main-menu-font-style: normal;
+  --header-mainmenu-font-style: normal;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Hover"],
     "title": "Font style",
@@ -326,7 +326,7 @@ Adds template design editor style overrides.
     "icon": "italic",
     "scope": "global"
   */
-  --main-menu-hover-font-style: normal;
+  --header-mainmenu-hover-font-style: normal;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Active"],
     "title": "Font style",
@@ -339,7 +339,7 @@ Adds template design editor style overrides.
     "icon": "italic",
     "scope": "global"
   */
-  --main-menu-active-font-style: normal;
+  --header-mainmenu-active-font-style: normal;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Normal"],
     "title": "Text decoration",
@@ -352,11 +352,11 @@ Adds template design editor style overrides.
     "icon": "underline",
     "scope": "global",
     "boundVariables": [
-      "--main-menu-hover-text-decoration",
-      "--main-menu-active-text-decoration"
+      "--header-mainmenu-hover-text-decoration",
+      "--header-mainmenu-active-text-decoration"
     ]
   */
-  --main-menu-text-decoration: none;
+  --header-mainmenu-text-decoration: none;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Hover"],
     "title": "Text decoration",
@@ -369,7 +369,7 @@ Adds template design editor style overrides.
     "icon": "underline",
     "scope": "global"
   */
-  --main-menu-hover-text-decoration: none;
+  --header-mainmenu-hover-text-decoration: none;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Active"],
     "title": "Text decoration",
@@ -382,7 +382,7 @@ Adds template design editor style overrides.
     "icon": "underline",
     "scope": "global"
   */
-  --main-menu-active-text-decoration: none;
+  --header-mainmenu-active-text-decoration: none;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Normal"],
     "title": "Text transform",
@@ -395,11 +395,11 @@ Adds template design editor style overrides.
     "icon": "uppercase",
     "scope": "global",
     "boundVariables": [
-      "--main-menu-hover-text-transform",
-      "--main-menu-active-text-transform"
+      "--header-mainmenu-hover-text-transform",
+      "--header-mainmenu-active-text-transform"
     ]
   */
-  --main-menu-text-transform: uppercase;
+  --header-mainmenu-text-transform: uppercase;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Hover"],
     "title": "Text transform",
@@ -412,7 +412,7 @@ Adds template design editor style overrides.
     "icon": "uppercase",
     "scope": "global"
   */
-  --main-menu-hover-text-transform: uppercase;
+  --header-mainmenu-hover-text-transform: uppercase;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Active"],
     "title": "Text transform",
@@ -425,7 +425,7 @@ Adds template design editor style overrides.
     "icon": "uppercase",
     "scope": "global"
   */
-  --main-menu-active-text-transform: uppercase;
+  --header-mainmenu-active-text-transform: uppercase;
   /* VoogStyle
     "path": ["Header", "Main menu links", "Normal"],
     "title": "Color",
@@ -434,7 +434,7 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true
   */
-  --main-menu-color: #818181;
+  --header-mainmenu-color: #818181;
  /* VoogStyle
   "path": ["Header", "Main menu links", "Hover"],
   "title": "Color",
@@ -442,7 +442,7 @@ Adds template design editor style overrides.
   "editor": "colorPicker",
   "scope": "global"
 */
-  --main-menu-hover-color: black;
+  --header-mainmenu-hover-color: black;
  /* VoogStyle
   "path": ["Header", "Main menu links", "Active"],
   "title": "Color",
@@ -450,7 +450,7 @@ Adds template design editor style overrides.
   "editor": "colorPicker",
   "scope": "global"
 */
-  --main-menu-active-color: black;
+  --header-mainmenu-active-color: black;
 }
 
 :root {
@@ -1109,7 +1109,7 @@ Adds template design editor style overrides.
      "featured": true,
      "scope": "global"
   */
-  --submenu-font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  --content-submenu--font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Content", "Submenu links", "Normal"],
      "title": "Letter spacing",
@@ -1119,7 +1119,7 @@ Adds template design editor style overrides.
      "unit": "px",
      "scope": "global"
   */
-  --submenu-letter-spacing: 0;
+  --content-submenu--letter-spacing: 0;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Normal"],
     "title": "Size",
@@ -1131,11 +1131,11 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true,
     "boundVariables": [
-      "--submenu-hover-font-size",
-      "--submenu-active-font-size"
+      "--content-submenu--hover-font-size",
+      "--content-submenu--active-font-size"
     ]
   */
-  --submenu-font-size: 14px;
+  --content-submenu--font-size: 14px;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Hover"],
     "title": "Size",
@@ -1146,7 +1146,7 @@ Adds template design editor style overrides.
     "unit": "px",
     "scope": "global"
   */
-  --submenu-hover-font-size: 14px;
+  --content-submenu--hover-font-size: 14px;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Active"],
     "title": "Size",
@@ -1157,7 +1157,7 @@ Adds template design editor style overrides.
     "unit": "px",
     "scope": "global"
   */
-  --submenu-active-font-size: 14px;
+  --content-submenu--active-font-size: 14px;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Normal"],
     "title": "Font weight",
@@ -1170,11 +1170,11 @@ Adds template design editor style overrides.
     "icon": "bold",
     "scope": "global",
     "boundVariables": [
-      "--submenu-hover-font-weight",
-      "--submenu-active-font-weight"
+      "--content-submenu--hover-font-weight",
+      "--content-submenu--active-font-weight"
     ]
   */
-  --submenu-font-weight: 400;
+  --content-submenu--font-weight: 400;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Hover"],
     "title": "Font weight",
@@ -1187,7 +1187,7 @@ Adds template design editor style overrides.
     "icon": "bold",
     "scope": "global"
   */
-  --submenu-hover-font-weight: 400;
+  --content-submenu--hover-font-weight: 400;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Active"],
     "title": "Font weight",
@@ -1200,7 +1200,7 @@ Adds template design editor style overrides.
     "icon": "bold",
     "scope": "global"
   */
-  --submenu-active-font-weight: 400;
+  --content-submenu--active-font-weight: 400;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Normal"],
     "title": "Font style",
@@ -1213,11 +1213,11 @@ Adds template design editor style overrides.
     "icon": "italic",
     "scope": "global",
     "boundVariables": [
-      "--submenu-hover-font-style",
-      "--submenu-active-font-style"
+      "--content-submenu--hover-font-style",
+      "--content-submenu--active-font-style"
     ]
   */
-  --submenu-font-style: normal;
+  --content-submenu--font-style: normal;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Hover"],
     "title": "Font style",
@@ -1230,7 +1230,7 @@ Adds template design editor style overrides.
     "icon": "italic",
     "scope": "global"
   */
-  --submenu-hover-font-style: normal;
+  --content-submenu--hover-font-style: normal;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Active"],
     "title": "Font style",
@@ -1243,7 +1243,7 @@ Adds template design editor style overrides.
     "icon": "italic",
     "scope": "global"
   */
-  --submenu-active-font-style: normal;
+  --content-submenu--active-font-style: normal;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Normal"],
     "title": "Text decoration",
@@ -1256,11 +1256,11 @@ Adds template design editor style overrides.
     "icon": "underline",
     "scope": "global",
     "boundVariables": [
-      "--submenu-hover-text-decoration",
-      "--submenu-active-text-decoration"
+      "--content-submenu--hover-text-decoration",
+      "--content-submenu--active-text-decoration"
     ]
   */
-  --submenu-text-decoration: none;
+  --content-submenu--text-decoration: none;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Hover"],
     "title": "Text decoration",
@@ -1273,7 +1273,7 @@ Adds template design editor style overrides.
     "icon": "underline",
     "scope": "global"
   */
-  --submenu-hover-text-decoration: none;
+  --content-submenu--hover-text-decoration: none;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Active"],
     "title": "Text decoration",
@@ -1286,7 +1286,7 @@ Adds template design editor style overrides.
     "icon": "underline",
     "scope": "global"
   */
-  --submenu-active-text-decoration: none;
+  --content-submenu--active-text-decoration: none;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Normal"],
     "title": "Text transform",
@@ -1299,11 +1299,11 @@ Adds template design editor style overrides.
     "icon": "uppercase",
     "scope": "global",
     "boundVariables": [
-      "--submenu-hover-text-transform",
-      "--submenu-active-text-transform"
+      "--content-submenu--hover-text-transform",
+      "--content-submenu--active-text-transform"
     ]
   */
-  --submenu-text-transform: none;
+  --content-submenu--text-transform: none;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Hover"],
     "title": "Text transform",
@@ -1316,7 +1316,7 @@ Adds template design editor style overrides.
     "icon": "uppercase",
     "scope": "global"
   */
-  --submenu-hover-text-transform: none;
+  --content-submenu--hover-text-transform: none;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Active"],
     "title": "Text transform",
@@ -1329,7 +1329,7 @@ Adds template design editor style overrides.
     "icon": "uppercase",
     "scope": "global"
   */
-  --submenu-active-text-transform: none;
+  --content-submenu--active-text-transform: none;
   /* VoogStyle
     "path": ["Content", "Submenu links", "Normal"],
     "title": "Color",
@@ -1338,7 +1338,7 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true
   */
-  --submenu-color: #818181;
+  --content-submenu--color: #818181;
  /* VoogStyle
   "path": ["Content", "Submenu links", "Hover"],
   "title": "Color",
@@ -1346,7 +1346,7 @@ Adds template design editor style overrides.
   "editor": "colorPicker",
   "scope": "global"
 */
-  --submenu-hover-color: black;
+  --content-submenu--hover-color: black;
  /* VoogStyle
   "path": ["Content", "Submenu links", "Active"],
   "title": "Color",
@@ -1354,7 +1354,7 @@ Adds template design editor style overrides.
   "editor": "colorPicker",
   "scope": "global"
 */
-  --submenu-active-color: black;
+  --content-submenu--active-color: black;
   /* VoogStyle
      "path": ["Content", "Text"],
      "title": "Font family",
@@ -1919,7 +1919,7 @@ Adds template design editor style overrides.
 }
 
 .main {
-  background-color: var(--global-background-color);
+  background-color: var(--bg-color);
 }
 
 .header,
@@ -2061,72 +2061,72 @@ main .post-content a:hover {
   }
 }
 .site-title {
-  color: var(--site-title-color);
-  font-family: var(--site-title-font-family);
-  font-style: var(--site-title-font-style);
-  font-weight: var(--site-title-font-weight);
-  letter-spacing: var(--site-title-letter-spacing);
-  text-transform: var(--site-title-text-transform);
+  color: var(--header-site-title-color);
+  font-family: var(--header-site-title-font-family);
+  font-style: var(--header-site-title-font-style);
+  font-weight: var(--header-site-title-font-weight);
+  letter-spacing: var(--header-site-title-letter-spacing);
+  text-transform: var(--header-site-title-text-transform);
 }
 .site-title .site-title-inner {
-  text-decoration: var(--site-title-text-decoration);
+  text-decoration: var(--header-site-title-text-decoration);
 }
 .site-title a {
   color: black;
 }
 
 .main-menu ul a {
-  color: var(--main-menu-color);
-  font-family: var(--main-menu-font-family);
-  font-size: var(--main-menu-font-size);
-  font-style: var(--main-menu-font-style);
-  font-weight: var(--main-menu-font-weight);
-  letter-spacing: var(--main-menu-letter-spacing);
-  text-decoration: var(--main-menu-text-decoration);
-  text-transform: var(--main-menu-text-transform);
+  color: var(--header-mainmenu-color);
+  font-family: var(--header-mainmenu-font-family);
+  font-size: var(--header-mainmenu-font-size);
+  font-style: var(--header-mainmenu-font-style);
+  font-weight: var(--header-mainmenu-font-weight);
+  letter-spacing: var(--header-mainmenu-letter-spacing);
+  text-decoration: var(--header-mainmenu-text-decoration);
+  text-transform: var(--header-mainmenu-text-transform);
 }
 .main-menu ul a:hover {
-  color: var(--main-menu-hover-color);
-  font-size: var(--main-menu-hover-font-size);
-  font-style: var(--main-menu-hover-font-style);
-  font-weight: var(--main-menu-hover-font-weight);
-  text-decoration: var(--main-menu-hover-text-decoration);
-  text-transform: var(--main-menu-hover-text-transform);
+  color: var(--header-mainmenu-hover-color);
+  font-size: var(--header-mainmenu-hover-font-size);
+  font-style: var(--header-mainmenu-hover-font-style);
+  font-weight: var(--header-mainmenu-hover-font-weight);
+  text-decoration: var(--header-mainmenu-hover-text-decoration);
+  text-transform: var(--header-mainmenu-hover-text-transform);
 }
 .main-menu ul a.active {
-  color: var(--main-menu-active-color);
-  font-size: var(--main-menu-active-font-size);
-  font-style: var(--main-menu-active-font-style);
-  font-weight: var(--main-menu-active-font-weight);
-  text-decoration: var(--main-menu-active-text-decoration);
-  text-transform: var(--main-menu-active-text-transform);
+  color: var(--header-mainmenu-active-color);
+  font-size: var(--header-mainmenu-active-font-size);
+  font-style: var(--header-mainmenu-active-font-style);
+  font-weight: var(--header-mainmenu-active-font-weight);
+  text-decoration: var(--header-mainmenu-active-text-decoration);
+  text-transform: var(--header-mainmenu-active-text-transform);
 }
 
 .sub-menu a {
-  color: var(--submenu-color);
-  font-family: var(--submenu-font-family);
-  font-size: var(--submenu-font-size);
-  font-style: var(--submenu-font-style);
-  font-weight: var(--submenu-font-weight);
-  letter-spacing: var(--submenu-letter-spacing);
-  text-decoration: var(--submenu-text-decoration);
-  text-transform: var(--submenu-text-transform);
+  color: var(--content-submenu--color);
+  font-family: var(--content-submenu--font-family);
+  font-size: var(--content-submenu--font-size);
+  font-style: var(--content-submenu--font-style);
+  font-weight: var(--content-submenu--font-weight);
+  letter-spacing: var(--content-submenu--letter-spacing);
+  text-decoration: var(--content-submenu--text-decoration);
+  text-transform: var(--content-submenu--text-transform);
 }
 .sub-menu a:hover {
-  color: var(--submenu-hover-color);
-  font-size: var(--submenu-hover-font-size);
-  font-style: var(--submenu-hover-font-style);
-  font-weight: var(--submenu-hover-font-weight);
-  text-decoration: var(--submenu-hover-text-decoration);
-  text-transform: var(--submenu-hover-text-transform);
+  color: var(--content-submenu--hover-color);
+  font-size: var(--content-submenu--hover-font-size);
+  font-style: var(--content-submenu--hover-font-style);
+  font-weight: var(--content-submenu--hover-font-weight);
+  text-decoration: var(--content-submenu--hover-text-decoration);
+  text-transform: var(--content-submenu--hover-text-transform);
 }
 .sub-menu a.active {
-  color: var(--submenu-active-color);
-  font-size: var(--submenu-active-font-size);
-  font-style: var(--submenu-active-font-style);
-  font-weight: var(--submenu-active-font-weight);
-  text-decoration: var(--submenu-active-text-decoration);
-  text-transform: var(--submenu-active-text-transform);
+  color: var(--content-submenu--active-color);
+  font-size: var(--content-submenu--active-font-size);
+  font-style: var(--content-submenu--active-font-style);
+  font-weight: var(--content-submenu--active-font-weight);
+  text-decoration: var(--content-submenu--active-text-decoration);
+  text-transform: var(--content-submenu--active-text-transform);
 }
 
 .footer {
@@ -2147,7 +2147,7 @@ main .post-content a:hover {
 
 @media screen and (min-width: 500px) {
   .site-title {
-    font-size: var(--site-title-font-size);
+    font-size: var(--header-site-title-font-size);
   }
 
   .blog-list-page .main .article,
