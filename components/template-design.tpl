@@ -63,7 +63,8 @@ Adds template design editor style overrides.
      "featured": true,
      "boundVariables": [
         "--content-color",
-        "--form-field-text-color"
+        "--form-field-text-color",
+        "--footer-text-color"
      ]
   */
   --main-color: #333;
@@ -1748,7 +1749,7 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true
   */
-  --footer-color: #333;
+  --footer-text-color: #333;
 }
 
 :root {

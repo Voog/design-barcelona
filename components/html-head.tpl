@@ -16,7 +16,7 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}STYLESHEETS{% endcomment %}
-{% stylesheet_link "main.css?3" %}
+{% stylesheet_link "main.min.css?4" %}
 {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
 
 {% comment %}Custom fonts{% endcomment %}
