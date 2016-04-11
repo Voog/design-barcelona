@@ -21,7 +21,8 @@ Adds template design editor style overrides.
       "--h2-font-family",
       "--h3-font-family",
       "--content-font-family",
-      "--footer-font-family"
+      "--footer-font-family",
+      "--form-field-text-font-family"
      ]
   */
   --font-main: "Montserrat", Helvetica, Arial, sans-serif;
@@ -1406,7 +1407,8 @@ Adds template design editor style overrides.
     "scope": "global",
     "featured": true,
     "boundVariables": [
-      "--form-field-text-font-size"
+      "--form-field-text-font-size",
+      "--content-links-font-size"
     ]
   */
   --content-font-size: 18px;
@@ -1759,7 +1761,7 @@ Adds template design editor style overrides.
     "editor": "colorPicker",
     "scope": "global"
   */
-  --table-background-color: black;
+  --table-background-color: rgba(255, 255, 255, 0);
   /* VoogStyle
     "path": ["Tables"],
     "title": "Border color",
@@ -1929,13 +1931,6 @@ body,
 .custom-btn,
 .lang-menu-btn,
 .jq-select,
-.form_field_textfield,
-.form_field_textarea,
-.form_submit input,
-.submit,
-input[type=submit],
-input[type=text],
-textarea,
 .search-submit,
 .lang-menu-btn,
 .option-btn {
@@ -2191,6 +2186,20 @@ main .post-content a:hover {
   text-transform: var(--blog-list-date-text-transform);
 }
 
+main .content table {
+  background-color: var(--table-background-color);
+}
+main .content table td,
+main .content table th {
+  border: var(--table-border-width) var(--table-border-color) solid;
+  padding: var(--table-cell-padding);
+}
+
+.form_field_textfield,
+.form_field_textarea,
+.form_submit input,
+input[type=submit],
+input[type=text],
 textarea {
   font-family: var(--form-field-text-font-family);
 }
@@ -2200,7 +2209,6 @@ textarea {
   background-color: var(--form-field-background-color);
   border: var(--form-field-border-width) var(--form-field-border-color) solid;
   color: var(--form-field-text-color);
-  font-family: var(--form-field-text-font-family);
   font-size: var(--form-field-text-font-size);
   line-height: var(--form-field-text-line-height);
   font-style: var(--form-field-text-font-style);

@@ -22,13 +22,6 @@ body,
 .custom-btn,
 .lang-menu-btn,
 .jq-select,
-.form_field_textfield,
-.form_field_textarea,
-.form_submit input,
-.submit,
-input[type=submit],
-input[type=text],
-textarea,
 .search-submit,
 .lang-menu-btn,
 .option-btn {
@@ -326,6 +319,24 @@ main .post-content {
 }
 
 // TABLES
+main .content {
+  table {
+    background-color: var(--table-background-color);
+
+    td,
+    th {
+      border: var(--table-border-width) var(--table-border-color) solid;
+      padding: var(--table-cell-padding);
+    }
+  }
+}
+
+// FORMS
+.form_field_textfield,
+.form_field_textarea,
+.form_submit input,
+input[type=submit],
+input[type=text],
 textarea {
   font-family: var(--form-field-text-font-family);
 }
@@ -336,7 +347,6 @@ textarea {
   background-color: var(--form-field-background-color);
   border: var(--form-field-border-width) var(--form-field-border-color) solid;
   color: var(--form-field-text-color);
-  font-family: var(--form-field-text-font-family);
   font-size: var(--form-field-text-font-size);
   line-height: var(--form-field-text-line-height);
   font-style: var(--form-field-text-font-style);
