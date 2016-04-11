@@ -1962,9 +1962,13 @@ blockquote,
 
 main .content.formatted {
   background-color: var(--content-background-color);
-  padding: var(--content-padding);
 }
 
+@media screen and (min-width: 500px) {
+  main .content.formatted {
+    padding: var(--content-padding);
+  }
+}
 main .content-body,
 main .post-content {
   color: var(--content-color);
