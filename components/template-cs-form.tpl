@@ -5,17 +5,34 @@
     "editor": "colorPicker",
     "scope": "global"
   */
+  --form-background-color: transparent;
+  /* VoogStyle
+     "pathI18n": ["custom_styles.form"],
+     "titleI18n": "custom_styles.padding",
+     "editor": "rangePicker",
+     "min": 0,
+     "max": 100,
+     "unit": "px",
+     "scope": "global"
+  */
+  --form-padding: 0;
+  /* VoogStyle
+    "pathI18n": ["custom_styles.form"],
+    "titleI18n": "custom_styles.field_bg_color",
+    "editor": "colorPicker",
+    "scope": "global"
+  */
   --form-field-background-color: white;
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.border_color",
+    "titleI18n": "custom_styles.field_border_color",
     "editor": "colorPicker",
     "scope": "global"
   */
   --form-field-border-color: black;
   /* VoogStyle
      "pathI18n": ["custom_styles.form"],
-     "titleI18n": "custom_styles.border_thickness",
+     "titleI18n": "custom_styles.field_border_thickness",
      "editor": "rangePicker",
      "min": 0,
      "max": 20,
@@ -25,7 +42,7 @@
   --form-field-border-width: 0;
   /* VoogStyle
      "pathI18n": ["custom_styles.form"],
-     "titleI18n": "custom_styles.padding",
+     "titleI18n": "custom_styles.field_padding",
      "editor": "rangePicker",
      "min": 0,
      "max": 100,

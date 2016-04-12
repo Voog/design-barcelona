@@ -18,7 +18,7 @@
   --h1-alignment: center;
   /* VoogStyle
      "pathI18n": ["custom_styles.headings", "custom_styles.title"],
-     "titleI18n": "Padding bottom",
+     "titleI18n": "custom_styles.padding_bottom",
      "editor": "rangePicker",
      "min": 0,
      "max": 150,
@@ -139,7 +139,7 @@
   --h2-alignment: left;
   /* VoogStyle
      "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
-     "titleI18n": "Padding bottom",
+     "titleI18n": "custom_styles.padding_bottom",
      "editor": "rangePicker",
      "min": 0,
      "max": 150,

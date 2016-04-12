@@ -157,7 +157,7 @@
   --blog-list-date-letter-spacing: 0;
   /* VoogStyle
      "pathI18n": ["custom_styles.blog", "custom_styles.date"],
-     "titleI18n": "custom_styles.padding",
+     "titleI18n": "custom_styles.top_padding",
      "editor": "rangePicker",
      "min": 0,
      "max": 50,

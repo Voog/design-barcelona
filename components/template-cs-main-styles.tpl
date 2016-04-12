@@ -32,7 +32,7 @@
   --bg-color: #f4f4f4;
   /* VoogStyle
      "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
-     "titleI18n": "custom_styles.main_color",
+     "titleI18n": "custom_styles.primary_color",
      "editor": "colorPicker",
      "scope": "global",
      "featured": true,
