@@ -28,8 +28,9 @@
   {% include "template-cs-headings" %}
   {% if html-head == "blog_listing_page" %}
     {% include "template-cs-blog-list" %}
+  {% else %}
+    {% include "template-cs-content" %}
   {% endif %}
-  {% include "template-cs-content" %}
   {% comment %}{% include "template-cs-list" %}{% endcomment %}
   {% include "template-cs-table" %}
   {% include "template-cs-footer" %}
