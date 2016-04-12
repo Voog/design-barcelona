@@ -19,10 +19,6 @@
 :root {
   // scss-lint:disable Comment, Indentation
 
-  // ===========================================================================
-  // Footer styles
-  // ===========================================================================
-
   /* VoogStyle
      "pathI18n": ["custom_styles.footer"],
      "titleI18n": "custom_styles.background_color",
@@ -30,10 +26,6 @@
      "scope": "global"
   */
   --footer-background-color: $bg-color;
-
-  // ===========================================================================
-  // Footer styles - Text
-  // ===========================================================================
 
   /* VoogStyle
      "pathI18n": ["custom_styles.footer", "custom_styles.text"],

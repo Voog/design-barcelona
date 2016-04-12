@@ -19,10 +19,6 @@
 :root {
   // scss-lint:disable Comment, Indentation
 
-  // ===========================================================================
-  // Header styles: General
-  // ===========================================================================
-
   /* VoogStyle
      "pathI18n": ["custom_styles.header"],
      "titleI18n": "custom_styles.background_color",
@@ -30,10 +26,6 @@
      "scope": "global"
   */
   --header-background-color: $bg-color;
-
-  // ===========================================================================
-  // Header styles: site title
-  // ===========================================================================
 
   /* VoogStyle
      "pathI18n": ["custom_styles.header", "custom_styles.title"],
@@ -134,10 +126,6 @@
     "featured": true
   */
   --header-site-title-color: $second-color;
-
-  // ===========================================================================
-  // Header styles: main menu links
-  // ===========================================================================
 
   /* VoogStyle
      "pathI18n": ["custom_styles.header", "custom_styles.main_menu", "custom_styles.normal"],
