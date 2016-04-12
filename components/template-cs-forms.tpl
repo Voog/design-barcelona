@@ -35,7 +35,7 @@
   --form-field-padding: 10px;
   /* VoogStyle
      "pathI18n": ["custom_styles.form", "custom_styles.text"],
-     "titleI18n": "custom_styles.font_family",
+     "titleI18n": "custom_styles.font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,

@@ -1,7 +1,7 @@
 :root {
   /* VoogStyle
      "pathI18n": ["custom_styles.headings", "custom_styles.title"],
-     "titleI18n": "custom_styles.font_family",
+     "titleI18n": "custom_styles.font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
@@ -122,7 +122,7 @@
   --h1-color: black;
   /* VoogStyle
      "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
-     "titleI18n": "custom_styles.font_family",
+     "titleI18n": "custom_styles.font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
@@ -242,8 +242,8 @@
   */
   --h2-color: black;
   /* VoogStyle
-     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
-     "titleI18n": "custom_styles.font_family",
+     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
+     "titleI18n": "custom_styles.font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
@@ -251,7 +251,7 @@
   */
   --h3-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
-     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
      "titleI18n": "custom_styles.alignment",
      "editor": "listPicker",
      "list": {{ base_alignment_set }},
@@ -259,7 +259,7 @@
   */
   --h3-alignment: left;
   /* VoogStyle
-     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
      "titleI18n": "custom_styles.padding",
      "editor": "rangePicker",
      "min": 0,
@@ -269,7 +269,7 @@
   */
   --h3-margin: 20px;
   /* VoogStyle
-     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
      "titleI18n": "Padding bottom",
      "editor": "rangePicker",
      "min": 0,
@@ -279,7 +279,7 @@
   */
   --h3-padding-bottom: 0;
   /* VoogStyle
-     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
      "titleI18n": "custom_styles.letter_spacing",
      "editor": "rangePicker",
      "min": 0,
@@ -289,7 +289,7 @@
   */
   --h3-letter-spacing: 0;
   /* VoogStyle
-     "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+     "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
      "titleI18n": "custom_styles.line_height",
      "editor": "rangePicker",
      "min": 0.8,
@@ -300,7 +300,7 @@
   */
   --h3-line-height: 1.1em;
   /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+    "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.size",
     "type": "button",
     "editor": "rangePicker",
@@ -312,7 +312,7 @@
   */
   --h3-font-size: 20px;
   /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+    "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -325,7 +325,7 @@
   */
   --h3-font-weight: 600;
   /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+    "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -338,7 +338,7 @@
   */
   --h3-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+    "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -351,7 +351,7 @@
   */
   --h3-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+    "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -364,7 +364,7 @@
   */
   --h3-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["custom_styles.headings", "custom_styles.heading"],
+    "pathI18n": ["custom_styles.headings", "custom_styles.subheading"],
     "titleI18n": "custom_styles.color",
     "type": "button",
     "editor": "colorPicker",

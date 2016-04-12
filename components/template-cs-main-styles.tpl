@@ -21,7 +21,7 @@
   --font-main: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "pathI18n": ["custom_styles.main_styles"],
-     "titleI18n": "custom_styles.background",
+     "titleI18n": "custom_styles.background_color",
      "editor": "colorPicker",
      "scope": "global",
      "boundVariables": [
@@ -32,7 +32,7 @@
   --bg-color: #f4f4f4;
   /* VoogStyle
      "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
-     "titleI18n": "custom_styles.primary_color",
+     "titleI18n": "custom_styles.main_color",
      "editor": "colorPicker",
      "scope": "global",
      "featured": true,
@@ -51,7 +51,7 @@
   --second-color: black;
   /* VoogStyle
      "pathI18n": ["custom_styles.main_styles", "custom_styles.colors"],
-     "titleI18n": "custom_styles.secondary-color",
+     "titleI18n": "custom_styles.secondary_color",
      "editor": "colorPicker",
      "scope": "global",
      "featured": true,

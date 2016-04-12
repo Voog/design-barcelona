@@ -1,14 +1,14 @@
 :root {
   /* VoogStyle
      "pathI18n": ["custom_styles.header"],
-     "titleI18n": "custom_styles.background",
+     "titleI18n": "custom_styles.background_color",
      "editor": "colorPicker",
      "scope": "global"
   */
   --header-background-color: #f4f4f4;
   /* VoogStyle
      "pathI18n": ["custom_styles.header", "custom_styles.title"],
-     "titleI18n": "custom_styles.font_family",
+     "titleI18n": "custom_styles.font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
@@ -100,7 +100,7 @@
   --header-site-title-color: black;
   /* VoogStyle
      "pathI18n": ["custom_styles.header", "custom_styles.main_menu", "custom_styles.normal"],
-     "titleI18n": "custom_styles.font_family",
+     "titleI18n": "custom_styles.font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,

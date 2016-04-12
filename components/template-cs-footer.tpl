@@ -1,14 +1,14 @@
 :root {
   /* VoogStyle
      "pathI18n": ["custom_styles.footer"],
-     "titleI18n": "custom_styles.background",
+     "titleI18n": "custom_styles.background_color",
      "editor": "colorPicker",
      "scope": "global"
   */
   --footer-background-color: #f4f4f4;
   /* VoogStyle
      "pathI18n": ["custom_styles.footer", "custom_styles.text"],
-     "titleI18n": "custom_styles.font_family",
+     "titleI18n": "custom_styles.font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
