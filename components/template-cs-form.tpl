@@ -1,7 +1,7 @@
 :root {
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.background",
+    "titleI18n": "custom_styles.background_color",
     "editor": "colorPicker",
     "scope": "global"
   */
