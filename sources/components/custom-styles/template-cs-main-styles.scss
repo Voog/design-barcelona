@@ -1,10 +1,24 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/modules/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
 :root {
   // scss-lint:disable Comment, Indentation
 
-  // ===========================================================================
-  // Global layout styles.
-  // ===========================================================================
-	
   /* VoogStyle
      "path": ["Main Styles"],
      "title": "Font",
@@ -24,7 +38,7 @@
       "--form-field-text-font-family"
      ]
   */
-  --font-main: $font-main; 
+  --font-main: $font-main;
 
   /* VoogStyle
      "path": ["Main Styles"],
@@ -99,4 +113,4 @@
     ]
   */
   --fourth-color: $fourth-color;
- }
+}

@@ -1,8 +1,28 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/modules/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
 :root {
+  // scss-lint:disable Comment, Indentation
+
   // ===========================================================================
   // Blog list styles
-  // ===========================================================================  
- 
+  // ===========================================================================
+
   /* VoogStyle
      "path": ["Blog list"],
      "title": "Width",
@@ -12,7 +32,7 @@
      "unit": "px",
      "scope": "global"
   */
-  --blog-list-article-width: 300px; 
+  --blog-list-article-width: 300px;
 
   /* VoogStyle
      "path": ["Blog list"],
@@ -21,7 +41,7 @@
      "list": {{ base_alignment_set }},
      "scope": "global"
   */
-  --blog-list-alignment: left; 
+  --blog-list-alignment: left;
 
   /* VoogStyle
      "path": ["Blog list"],
@@ -109,7 +129,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --blog-list-headings-font-style: normal;  
+  --blog-list-headings-font-style: normal;
 
   /* VoogStyle
     "path": ["Blog list", "Headings"],
@@ -160,7 +180,7 @@
      "featured": true,
      "scope": "global"
   */
-  --blog-list-date-font-family: $font-main;  
+  --blog-list-date-font-family: $font-main;
 
   /* VoogStyle
      "path": ["Blog list", "Date"],
@@ -224,7 +244,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --blog-list-date-font-style: normal;  
+  --blog-list-date-font-style: normal;
 
   /* VoogStyle
     "path": ["Blog list", "Date"],
@@ -262,5 +282,7 @@
     "scope": "global",
     "featured": true
   */
-  --blog-list-date-color: $color-white; 
+  --blog-list-date-color: $color-white;
+
+  // scss-lint:enable Comment, Indentation
 }

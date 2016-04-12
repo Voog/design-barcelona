@@ -1,9 +1,4 @@
-:root { 
-
-  // ===========================================================================
-  // Headings styles - H1
-  // ===========================================================================  
-
+:root {
   /* VoogStyle
      "path": ["Headings", "Title"],
      "title": "Font family",
@@ -12,8 +7,7 @@
      "featured": true,
      "scope": "global"
   */
-  --h1-font-family: $font-main;
-
+  --h1-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Headings", "Title"],
      "title": "Alignment",
@@ -22,7 +16,6 @@
      "scope": "global"
   */
   --h1-alignment: center;
-
   /* VoogStyle
      "path": ["Headings", "Title"],
      "title": "Padding bottom",
@@ -33,7 +26,6 @@
      "scope": "global"
   */
   --h1-padding-bottom: 48px;
-
   /* VoogStyle
      "path": ["Headings", "Title"],
      "title": "Letter spacing",
@@ -44,7 +36,6 @@
      "scope": "global"
   */
   --h1-letter-spacing: 0;
-
   /* VoogStyle
      "path": ["Headings", "Title"],
      "title": "Line height",
@@ -56,7 +47,6 @@
      "scope": "global"
   */
   --h1-line-height: 1.1em;
-
   /* VoogStyle
     "path": ["Headings", "Title"],
     "title": "Size",
@@ -68,8 +58,7 @@
     "scope": "global",
     "featured": true
   */
-  --h1-font-size: $h1-size;
-
+  --h1-font-size: 40px;
   /* VoogStyle
     "path": ["Headings", "Title"],
     "title": "Font weight",
@@ -83,7 +72,6 @@
     "scope": "global"
   */
   --h1-font-weight: 600;
-
   /* VoogStyle
     "path": ["Headings", "Title"],
     "title": "Font style",
@@ -96,8 +84,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --h1-font-style: normal;  
-
+  --h1-font-style: normal;
   /* VoogStyle
     "path": ["Headings", "Title"],
     "title": "Text decoration",
@@ -111,7 +98,6 @@
     "scope": "global"
   */
   --h1-text-decoration: none;
-
   /* VoogStyle
     "path": ["Headings", "Title"],
     "title": "Text transform",
@@ -125,7 +111,6 @@
     "scope": "global"
   */
   --h1-text-transform: none;
-
   /* VoogStyle
     "path": ["Headings", "Title"],
     "title": "Color",
@@ -134,12 +119,7 @@
     "scope": "global",
     "featured": true
   */
-  --h1-color: $second-color;
-
-  // ===========================================================================
-  // Headings styles - H2
-  // ===========================================================================  
-
+  --h1-color: black;
   /* VoogStyle
      "path": ["Headings", "Heading"],
      "title": "Font family",
@@ -148,8 +128,7 @@
      "featured": true,
      "scope": "global"
   */
-  --h2-font-family: $font-main;
-
+  --h2-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Headings", "Heading"],
      "title": "Alignment",
@@ -158,7 +137,6 @@
      "scope": "global"
   */
   --h2-alignment: left;
-
   /* VoogStyle
      "path": ["Headings", "Heading"],
      "title": "Padding bottom",
@@ -169,7 +147,6 @@
      "scope": "global"
   */
   --h2-padding-bottom: 0px;
-
   /* VoogStyle
      "path": ["Headings", "Heading"],
      "title": "Letter spacing",
@@ -180,7 +157,6 @@
      "scope": "global"
   */
   --h2-letter-spacing: 0;
-
   /* VoogStyle
      "path": ["Headings", "Heading"],
      "title": "Line height",
@@ -192,7 +168,6 @@
      "scope": "global"
   */
   --h2-line-height: 1.1em;
-
   /* VoogStyle
     "path": ["Headings", "Heading"],
     "title": "Size",
@@ -204,8 +179,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-font-size: $h2-size;
-
+  --h2-font-size: 24px;
   /* VoogStyle
     "path": ["Headings", "Heading"],
     "title": "Font weight",
@@ -219,7 +193,6 @@
     "scope": "global"
   */
   --h2-font-weight: 600;
-
   /* VoogStyle
     "path": ["Headings", "Heading"],
     "title": "Font style",
@@ -232,8 +205,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --h2-font-style: normal;  
-
+  --h2-font-style: normal;
   /* VoogStyle
     "path": ["Headings", "Heading"],
     "title": "Text decoration",
@@ -247,7 +219,6 @@
     "scope": "global"
   */
   --h2-text-decoration: none;
-
   /* VoogStyle
     "path": ["Headings", "Heading"],
     "title": "Text transform",
@@ -261,7 +232,6 @@
     "scope": "global"
   */
   --h2-text-transform: none;
-
   /* VoogStyle
     "path": ["Headings", "Heading"],
     "title": "Color",
@@ -270,13 +240,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-color: $second-color;
-
-
-  // ===========================================================================
-  // Headings styles - H3
-  // ===========================================================================  
-
+  --h2-color: black;
   /* VoogStyle
      "path": ["Headings", "Subheading"],
      "title": "Font family",
@@ -285,8 +249,7 @@
      "featured": true,
      "scope": "global"
   */
-  --h3-font-family: $font-main;
-
+  --h3-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "path": ["Headings", "Subheading"],
      "title": "Alignment",
@@ -295,7 +258,6 @@
      "scope": "global"
   */
   --h3-alignment: left;
-
   /* VoogStyle
      "path": ["Headings", "Subheading"],
      "title": "Padding",
@@ -306,7 +268,6 @@
      "scope": "global"
   */
   --h3-margin: 20px;
-
   /* VoogStyle
      "path": ["Headings", "Subheading"],
      "title": "Padding bottom",
@@ -317,7 +278,6 @@
      "scope": "global"
   */
   --h3-padding-bottom: 0;
-
   /* VoogStyle
      "path": ["Headings", "Subheading"],
      "title": "Letter spacing",
@@ -328,7 +288,6 @@
      "scope": "global"
   */
   --h3-letter-spacing: 0;
-
   /* VoogStyle
      "path": ["Headings", "Subheading"],
      "title": "Line height",
@@ -340,7 +299,6 @@
      "scope": "global"
   */
   --h3-line-height: 1.1em;
-
   /* VoogStyle
     "path": ["Headings", "Subheading"],
     "title": "Size",
@@ -352,8 +310,7 @@
     "scope": "global",
     "featured": true
   */
-  --h3-font-size: $h3-size;
-
+  --h3-font-size: 20px;
   /* VoogStyle
     "path": ["Headings", "Subheading"],
     "title": "Font weight",
@@ -367,7 +324,6 @@
     "scope": "global"
   */
   --h3-font-weight: 600;
-
   /* VoogStyle
     "path": ["Headings", "Subheading"],
     "title": "Font style",
@@ -380,8 +336,7 @@
     "icon": "italic",
     "scope": "global"
   */
-  --h3-font-style: normal;  
-
+  --h3-font-style: normal;
   /* VoogStyle
     "path": ["Headings", "Subheading"],
     "title": "Text decoration",
@@ -395,7 +350,6 @@
     "scope": "global"
   */
   --h3-text-decoration: none;
-
   /* VoogStyle
     "path": ["Headings", "Subheading"],
     "title": "Text transform",
@@ -409,7 +363,6 @@
     "scope": "global"
   */
   --h3-text-transform: none;
-
   /* VoogStyle
     "path": ["Headings", "Subheading"],
     "title": "Color",
@@ -418,6 +371,5 @@
     "scope": "global",
     "featured": true
   */
-  --h3-color: $second-color;
-
+  --h3-color: black;
 }

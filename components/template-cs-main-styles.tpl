@@ -1,0 +1,91 @@
+:root {
+  /* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Font",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global",
+     "boundVariables": [
+      "--header-site-title-font-family",
+      "--header-mainmenu-font-family",
+      "--blog-list-headings-font-family",
+      "--h1-font-family",
+      "--h2-font-family",
+      "--h3-font-family",
+      "--content-font-family",
+      "--footer-font-family",
+      "--form-field-text-font-family"
+     ]
+  */
+  --font-main: "Montserrat", Helvetica, Arial, sans-serif;
+  /* VoogStyle
+     "path": ["Main Styles"],
+     "title": "Background",
+     "editor": "colorPicker",
+     "scope": "global",
+     "boundVariables": [
+      "--header-background-color",
+      "--footer-background-color"
+    ]
+  */
+  --bg-color: #f4f4f4;
+  /* VoogStyle
+     "path": ["Main Styles", "Colors"],
+     "title": "Primary color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true,
+     "boundVariables": [
+        "--header-site-title-color",
+        "--header-mainmenu-hover-color",
+        "--header-mainmenu-active-color",
+        "--content-submenu--hover-color",
+        "--content-submenu--active-color",
+        "--h1-color",
+        "--h2-color",
+        "--h3-color",
+        "--content-links-hover-color"
+     ]
+  */
+  --second-color: black;
+  /* VoogStyle
+     "path": ["Main Styles", "Colors"],
+     "title": "Secondary color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true,
+     "boundVariables": [
+        "--content-color",
+        "--form-field-text-color",
+        "--footer-text-color"
+     ]
+  */
+  --main-color: #333;
+  /* VoogStyle
+     "path": ["Main Styles", "Colors"],
+     "title": "Third color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true,
+     "boundVariables": [
+      "--header-mainmenu-color",
+      "--content-submenu--color",
+      "--content-links-color",
+      "--table-border-color"
+     ]
+  */
+  --third-color: #818181;
+  /* VoogStyle
+     "path": ["Main Styles", "Colors"],
+     "title": "Fourth color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true,
+     "boundVariables": [
+      "--blog-list-headings-color",
+      "--form-field-background-color"
+    ]
+  */
+  --fourth-color: white;
+}
