@@ -20,24 +20,24 @@
   // scss-lint:disable Comment, Indentation
 
   /* VoogStyle
-    "path": ["Forms"],
-    "title": "Field background",
+    "pathI18n": ["custom_styles.form"],
+    "titleI18n": "Field background",
     "editor": "colorPicker",
     "scope": "global"
   */
   --form-field-background-color: $fourth-color;
 
   /* VoogStyle
-    "path": ["Forms"],
-    "title": "Field border color",
+    "pathI18n": ["custom_styles.form"],
+    "titleI18n": "Field border color",
     "editor": "colorPicker",
     "scope": "global"
   */
   --form-field-border-color: $color-black;
 
   /* VoogStyle
-     "path": ["Forms"],
-     "title": "Field border width",
+     "pathI18n": ["custom_styles.form"],
+     "titleI18n": "Field border width",
      "editor": "rangePicker",
      "min": 0,
      "max": 20,
@@ -47,8 +47,8 @@
   --form-field-border-width: 0;
 
   /* VoogStyle
-     "path": ["Forms"],
-     "title": "Field padding",
+     "pathI18n": ["custom_styles.form"],
+     "titleI18n": "Field padding",
      "editor": "rangePicker",
      "min": 0,
      "max": 100,
@@ -58,8 +58,8 @@
   --form-field-padding: 10px;
 
   /* VoogStyle
-     "path": ["Forms", "Text"],
-     "title": "Font family",
+     "pathI18n": ["custom_styles.form", "custom_styles.text"],
+     "titleI18n": "custom_styles.font_family",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
@@ -68,8 +68,8 @@
   --form-field-text-font-family: $font-main;
 
   /* VoogStyle
-     "path": ["Forms", "Text"],
-     "title": "Line height",
+     "pathI18n": ["custom_styles.form", "custom_styles.text"],
+     "titleI18n": "custom_styles.line_height",
      "editor": "rangePicker",
      "min": 0.8,
      "max": 3,
@@ -80,8 +80,8 @@
   --form-field-text-line-height: $line-height#em;
 
   /* VoogStyle
-    "path": ["Forms", "Text"],
-    "title": "Size",
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
+    "titleI18n": "custom_styles.size",
     "type": "button",
     "editor": "rangePicker",
     "min": 8,
@@ -93,8 +93,8 @@
   --form-field-text-font-size: $font-size;
 
   /* VoogStyle
-    "path": ["Forms", "Text"],
-    "title": "Font weight",
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
+    "titleI18n": "custom_styles.font_weight",
     "type": "button",
     "editor": "toggleIcon",
     "states": {
@@ -107,8 +107,8 @@
   --form-field-text-font-weight: 400;
 
   /* VoogStyle
-    "path": ["Forms", "Text"],
-    "title": "Font style",
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
+    "titleI18n": "custom_styles.font_style",
     "type": "button",
     "editor": "toggleIcon",
     "states": {
@@ -121,8 +121,8 @@
   --form-field-text-font-style: normal;
 
   /* VoogStyle
-    "path": ["Forms", "Text"],
-    "title": "Text decoration",
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
+    "titleI18n": "custom_styles.text_decoration",
     "type": "button",
     "editor": "toggleIcon",
     "states": {
@@ -135,8 +135,8 @@
   --form-field-text-text-decoration: none;
 
   /* VoogStyle
-    "path": ["Forms", "Text"],
-    "title": "Text transform",
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
+    "titleI18n": "custom_styles.text_transform",
     "type": "button",
     "editor": "toggleIcon",
     "states": {
@@ -149,8 +149,8 @@
   --form-field-text-text-transform: none;
 
   /* VoogStyle
-    "path": ["Forms", "Text"],
-    "title": "Color",
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
+    "titleI18n": "custom_styles.color",
     "type": "button",
     "editor": "colorPicker",
     "scope": "global",
