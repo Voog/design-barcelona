@@ -33,6 +33,7 @@
   {% endif %}
   {% comment %}{% include "template-cs-list" %}{% endcomment %}
   {% include "template-cs-table" %}
+  {% include "template-cs-form" %}
   {% include "template-cs-footer" %}
   {% include "template-cs-style-rules" %}
 </style>

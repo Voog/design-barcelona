@@ -1,43 +1,21 @@
-// =============================================================================
-// TEMPLATE CUSTOM STYLES.
-// This file sets the configuration for design editor tool.
-//
-// This file will be converted to CSS, copied under "/components" and renamed to
-// "*.tpl".
-//
-// The output component can be included in any "layout" or "component".
-// =============================================================================
-
-// =============================================================================
-// Modules
-// =============================================================================
-@import '../../stylesheets/modules/variables';
-
-// =============================================================================
-// Design editor configuration.
-// =============================================================================
 :root {
-  // scss-lint:disable Comment, Indentation
-
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
-    "titleI18n": "Field background",
+    "titleI18n": "custom_styles.background",
     "editor": "colorPicker",
     "scope": "global"
   */
-  --form-field-background-color: $fourth-color;
-
+  --form-field-background-color: white;
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
-    "titleI18n": "Field border color",
+    "titleI18n": "custom_styles.border_color",
     "editor": "colorPicker",
     "scope": "global"
   */
-  --form-field-border-color: $color-black;
-
+  --form-field-border-color: black;
   /* VoogStyle
      "pathI18n": ["custom_styles.form"],
-     "titleI18n": "Field border width",
+     "titleI18n": "custom_styles.border_thickness",
      "editor": "rangePicker",
      "min": 0,
      "max": 20,
@@ -45,10 +23,9 @@
      "scope": "global"
   */
   --form-field-border-width: 0;
-
   /* VoogStyle
      "pathI18n": ["custom_styles.form"],
-     "titleI18n": "Field padding",
+     "titleI18n": "custom_styles.padding",
      "editor": "rangePicker",
      "min": 0,
      "max": 100,
@@ -56,7 +33,6 @@
      "scope": "global"
   */
   --form-field-padding: 10px;
-
   /* VoogStyle
      "pathI18n": ["custom_styles.form", "custom_styles.text"],
      "titleI18n": "custom_styles.font",
@@ -65,8 +41,7 @@
      "featured": true,
      "scope": "global"
   */
-  --form-field-text-font-family: $font-main;
-
+  --form-field-text-font-family: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
      "pathI18n": ["custom_styles.form", "custom_styles.text"],
      "titleI18n": "custom_styles.line_height",
@@ -77,8 +52,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --form-field-text-line-height: $line-height#em;
-
+  --form-field-text-line-height: 1.45 #em;
   /* VoogStyle
     "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.size",
@@ -90,8 +64,7 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-text-font-size: $font-size;
-
+  --form-field-text-font-size: 18px;
   /* VoogStyle
     "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.font_weight",
@@ -105,7 +78,6 @@
     "scope": "global"
   */
   --form-field-text-font-weight: 400;
-
   /* VoogStyle
     "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.font_style",
@@ -119,7 +91,6 @@
     "scope": "global"
   */
   --form-field-text-font-style: normal;
-
   /* VoogStyle
     "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.text_decoration",
@@ -133,7 +104,6 @@
     "scope": "global"
   */
   --form-field-text-text-decoration: none;
-
   /* VoogStyle
     "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.text_transform",
@@ -147,7 +117,6 @@
     "scope": "global"
   */
   --form-field-text-text-transform: none;
-
   /* VoogStyle
     "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.color",
@@ -156,7 +125,5 @@
     "scope": "global",
     "featured": true
   */
-  --form-field-text-color: $main-color;
-
-  // scss-lint:enable Comment, Indentation
+  --form-field-text-color: #333;
 }
