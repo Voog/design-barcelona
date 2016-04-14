@@ -109,9 +109,8 @@ textarea {
   color: $fourth-color;
   cursor: pointer;
   font: #{$font-size}/#{$line-height} $font-main;
-  height: 45px;
   outline: 0;
-  padding: 0 12px;
+  padding: 12px;
 
   &:hover {
     @include bg($bg-color-dark, .8);

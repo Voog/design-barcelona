@@ -144,9 +144,8 @@ textarea {
   color: white;
   cursor: pointer;
   font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
-  height: 45px;
   outline: 0;
-  padding: 0 12px;
+  padding: 12px;
 }
 .form_submit input:hover,
 .submit:hover {
