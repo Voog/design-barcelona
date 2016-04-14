@@ -312,8 +312,7 @@ main .content table th {
 .form_submit input,
 input[type=submit],
 input[type=text],
-textarea,
-label {
+textarea {
   font-family: var(--form-field-text-font-family);
 }
 
