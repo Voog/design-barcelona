@@ -79,8 +79,8 @@ textarea {
 
 .form_error,
 .form_notice {
-  font-weight: bold;
   padding: 0 0 20px;
+  font-weight: bold;
 }
 
 .form_error {
@@ -92,8 +92,8 @@ textarea {
 }
 
 .form_field_error {
-  color: $error-color;
   display: none;
+  color: $error-color;
 }
 
 .form_field_with_errors input,
@@ -104,13 +104,14 @@ textarea {
 
 .form_submit input,
 .submit {
-  background: $bg-color-dark;
-  border: 0;
+  padding: 12px;
+  font-family: $font-main;
+  font-size: $font-size;
   color: $fourth-color;
   cursor: pointer;
-  font: #{$font-size}/#{$line-height} $font-main;
+  background: $bg-color-dark;
+  border: 0;
   outline: 0;
-  padding: 12px;
 
   &:hover {
     @include bg($bg-color-dark, .8);
@@ -127,8 +128,8 @@ label {
   cursor: pointer;
 
   &::before {
-    content: url('../images/check.png?1');
     display: none;
+    content: url('../images/check.png?1');
   }
 
   .form_field_checkbox,
@@ -144,15 +145,15 @@ label {
     // scss-lint:disable NestingDepth
     &:checked {
       + .form_control_indicator::before {
-        background: url('../images/check_small.png?1') no-repeat left bottom;
-        height: 100%;
         width: 100%;
+        height: 100%;
+        background: url('../images/check_small.png?1') no-repeat left bottom;
 
         .backgroundsize & {
+          width: 100%;
+          height: 100%;
           background: url('../images/check.png?1') no-repeat left bottom;
           background-size: 17px 18px;
-          height: 100%;
-          width: 100%;
         }
       }
     }

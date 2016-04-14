@@ -120,17 +120,39 @@ main .post-content a:hover {
   text-transform: var(--h2-text-transform);
 }
 .formatted h3 {
-  color: var(--h3-color);
+  padding-bottom: var(--h3-padding-bottom);
   font-family: var(--h3-font-family);
   font-size: var(--h3-font-size);
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);
-  letter-spacing: var(--h3-letter-spacing);
   line-height: var(--h3-line-height);
-  padding-bottom: var(--h3-padding-bottom);
+  letter-spacing: var(--h3-letter-spacing);
+  color: var(--h3-color);
   text-align: var(--h3-alignment);
   text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
+}
+.formatted .custom-btn {
+  padding: var(--content-button-padding);
+  font-family: var(--content-button-font-family);
+  font-size: var(--content-button-font-size);
+  font-style: var(--content-button-font-style);
+  font-weight: var(--content-button-font-weight);
+  line-height: var(--content-button-line-height);
+  letter-spacing: var(--content-button-letter-spacing);
+  color: var(--content-button-color);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
+  background-color: var(--content-button-background-color);
+}
+.formatted .custom-btn:hover {
+  font-size: var(--content-button-hover-font-size);
+  font-style: var(--content-button-hover-font-style);
+  font-weight: var(--content-button-hover-font-weight);
+  color: var(--content-button-hover-color);
+  text-decoration: var(--content-button-hover-text-decoration);
+  text-transform: var(--content-button-hover-text-transform);
+  background-color: var(--content-button-hover-background-color);
 }
 
 @media screen and (max-width: 500px) {
@@ -290,7 +312,8 @@ main .content table th {
 .form_submit input,
 input[type=submit],
 input[type=text],
-textarea {
+textarea,
+label {
   font-family: var(--form-field-text-font-family);
 }
 
@@ -307,6 +330,31 @@ textarea {
   padding-right: var(--form-field-padding);
   text-decoration: var(--form-field-text-text-decoration);
   text-transform: var(--form-field-text-text-transform);
+}
+
+.form_submit input,
+.submit {
+  padding: var(--form-button-padding);
+  font-family: var(--form-button-font-family);
+  font-size: var(--form-button-font-size);
+  font-style: var(--form-button-font-style);
+  font-weight: var(--form-button-font-weight);
+  line-height: var(--form-button-line-height);
+  letter-spacing: var(--form-button-letter-spacing);
+  color: var(--form-button-color);
+  text-decoration: var(--form-button-text-decoration);
+  text-transform: var(--form-button-text-transform);
+  background-color: var(--form-button-background-color);
+}
+.form_submit input:hover,
+.submit:hover {
+  font-size: var(--form-button-hover-font-size);
+  font-style: var(--form-button-hover-font-style);
+  font-weight: var(--form-button-hover-font-weight);
+  color: var(--form-button-hover-color);
+  text-decoration: var(--form-button-hover-text-decoration);
+  text-transform: var(--form-button-hover-text-transform);
+  background-color: var(--form-button-hover-background-color);
 }
 
 label .form_field_checkbox + .form_control_indicator::before {

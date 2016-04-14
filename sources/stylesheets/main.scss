@@ -122,13 +122,15 @@ blockquote {
 }
 
 .custom-btn {
-  background: $bg-color-dark;
-  cursor: pointer;
   display: inline-block;
-  font: #{$font-size}/#{$line-height} $font-main;
-  margin-bottom: 20px;
-  margin-top: 20px;
   padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: $font-main;
+  font-size: $font-size;
+  line-height: 1.2;
+  cursor: pointer;
+  background: $bg-color-dark;
 
   &,
   &:hover {
@@ -312,7 +314,7 @@ a {
       line-height: 1.1;
       text-transform: uppercase;
 
-      &:hover, 
+      &:hover,
       &.active {
         color: $second-color;
       }
@@ -354,7 +356,7 @@ a {
     color: $third-color;
     display: inline-block;
 
-    &:hover, 
+    &:hover,
     &.active {
       color: $second-color;
     }
@@ -581,7 +583,7 @@ a {
           height: 100%;
           position: relative;
           width: 100%;
-          &::before, 
+          &::before,
           &::after {
             @include border-radius(2px);
             background: $color-white;
@@ -714,7 +716,7 @@ a {
   background: $bg-color-dark;
   opacity: .95;
 
-  &, 
+  &,
   h3 {
     color: $fourth-color;
   }
@@ -894,7 +896,7 @@ a {
     font-weight: bold;
   }
 
-  .form_field, 
+  .form_field,
   .edy-fe-field {
     margin-bottom: 10px;
   }

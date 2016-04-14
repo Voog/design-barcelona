@@ -112,8 +112,8 @@ textarea {
 
 .form_error,
 .form_notice {
-  font-weight: bold;
   padding: 0 0 20px;
+  font-weight: bold;
 }
 
 .form_error {
@@ -125,8 +125,8 @@ textarea {
 }
 
 .form_field_error {
-  color: #c70909;
   display: none;
+  color: #c70909;
 }
 
 .form_field_with_errors input,
@@ -139,13 +139,14 @@ textarea {
 
 .form_submit input,
 .submit {
-  background: #2b2b2b;
-  border: 0;
+  padding: 12px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 18px;
   color: white;
   cursor: pointer;
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  background: #2b2b2b;
+  border: 0;
   outline: 0;
-  padding: 12px;
 }
 .form_submit input:hover,
 .submit:hover {
@@ -161,8 +162,8 @@ label {
   cursor: pointer;
 }
 label::before {
-  content: url("../images/check.png?1");
   display: none;
+  content: url("../images/check.png?1");
 }
 label .form_field_checkbox,
 label .form_field_radio {
@@ -172,15 +173,15 @@ label .form_field_checkbox + .form_control_indicator::before {
   background: white;
 }
 label .form_field_checkbox:checked + .form_control_indicator::before {
-  background: url("../images/check_small.png?1") no-repeat left bottom;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  background: url("../images/check_small.png?1") no-repeat left bottom;
 }
 .backgroundsize label .form_field_checkbox:checked + .form_control_indicator::before {
+  width: 100%;
+  height: 100%;
   background: url("../images/check.png?1") no-repeat left bottom;
   background-size: 17px 18px;
-  height: 100%;
-  width: 100%;
 }
 label .form_field_radio + .form_control_indicator::before {
   border: 3px solid white;
@@ -632,13 +633,15 @@ blockquote {
 }
 
 .custom-btn {
-  background: #2b2b2b;
-  cursor: pointer;
   display: inline-block;
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
-  margin-bottom: 20px;
-  margin-top: 20px;
   padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  cursor: pointer;
+  background: #2b2b2b;
 }
 .custom-btn, .custom-btn:hover {
   color: white;
