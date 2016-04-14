@@ -95,6 +95,10 @@ main .post-content a:hover {
 
 .formatted h1 {
   color: var(--h1-color);
+}
+.formatted h1,
+.formatted h1 a,
+.formatted h1 a:hover {
   font-family: var(--h1-font-family);
   font-size: var(--h1-font-size);
   font-style: var(--h1-font-style);
@@ -108,6 +112,8 @@ main .post-content a:hover {
 }
 .formatted h2 {
   color: var(--h2-color);
+}
+.formatted h2, .formatted h2 a, .formatted h2 a:hover {
   font-family: var(--h2-font-family);
   font-size: var(--h2-font-size);
   font-style: var(--h2-font-style);
@@ -120,6 +126,11 @@ main .post-content a:hover {
   text-transform: var(--h2-text-transform);
 }
 .formatted h3 {
+  color: var(--h3-color);
+}
+.formatted h3,
+.formatted h3 a,
+.formatted h3 a:hover {
   padding-bottom: var(--h3-padding-bottom);
   font-family: var(--h3-font-family);
   font-size: var(--h3-font-size);
@@ -127,7 +138,6 @@ main .post-content a:hover {
   font-weight: var(--h3-font-weight);
   line-height: var(--h3-line-height);
   letter-spacing: var(--h3-letter-spacing);
-  color: var(--h3-color);
   text-align: var(--h3-alignment);
   text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
