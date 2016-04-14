@@ -40,12 +40,14 @@ blockquote,
   max-width: var(--main-width);
 }
 
-main .content.formatted {
+main .content.formatted,
+main .content .formatted {
   background-color: var(--content-background-color);
 }
 
 @media screen and (min-width: 500px) {
-  main .content.formatted {
+  main .content.formatted,
+  main .content .formatted {
     padding: var(--content-padding);
   }
 }
