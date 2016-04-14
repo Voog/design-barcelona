@@ -116,5 +116,5 @@
     "scope": "global",
     "featured": true
   */
-  --footer-text-color: #333;
+  --footer-color: #333;
 }
