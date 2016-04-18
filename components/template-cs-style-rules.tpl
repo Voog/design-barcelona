@@ -222,7 +222,7 @@ main .footer-content a:hover {
 }
 
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: var(--footer-background-color) !important;
 }
 .footer .footer-content {
   color: var(--footer-color);

@@ -1394,7 +1394,7 @@ a:hover {
 }
 
 .footer {
-  background: white;
+  background-color: white;
   min-height: 75px;
   z-index: 200;
 }

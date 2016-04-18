@@ -270,7 +270,7 @@ main .footer-content {
 
 // Footer
 .footer {
-  background-color: var(--footer-background-color);
+  background-color: var(--footer-background-color) !important;
 
   .footer-content {
     color: var(--footer-color);
