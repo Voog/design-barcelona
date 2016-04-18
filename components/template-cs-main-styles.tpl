@@ -5,18 +5,7 @@
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
-     "scope": "global",
-     "boundVariables": [
-      "--header-site-title-font-family",
-      "--header-mainmenu-font-family",
-      "--blog-list-headings-font-family",
-      "--h1-font-family",
-      "--h2-font-family",
-      "--h3-font-family",
-      "--content-font-family",
-      "--footer-font-family",
-      "--form-field-text-font-family"
-     ]
+     "scope": "global"
   */
   --font-main: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
@@ -40,8 +29,8 @@
         "--header-site-title-color",
         "--header-mainmenu-hover-color",
         "--header-mainmenu-active-color",
-        "--content-submenu--hover-color",
-        "--content-submenu--active-color",
+        "--content-submenu-hover-color",
+        "--content-submenu-active-color",
         "--h1-color",
         "--h2-color",
         "--h3-color",
@@ -70,7 +59,7 @@
      "featured": true,
      "boundVariables": [
       "--header-mainmenu-color",
-      "--content-submenu--color",
+      "--content-submenu-color",
       "--content-links-color",
       "--table-border-color"
      ]

@@ -2,7 +2,7 @@
 {% include "template-variables" %}
 <html class="front-page blog-list-page {% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% assign front_page = true %}
+  {% assign blog_page = true %}
   {% include "edicy-tools-variables" %}
   {% include "html-head" with "blog_listing_page" %}
 </head>
