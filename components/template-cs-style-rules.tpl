@@ -54,7 +54,6 @@ main .content .formatted {
 main .content-body,
 main .post-content {
   color: var(--content-color);
-  font-family: var(--content-font-family);
   font-size: var(--content-font-size);
   font-style: var(--content-font-style);
   font-weight: var(--content-font-weight);
@@ -68,7 +67,6 @@ main .content-body a,
 main .post-content a,
 main .footer-content a {
   color: var(--content-links-color);
-  font-family: var(--content-links-font-family);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
   text-decoration: var(--content-links-text-decoration);
@@ -84,22 +82,13 @@ main .footer-content a:hover {
   text-transform: var(--content-links-hover-text-transform);
 }
 
-main .content-body a,
-main .post-content a {
-  font-size: var(--content-links-font-size);
-}
-main .content-body a:hover,
-main .post-content a:hover {
-  font-size: var(--content-links-hover-font-size);
-}
-
 .formatted h1 {
   color: var(--h1-color);
 }
 .formatted h1,
 .formatted h1 a,
 .formatted h1 a:hover {
-  font-family: var(--h1-font-family);
+  font-family: var(--font-main);
   font-size: var(--h1-font-size);
   font-style: var(--h1-font-style);
   font-weight: var(--h1-font-weight);
@@ -113,7 +102,7 @@ main .post-content a:hover {
   color: var(--h2-color);
 }
 .formatted h2, .formatted h2 a, .formatted h2 a:hover {
-  font-family: var(--h2-font-family);
+  font-family: var(--font-main);
   font-size: var(--h2-font-size);
   font-style: var(--h2-font-style);
   font-weight: var(--h2-font-weight);
@@ -129,7 +118,7 @@ main .post-content a:hover {
 .formatted h3,
 .formatted h3 a,
 .formatted h3 a:hover {
-  font-family: var(--h3-font-family);
+  font-family: var(--font-main);
   font-size: var(--h3-font-size);
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);
@@ -142,7 +131,7 @@ main .post-content a:hover {
 .formatted .custom-btn {
   background-color: var(--content-button-background-color);
   color: var(--content-button-color);
-  font-family: var(--content-button-font-family);
+  font-family: var(--font-main);
   font-size: var(--content-button-font-size);
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
@@ -154,7 +143,6 @@ main .post-content a:hover {
 .formatted .custom-btn:hover {
   background-color: var(--content-button-hover-background-color);
   color: var(--content-button-hover-color);
-  font-size: var(--content-button-hover-font-size);
   font-style: var(--content-button-hover-font-style);
   font-weight: var(--content-button-hover-font-weight);
   text-decoration: var(--content-button-hover-text-decoration);
@@ -174,7 +162,6 @@ main .post-content a:hover {
 }
 .site-title {
   color: var(--header-site-title-color);
-  font-family: var(--header-site-title-font-family);
   font-style: var(--header-site-title-font-style);
   font-weight: var(--header-site-title-font-weight);
   text-transform: var(--header-site-title-text-transform);
@@ -188,7 +175,7 @@ main .post-content a:hover {
 
 .main-menu ul a {
   color: var(--header-mainmenu-color);
-  font-family: var(--header-mainmenu-font-family);
+  font-family: var(--font-main);
   font-size: var(--header-mainmenu-font-size);
   font-style: var(--header-mainmenu-font-style);
   font-weight: var(--header-mainmenu-font-weight);
@@ -214,7 +201,6 @@ main .post-content a:hover {
 
 .sub-menu a {
   color: var(--content-submenu--color);
-  font-family: var(--content-submenu--font-family);
   font-size: var(--content-submenu--font-size);
   font-style: var(--content-submenu--font-style);
   font-weight: var(--content-submenu--font-weight);
@@ -243,7 +229,7 @@ main .post-content a:hover {
 }
 .footer .footer-content {
   color: var(--footer-color);
-  font-family: var(--footer-font-family);
+  font-family: var(--font-main);
   font-size: var(--footer-font-size);
   font-style: var(--footer-font-style);
   font-weight: var(--footer-font-weight);
@@ -272,7 +258,7 @@ main .post-content a:hover {
 .blog-list-page .main .article h2,
 .blog-list-page .main .new-article h2 {
   color: var(--blog-list-headings-color);
-  font-family: var(--blog-list-headings-font-family);
+  font-family: var(--font-main);
   font-size: var(--blog-list-headings-font-size);
   font-style: var(--blog-list-headings-font-style);
   font-weight: var(--blog-list-headings-font-weight);
@@ -283,7 +269,7 @@ main .post-content a:hover {
 .blog-list-page .main .article .article-date,
 .blog-list-page .main .new-article .article-date {
   color: var(--blog-list-date-color);
-  font-family: var(--blog-list-date-font-family);
+  font-family: var(--font-main);
   font-size: var(--blog-list-date-font-size);
   font-style: var(--blog-list-date-font-style);
   font-weight: var(--blog-list-date-font-weight);
@@ -313,7 +299,7 @@ main .content table th {
 input[type=submit],
 input[type=text],
 textarea {
-  font-family: var(--form-field-text-font-family);
+  font-family: var(--font-main);
 }
 
 .form_field_textfield,
@@ -335,7 +321,7 @@ textarea {
 .submit {
   background-color: var(--form-button-background-color);
   color: var(--form-button-color);
-  font-family: var(--form-button-font-family);
+  font-family: var(--font-main);
   font-size: var(--form-button-font-size);
   font-style: var(--form-button-font-style);
   font-weight: var(--form-button-font-weight);
