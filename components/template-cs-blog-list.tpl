@@ -11,14 +11,6 @@
   --blog-list-article-width: 300px;
   /* VoogStyle
      "pathI18n": ["custom_styles.blog"],
-     "titleI18n": "custom_styles.alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --blog-list-alignment: left;
-  /* VoogStyle
-     "pathI18n": ["custom_styles.blog"],
      "titleI18n": "custom_styles.padding",
      "editor": "rangePicker",
      "min": 0,
@@ -27,6 +19,25 @@
      "scope": "global"
   */
   --blog-list-padding: 30px;
+  /* VoogStyle
+     "pathI18n": ["custom_styles.blog"],
+     "titleI18n": "custom_styles.alignment",
+     "editor": "listPicker",
+     "list": {{ base_alignment_set }},
+     "scope": "global"
+  */
+  --blog-list-alignment: left;
+  /* VoogStyle
+    "pathI18n": ["custom_styles.blog", "custom_styles.headings"],
+    "titleI18n": "custom_styles.size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
+  --blog-list-headings-font-size: 24px;
   /* VoogStyle
      "pathI18n": ["custom_styles.blog", "custom_styles.headings"],
      "titleI18n": "custom_styles.line_height",
@@ -38,18 +49,6 @@
      "scope": "global"
   */
   --blog-list-headings-line-height: 1.45em;
-  /* VoogStyle
-    "pathI18n": ["custom_styles.blog", "custom_styles.headings"],
-    "titleI18n": "custom_styles.size",
-    "type": "button",
-    "editor": "rangePicker",
-    "min": 8,
-    "max": 80,
-    "unit": "px",
-    "scope": "global",
-    "featured": true
-  */
-  --blog-list-headings-font-size: 24px;
   /* VoogStyle
     "pathI18n": ["custom_styles.blog", "custom_styles.headings"],
     "titleI18n": "custom_styles.font_weight",
@@ -115,20 +114,8 @@
   */
   --blog-list-headings-color: white;
   /* VoogStyle
-     "pathI18n": ["custom_styles.blog", "custom_styles.date"],
-     "titleI18n": "custom_styles.top_padding",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 50,
-     "step": 1,
-     "unit": "px",
-     "scope": "global"
-  */
-  --blog-list-date-padding-top: 8px;
-  /* VoogStyle
     "pathI18n": ["custom_styles.blog", "custom_styles.date"],
     "titleI18n": "custom_styles.size",
-    "type": "button",
     "editor": "rangePicker",
     "min": 8,
     "max": 80,

@@ -287,7 +287,7 @@ main .content table {
 }
 main .content table td,
 main .content table th {
-  border: var(--table-border-width) var(--table-border-color) solid;
+  border-style: var(--table-border-style);
   padding: var(--table-cell-padding);
 }
 
@@ -323,26 +323,15 @@ textarea {
 
 .form_submit input,
 .submit {
-  background-color: var(--form-button-background-color);
-  color: var(--form-button-color);
+  background-color: var(--content-button-background-color);
+  color: var(--content-button-color);
   font-family: var(--font-main);
-  font-size: var(--form-button-font-size);
-  font-style: var(--form-button-font-style);
-  font-weight: var(--form-button-font-weight);
-  line-height: var(--form-button-line-height);
-  padding: var(--form-button-padding);
-  text-decoration: var(--form-button-text-decoration);
-  text-transform: var(--form-button-text-transform);
-}
-.form_submit input:hover,
-.submit:hover {
-  background-color: var(--form-button-hover-background-color);
-  color: var(--form-button-hover-color);
-  font-size: var(--form-button-hover-font-size);
-  font-style: var(--form-button-hover-font-style);
-  font-weight: var(--form-button-hover-font-weight);
-  text-decoration: var(--form-button-hover-text-decoration);
-  text-transform: var(--form-button-hover-text-transform);
+  font-size: var(--content-button-font-size);
+  font-style: var(--content-button-font-style);
+  font-weight: var(--content-button-font-weight);
+  line-height: var(--content-button-line-height);
+  text-decoration: var(--content-button-text-decoration);
+  text-transform: var(--content-button-text-transform);
 }
 
 label .form_field_checkbox + .form_control_indicator::before {

@@ -30,6 +30,7 @@
     {% include "template-cs-blog-list" %}
   {% else %}
     {% include "template-cs-content" %}
+    {% include "template-cs-button" %}
   {% endif %}
   {% comment %}{% include "template-cs-list" %}{% endcomment %}
   {% include "template-cs-table" %}
