@@ -21,10 +21,10 @@
     "pathI18n": ["custom_styles.button"],
     "titleI18n": "custom_styles.line_height",
     "editor": "rangePicker",
-    "min": 1,
+    "min": 0.8,
     "max": 5,
     "step": 0.1,
-    "unit": "",
+    "unit": "em",
     "scope": "global"
   */
   --content-button-line-height: 1.2em;

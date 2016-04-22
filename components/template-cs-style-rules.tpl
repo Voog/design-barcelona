@@ -188,7 +188,6 @@ main .post-content .post-tags a {
 }
 .main-menu ul a:hover {
   color: var(--header-mainmenu-hover-color);
-  font-size: var(--header-mainmenu-hover-font-size);
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
   text-decoration: var(--header-mainmenu-hover-text-decoration);
@@ -196,7 +195,6 @@ main .post-content .post-tags a {
 }
 .main-menu ul a.active {
   color: var(--header-mainmenu-active-color);
-  font-size: var(--header-mainmenu-active-font-size);
   font-style: var(--header-mainmenu-active-font-style);
   font-weight: var(--header-mainmenu-active-font-weight);
   text-decoration: var(--header-mainmenu-active-text-decoration);
@@ -241,6 +239,9 @@ main .post-content .post-tags a {
   text-align: var(--footer-alignment);
   text-decoration: var(--footer-text-decoration);
   text-transform: var(--footer-text-transform);
+}
+.footer .footer-content .lang-menu-btn .lang-title {
+  color: var(--footer-color);
 }
 
 @media screen and (min-width: 500px) {

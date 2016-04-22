@@ -1,6 +1,6 @@
 :root {
   /* VoogStyle
-    "pathI18n": ["custom_styles.form", "custom_styles.field_text"],
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.size",
     "editor": "rangePicker",
     "min": 8,
@@ -11,7 +11,7 @@
   */
   --form-field-text-font-size: 18px;
   /* VoogStyle
-     "pathI18n": ["custom_styles.form", "custom_styles.field_text"],
+     "pathI18n": ["custom_styles.form", "custom_styles.text"],
      "titleI18n": "custom_styles.line_height",
      "editor": "rangePicker",
      "min": 0.8,
@@ -22,7 +22,7 @@
   */
   --form-field-text-line-height: 1.45 #em;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form", "custom_styles.field_text"],
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.font_weight",
     "type": "button",
     "editor": "toggleIcon",
@@ -35,7 +35,7 @@
   */
   --form-field-text-font-weight: 400;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form", "custom_styles.field_text"],
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.font_style",
     "type": "button",
     "editor": "toggleIcon",
@@ -48,7 +48,7 @@
   */
   --form-field-text-font-style: normal;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form", "custom_styles.field_text"],
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.text_decoration",
     "type": "button",
     "editor": "toggleIcon",
@@ -61,7 +61,7 @@
   */
   --form-field-text-text-decoration: none;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form", "custom_styles.field_text"],
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.text_transform",
     "type": "button",
     "editor": "toggleIcon",
@@ -74,7 +74,7 @@
   */
   --form-field-text-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["custom_styles.form", "custom_styles.field_text"],
+    "pathI18n": ["custom_styles.form", "custom_styles.text"],
     "titleI18n": "custom_styles.color",
     "type": "button",
     "editor": "colorPicker",
@@ -84,7 +84,7 @@
   --form-field-text-color: #333;
   /* VoogStyle
     "pathI18n": ["custom_styles.form"],
-    "titleI18n": "custom_styles.field_bg_color",
+    "titleI18n": "custom_styles.background_color",
     "editor": "colorPicker",
     "scope": "global"
   */
