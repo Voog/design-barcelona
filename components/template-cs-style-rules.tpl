@@ -82,6 +82,10 @@ main .footer-content a:hover {
   text-transform: var(--content-links-hover-text-transform);
 }
 
+main .post-content .post-tags a {
+  color: #fff;
+}
+
 .formatted h1 {
   color: var(--h1-color);
 }
