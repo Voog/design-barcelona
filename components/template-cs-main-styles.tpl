@@ -47,7 +47,8 @@
      "boundVariables": [
         "--content-color",
         "--form-field-text-color",
-        "--footer-text-color"
+        "--footer-text-color",
+        "--footer-color"
      ]
   */
   --main-color: #333;

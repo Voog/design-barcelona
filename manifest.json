@@ -274,6 +274,36 @@
       "filename": "montserrat-bold.woff2"
     },
     {
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/montserrat-regular.eot",
+      "kind": "assets",
+      "filename": "montserrat-regular.eot"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/montserrat-regular.svg",
+      "kind": "assets",
+      "filename": "montserrat-regular.svg"
+    },
+    {
+      "content_type": "application/font-sfnt",
+      "file": "assets/montserrat-regular.ttf",
+      "kind": "assets",
+      "filename": "montserrat-regular.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/montserrat-regular.woff",
+      "kind": "assets",
+      "filename": "montserrat-regular.woff"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "assets/montserrat-regular.woff2",
+      "kind": "assets",
+      "filename": "montserrat-regular.woff2"
+    },
+    {
       "content_type": "image/png",
       "file": "images/check.png",
       "kind": "images",
@@ -320,6 +350,18 @@
       "file": "javascripts/application.min.js",
       "kind": "javascripts",
       "filename": "application.min.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/modernizr.js",
+      "kind": "javascripts",
+      "filename": "modernizr.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/modernizr.min.js",
+      "kind": "javascripts",
+      "filename": "modernizr.min.js"
     },
     {
       "content_type": "text/css",

@@ -240,7 +240,7 @@
     "titleI18n": "custom_styles.color",
     "editor": "colorPicker",
     "scope": "global",
-    "featured": true,
+    "featured": true
   */
   --content-color: #333;
   /* VoogStyle

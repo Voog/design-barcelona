@@ -167,6 +167,7 @@ label::before {
 }
 label .form_field_checkbox,
 label .form_field_radio {
+  display: none;
   display: inline-block\9;
 }
 label .form_field_checkbox + .form_control_indicator::before {

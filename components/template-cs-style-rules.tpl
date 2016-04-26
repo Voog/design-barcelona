@@ -40,14 +40,12 @@ blockquote,
   max-width: var(--main-width);
 }
 
-main .content.formatted,
-main .content .formatted {
+main .content.formatted {
   background-color: var(--content-background-color);
 }
 
 @media screen and (min-width: 500px) {
-  main .content.formatted,
-  main .content .formatted {
+  main .content.formatted {
     padding: var(--content-padding);
   }
 }
@@ -65,7 +63,7 @@ main .post-content {
 
 main .content-body a,
 main .post-content a,
-main .footer-content a {
+.footer-content a {
   color: var(--content-links-color);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
@@ -74,7 +72,7 @@ main .footer-content a {
 }
 main .content-body a:hover,
 main .post-content a:hover,
-main .footer-content a:hover {
+.footer-content a:hover {
   color: var(--content-links-hover-color);
   font-style: var(--content-links-hover-font-style);
   font-weight: var(--content-links-hover-font-weight);
@@ -82,7 +80,7 @@ main .footer-content a:hover {
   text-transform: var(--content-links-hover-text-transform);
 }
 
-main .post-content .post-tags a {
+main .post-content .post-tags a:not(.edy-tag-suggestion) {
   color: #fff;
 }
 
@@ -97,7 +95,6 @@ main .post-content .post-tags a {
   font-style: var(--h1-font-style);
   font-weight: var(--h1-font-weight);
   line-height: var(--h1-line-height);
-  padding-bottom: var(--h1-padding-bottom);
   text-align: var(--h1-alignment);
   text-decoration: var(--h1-text-decoration);
   text-transform: var(--h1-text-transform);
@@ -111,7 +108,6 @@ main .post-content .post-tags a {
   font-style: var(--h2-font-style);
   font-weight: var(--h2-font-weight);
   line-height: var(--h2-line-height);
-  padding-bottom: var(--h2-padding-bottom);
   text-align: var(--h2-alignment);
   text-decoration: var(--h2-text-decoration);
   text-transform: var(--h2-text-transform);
@@ -127,7 +123,6 @@ main .post-content .post-tags a {
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);
   line-height: var(--h3-line-height);
-  padding-bottom: var(--h3-padding-bottom);
   text-align: var(--h3-alignment);
   text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
@@ -140,7 +135,6 @@ main .post-content .post-tags a {
   font-style: var(--content-button-font-style);
   font-weight: var(--content-button-font-weight);
   line-height: var(--content-button-line-height);
-  padding: var(--content-button-padding);
   text-decoration: var(--content-button-text-decoration);
   text-transform: var(--content-button-text-transform);
 }
@@ -202,28 +196,28 @@ main .post-content .post-tags a {
 }
 
 .sub-menu a {
-  color: var(--content-submenu--color);
-  font-size: var(--content-submenu--font-size);
-  font-style: var(--content-submenu--font-style);
-  font-weight: var(--content-submenu--font-weight);
-  text-decoration: var(--content-submenu--text-decoration);
-  text-transform: var(--content-submenu--text-transform);
+  color: var(--content-submenu-color);
+  font-size: var(--content-submenu-font-size);
+  font-style: var(--content-submenu-font-style);
+  font-weight: var(--content-submenu-font-weight);
+  text-decoration: var(--content-submenu-text-decoration);
+  text-transform: var(--content-submenu-text-transform);
 }
 .sub-menu a:hover {
-  color: var(--content-submenu--hover-color);
-  font-size: var(--content-submenu--hover-font-size);
-  font-style: var(--content-submenu--hover-font-style);
-  font-weight: var(--content-submenu--hover-font-weight);
-  text-decoration: var(--content-submenu--hover-text-decoration);
-  text-transform: var(--content-submenu--hover-text-transform);
+  color: var(--content-submenu-hover-color);
+  font-size: var(--content-submenu-font-size);
+  font-style: var(--content-submenu-hover-font-style);
+  font-weight: var(--content-submenu-hover-font-weight);
+  text-decoration: var(--content-submenu-hover-text-decoration);
+  text-transform: var(--content-submenu-hover-text-transform);
 }
 .sub-menu a.active {
-  color: var(--content-submenu--active-color);
-  font-size: var(--content-submenu--active-font-size);
-  font-style: var(--content-submenu--active-font-style);
-  font-weight: var(--content-submenu--active-font-weight);
-  text-decoration: var(--content-submenu--active-text-decoration);
-  text-transform: var(--content-submenu--active-text-transform);
+  color: var(--content-submenu-active-color);
+  font-size: var(--content-submenu-font-size);
+  font-style: var(--content-submenu-active-font-style);
+  font-weight: var(--content-submenu-active-font-weight);
+  text-decoration: var(--content-submenu-active-text-decoration);
+  text-transform: var(--content-submenu-active-text-transform);
 }
 
 .footer {
@@ -278,7 +272,6 @@ main .post-content .post-tags a {
   font-size: var(--blog-list-date-font-size);
   font-style: var(--blog-list-date-font-style);
   font-weight: var(--blog-list-date-font-weight);
-  padding-top: var(--blog-list-date-padding-top);
   text-decoration: var(--blog-list-date-text-decoration);
   text-transform: var(--blog-list-date-text-transform);
 }
@@ -290,12 +283,7 @@ main .content table td,
 main .content table th {
   border-style: var(--table-border-style);
   padding: var(--table-cell-padding);
-}
-
-.formatted form,
-.formatted .form {
-  padding: var(--form-padding);
-  background-color: var(--form-background-color);
+  border-color: var(--content-color);
 }
 
 .form_field_textfield,
@@ -307,6 +295,7 @@ textarea {
   font-family: var(--font-main);
 }
 
+.form_field_select,
 .form_field_textfield,
 .form_field_textarea {
   background-color: var(--form-field-background-color);
@@ -316,8 +305,6 @@ textarea {
   font-style: var(--form-field-text-font-style);
   font-weight: var(--form-field-text-font-weight);
   line-height: var(--form-field-text-line-height);
-  padding-left: var(--form-field-padding);
-  padding-right: var(--form-field-padding);
   text-decoration: var(--form-field-text-text-decoration);
   text-transform: var(--form-field-text-text-transform);
 }
