@@ -36,7 +36,8 @@ blockquote,
   color: var(--third-color);
 }
 
-.wrap {
+.wrap,
+.footer .wrap {
   max-width: var(--main-width);
 }
 
@@ -127,7 +128,7 @@ main .post-content .post-tags a:not(.edy-tag-suggestion) {
   text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
 }
-.formatted .custom-btn {
+.formatted .custom-btn, .formatted .custom-btn:hover {
   background-color: var(--content-button-background-color);
   color: var(--content-button-color);
   font-family: var(--font-main);
@@ -139,12 +140,11 @@ main .post-content .post-tags a:not(.edy-tag-suggestion) {
   text-transform: var(--content-button-text-transform);
 }
 .formatted .custom-btn:hover {
-  background-color: var(--content-button-hover-background-color);
-  color: var(--content-button-hover-color);
-  font-style: var(--content-button-hover-font-style);
-  font-weight: var(--content-button-hover-font-weight);
-  text-decoration: var(--content-button-hover-text-decoration);
-  text-transform: var(--content-button-hover-text-transform);
+  opacity: .8;
+}
+.formatted .comment-form h2,
+.formatted .comments h2 {
+  font-size: 24px;
 }
 
 @media screen and (max-width: 500px) {
@@ -295,11 +295,23 @@ textarea {
   font-family: var(--font-main);
 }
 
+.jq-select-content {
+  padding: 0 28px 0 0;
+}
+
+.jq-select-inner {
+  background-color: var(--form-field-background-color);
+  padding: 4px 10px;
+}
+
+.jq-select-arrow {
+  background-color: var(--form-field-background-color);
+}
+
 .form_field_select,
 .form_field_textfield,
 .form_field_textarea {
   background-color: var(--form-field-background-color);
-  border: var(--form-field-border-width) var(--form-field-border-color) solid;
   color: var(--form-field-text-color);
   font-size: var(--form-field-text-font-size);
   font-style: var(--form-field-text-font-style);
