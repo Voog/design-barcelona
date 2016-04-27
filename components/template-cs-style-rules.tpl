@@ -301,6 +301,7 @@ textarea {
 
 .jq-select-inner {
   background-color: var(--form-field-background-color);
+  color: var(--form-field-text-color);
   padding: 4px 10px;
 }
 
