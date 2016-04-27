@@ -1,0 +1,142 @@
+// header
+
+.header {
+  background: $fourth-color;
+  left: 0;
+  min-height: 100px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: transform 200ms linear;
+  z-index: 1000;
+
+  .editmode & {
+    position: absolute !important;
+  }
+
+  &.headroom--not-top {
+    min-height: 75px;
+    transform: translateY(-100%);
+
+    .header-inner {
+      padding-top: 25px;
+    }
+  }
+
+  &.headroom--pinned {
+    transform: translateY(0%);
+  }
+
+  .header-inner {
+    display: none;
+    float: right;
+    min-height: 24px;
+    min-width: 24px;
+    padding: 36px 50px 0 20px;
+    position: relative;
+    z-index: 20;
+
+    .main-menu-not-fitting & {
+      display: block;
+    }
+
+    .main-menu-open & {
+      display: none;
+    }
+
+    .search-visible & {
+      display: block;
+    }
+
+    .search-enabled & {
+      display: block;
+    }
+  }
+
+  .main-menu-toggler {
+    color: $main-color;
+    display: none;
+    float: left;
+    font-size: 0;
+    height: $header-inner-height;
+    line-height: 0;
+    margin-left: 10px;
+    position: relative;
+    text-transform: uppercase;
+
+    &.menu-not-visible {
+      display: block;
+    }
+
+    .main-menu-open & {
+      display: none;
+    }
+
+    .search-visible & {
+      display: block;
+    }
+
+    &.main-menu-toggler-mobile {
+      display: none;
+    }
+
+    span {
+      display: block;
+      font-size: $font-size;
+      line-height: $header-inner-height;
+      padding-left: 36px;
+    }
+
+    &::before,
+    &::after,
+    span:before {
+      @include border-radius(3px);
+      background: $main-color;
+      content: '';
+      display: block;
+      height: 3px;
+      left: 5px;
+      position: absolute;
+      top: 8px;
+      width: 18px;
+    }
+
+    &::before {
+      top: 13px;
+    }
+
+    &::after {
+      top: 18px;
+    }
+  }
+}
+
+// site-title
+.site-title {
+  color: $second-color;
+  font-size: $h2-size;
+  line-height: 1.2;
+  overflow: hidden;
+  padding: 37px 0 37px 50px;
+  text-transform: uppercase; 
+
+  .headroom--not-top & {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  .site-title-wrap {
+    margin-right: 4px;
+  }
+
+  .site-title-inner {
+    @include hyphenate(true);
+    display: inline-block;
+    line-height: 1.1;
+    min-width: 150px;
+  }
+
+  a {
+    color: $second-color;
+  }
+}

@@ -1,0 +1,214 @@
+// search
+.search-holder {
+  float: left;
+  height: $header-inner-height;
+  position: relative;
+  width: $header-inner-height;
+
+}
+
+.search-container {
+  display: none;
+  height: $header-inner-height;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .search-visible & {
+    display: block;
+  }
+}
+
+.search-toggler {
+  background: url('../images/ico-search-black.png') no-repeat center center;
+  display: none;
+  height: $header-inner-height;
+  opacity: .35;
+  overflow: hidden;
+  position: relative;
+  width: $header-inner-height;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .svg & {
+    background: none;
+  }
+
+  svg {
+    display: none;
+
+    .svg & {
+      display: block;
+      left: 50%;
+      margin: -9px 0 0 -9px;
+      position: absolute;
+      top: 50%;
+    }
+  }
+
+  .search-enabled & {
+    display: block;
+  }
+
+  .search-visible & {
+    display: none;
+  }
+}
+
+.search {
+  @include box-sizing(border-box);
+  background: $bg-color;
+  height: $header-inner-height;
+  padding: 0 $header-inner-height + 10px 0 10px;
+  width: 180px;
+
+  .search-input {
+    @include box-sizing(border-box);
+    background: none;
+    border: 0;
+    font-size: $font-size - 2px;
+    height: $header-inner-height;
+    line-height: 1.1;
+    outline: 0;
+    padding: 0;
+    width: 100%;
+
+    &::-ms-clear {
+      display: none;
+    }
+  }
+
+  .search-submit {
+    @extend %button;
+    background: url('../images/ico-search-black.png') no-repeat center center;
+    display: block;
+    height: $header-inner-height;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $header-inner-height;
+
+    .svg & {
+      background: none;
+    }
+
+    svg {
+      display: none;
+
+      .svg & {
+        display: block;
+        left: 50%;
+        margin: -9px 0 0 -9px;
+        position: absolute;
+        top: 50%;
+      }
+    }
+  }
+
+  .search-close {
+    background: url('../images/close.png') no-repeat center center;
+    display: none;
+    height: $header-inner-height;
+    opacity: .5;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: $header-inner-height;
+
+    .svg & {
+      background: none;
+    }
+
+    svg {
+      display: none;
+
+      // scss-lint:disable SelectorDepth, NestingDepth
+      .svg & {
+        display: block;
+        left: 50%;
+        margin: -6px 0 0 -6px;
+        position: absolute;
+        top: 50%;
+      }
+    }
+  }
+
+  &.not-empty {
+    .search-submit { display: none; }
+    .search-close { display: block;}
+  }
+}
+
+.search-results {
+  @include bg($color-white, .95);
+  @include box-shadow(0, 0, 40px, rgba($color-black, .1));
+  @include box-sizing(border-box);
+  @include hyphenate(true);
+  display: none;
+  max-height: 400px;
+  overflow: auto;
+  padding: 15px 25px;
+  position: absolute;
+  right: 0;
+  top: $header-inner-height;
+  width: 400px;
+
+  &.search-results-active {
+    display: block;
+  }
+
+  .voog-search-modal-results {
+    font-size: $font-size - 2px;
+  }
+
+  .voog-search-modal-result {
+    color: $third-color;
+    font-size: $font-size - 4px;
+    line-height: 1.5;
+    padding: 10px 0;
+
+    h3 {
+      color: $second-color;
+      font-size: $font-size - 2px;
+      margin: 0;
+      padding: 0 0 10px;
+
+      a {
+        color: $second-color;
+      }
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    em {
+      background: #fbf5ac;
+      font-style: normal;
+    }
+  }
+
+  .voog-search-loader {
+    display: none;
+    height: 60px;
+
+    .svg & {
+      background: url('../assets/loader.svg') no-repeat center center;
+    }
+  }
+
+  &.search-results.loading {
+    .voog-search-loader {
+      display: block;
+    }
+
+    .voog-search-modal-results {
+      display: none;
+    }
+  }
+}
