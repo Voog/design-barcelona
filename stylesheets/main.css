@@ -521,6 +521,11 @@ label .form_control_indicator::before {
   line-height: 1.1;
   min-width: 150px;
 }
+.site-title .site-title-inner h1,
+.site-title .site-title-inner h2,
+.site-title .site-title-inner h3 {
+  display: inline;
+}
 .site-title a {
   color: black;
 }

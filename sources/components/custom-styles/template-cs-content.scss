@@ -25,18 +25,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --content-background-color: rgba($color-white, 0);
-
-  /* VoogStyle
-     "pathI18n": ["content"],
-     "titleI18n": "padding",
-     "editor": "rangePicker",
-     "min": 0,
-     "max": 200,
-     "unit": "px",
-     "scope": "global"
-  */
-  --content-padding: 0;
+  --bg-color: $bg-color;
 
   /* VoogStyle
      "pathI18n": ["content"],

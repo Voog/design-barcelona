@@ -9,17 +9,6 @@
   */
   --font-main: "Montserrat", Helvetica, Arial, sans-serif;
   /* VoogStyle
-     "pathI18n": ["main_styles"],
-     "titleI18n": "background_color",
-     "editor": "colorPicker",
-     "scope": "global",
-     "boundVariables": [
-      "--header-background-color",
-      "--footer-background-color"
-    ]
-  */
-  --bg-color: #f4f4f4;
-  /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
      "titleI18n": "primary_color",
      "editor": "colorPicker",
@@ -74,7 +63,9 @@
      "featured": true,
      "boundVariables": [
       "--blog-list-headings-color",
-      "--form-field-background-color"
+      "--form-field-background-color",
+      "--header-background-color",
+      "--footer-background-color"
     ]
   */
   --fourth-color: white;
