@@ -48,7 +48,6 @@ main .post-content {
   font-style: var(--content-font-style);
   font-weight: var(--content-font-weight);
   line-height: var(--content-line-height);
-  text-align: var(--content-alignment);
   text-decoration: var(--content-text-decoration);
   text-transform: var(--content-text-transform);
 }
