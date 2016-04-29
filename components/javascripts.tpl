@@ -1,4 +1,4 @@
-<script src="{{ javascripts_path }}/application.min.js?5"></script>
+<script src="{{ javascripts_path }}/application.min.js?7"></script>
 {% sitejs_include %}
 
 {% if site.search.enabled %}

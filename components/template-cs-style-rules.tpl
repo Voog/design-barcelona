@@ -41,15 +41,6 @@ blockquote,
   max-width: var(--main-width);
 }
 
-main .content.formatted {
-  background-color: var(--content-background-color);
-}
-
-@media screen and (min-width: 500px) {
-  main .content.formatted {
-    padding: var(--content-padding);
-  }
-}
 main .content-body,
 main .post-content {
   color: var(--content-color);
@@ -57,7 +48,6 @@ main .post-content {
   font-style: var(--content-font-style);
   font-weight: var(--content-font-weight);
   line-height: var(--content-line-height);
-  text-align: var(--content-alignment);
   text-decoration: var(--content-text-decoration);
   text-transform: var(--content-text-transform);
 }
