@@ -259,14 +259,6 @@
   */
   --content-line-height: 1.45 #em;
   /* VoogStyle
-     "pathI18n": ["content", "text"],
-     "titleI18n": "alignment",
-     "editor": "listPicker",
-     "list": {{ base_alignment_set }},
-     "scope": "global"
-  */
-  --content-alignment: left;
-  /* VoogStyle
     "pathI18n": ["content", "text"],
     "titleI18n": "font_weight",
     "type": "button",
