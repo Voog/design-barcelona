@@ -25,7 +25,6 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-header" %}
-  {% include "template-cs-headings" %}
   {% if blog_listing_page %}
     {% include "template-cs-blog-list" %}
   {% endif %}
@@ -33,6 +32,7 @@
     {% include "template-cs-content" %}
   {% endif %}
   {% include "template-cs-footer" %}
+  {% include "template-cs-headings" %}
   {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
