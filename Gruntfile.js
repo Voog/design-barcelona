@@ -212,54 +212,55 @@ module.exports = function(grunt) {
 
       js_copy: {
         files: 'sources/javascripts/copy/*.js',
-        tasks: ['copy:javascripts', 'exec:kitmanifest']
+        tasks: ['copy:javascripts', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
       js_concat: {
         files: 'sources/javascripts/concat/*.js',
-        tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest']
+        tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
       css_main: {
         files: [
           'sources/stylesheets/*.scss',
-          'sources/stylesheets/*/*.scss'
+          'sources/stylesheets/*/*.scss',
         ],
-        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest']
+        tasks: ['sass:build_main', 'postcss', 'cssmin:build', 'exec:kitmanifest', 'exec:kit:stylesheets/*.css']
       },
 
       custom_styles: {
         files: 'sources/components/custom-styles/*.scss',
-        tasks: ['sass:build_custom_styles', 'copy:custom_styles', 'clean:remove', 'exec:kitmanifest']
+        tasks: ['sass:build_custom_styles', 'postcss:custom_styles', 'copy:custom_styles', 'clean:remove', 'exec:kitmanifest']
       },
 
       img_copy: {
         files: 'sources/images/copy/*',
-        tasks: [ 'copy:images', 'exec:kitmanifest']
+        tasks: [ 'copy:images', 'exec:kitmanifest', 'exec:kit:images/*']
       },
 
       img_minify: {
         files: 'sources/images/minify/*',
-        tasks: ['imagemin:build_images', 'exec:kitmanifest']
+        tasks: ['imagemin:build_images', 'exec:kitmanifest', 'exec:kit:images/*']
       },
 
       assets_copy: {
         files: 'sources/assets/copy/*',
-        tasks: ['copy:assets', 'exec:kitmanifest']
+        tasks: ['copy:assets', 'exec:kitmanifest', 'exec:kit:assets/*']
       },
 
       assets_minify: {
         files: 'sources/assets/minify/*',
-        tasks: ['imagemin:build_assets', 'exec:kitmanifest']
+        tasks: ['imagemin:build_assets', 'exec:kitmanifest', 'exec:kit:assets/*']
       },
 
+
       voog: {
-        files: ['javascripts/*.js', 'stylesheets/*.css', 'layouts/*.tpl', 'components/*.tpl'],
+        files: ['layouts/*.tpl', 'components/*.tpl'],
         options: {
           spawn: false
         }
       }
-    },
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -276,7 +277,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['clean:reset', 'modernizr_builder', 'concat', 'uglify', 'sass', 'postcss', 'cssmin', 'imagemin', 'copy', 'clean:remove']);
 
-  /*
   grunt.event.on('watch', function(action, filepath, target) {
     if (target == 'voog') {
       if (action == 'added' || action == 'deleted') {
@@ -289,5 +289,4 @@ module.exports = function(grunt) {
       }
     }
   });
-  */
 };
