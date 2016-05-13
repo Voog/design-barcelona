@@ -24,7 +24,7 @@
   {% else %}
     {% for article in articles %}
       {% if article.data.background.image %}
-        {% assign og_image = article.data.background.image %}
+        {% assign og_image = article.data.background %}
         {% break %}
       {% endif %}
     {% endfor %}
@@ -41,11 +41,13 @@
 
 {% if og_image %}
   {% if og_image.image %}
-    <meta property="og:image" content="{{ og_image.image }}">
+    {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
+    <meta property="og:image" content="{{ og_image.image | replace_first: "http:", "" | replace_first: "https:", "" | prepend: "https:" }}">
     {% if og_image.imagesizes[2].width %}<meta property="og:image:width" content="{{ og_image.imagesizes[2].width }}">{% endif %}
     {% if og_image.imagesizes[2].height %}<meta property="og:image:height" content="{{ og_image.imagesizes[2].height }}">{% endif %}
   {% elsif og_image.url %}
-    {% if og_image.url %}<meta property="og:image" content="{{ og_image.url }}">{% endif %}
+    {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
+    {% if og_image.url %}<meta property="og:image" content="{{ og_image.url | replace_first: "http:", "" | replace_first: "https:", "" | prepend: "https:" }}">{% endif %}
     {% if og_image.content_type %}<meta property="og:image:type" content="{{ og_image.content_type }}">{% endif %}
     {% if og_image.width %}<meta property="og:image:width" content="{{ og_image.width }}">{% endif %}
     {% if og_image.height %}<meta property="og:image:height" content="{{ og_image.height }}">{% endif %}
@@ -63,4 +65,3 @@
   <meta property="og:description" content="{{ description | escape }}">
   <meta name="description" content="{{ description | escape }}">
 {% endif %}
-
