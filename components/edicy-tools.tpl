@@ -28,6 +28,8 @@
           });
         });
       });
+
+      template.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
     })(jQuery);
   </script>
 {% endif %}
