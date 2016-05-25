@@ -1,10 +1,8 @@
 {
   "name": "voog-design-barcelona",
   "devDependencies": {
-    "bourbon": "^4.2.6"
-  },
-  "dependencies": {
-    "jquery": "^2.2.1",
-    "jquery-mousewheel": "^3.1.13"
+    "jquery-mousewheel": "^3.1.13",
+    "jquery": "^2.2.4",
+    "bourbon": "^4.2.7"
   }
 }
