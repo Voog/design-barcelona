@@ -301,7 +301,7 @@ var setLayout = function() {
   var $m = $('.main-inner'),
   $bm = $('.blog-list-page .main-inner'),
   $h = $('.header'),
-  mh = $(window).height() - $h.height() - ($('.footer').is(':hidden') ? 0 : $('.footer').height());
+  mh = $(window).height() - $h.height() - ($('.footer').is(':hidden') ? 0 : $('.footer').height()) - ($('html').hasClass('editmode') ? 40 : 0);
 
 
 

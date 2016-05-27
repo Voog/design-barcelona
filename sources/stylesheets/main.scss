@@ -216,9 +216,17 @@ body {
 }
 
 html.blog-list-page {
-  &,
-  body {
-    height: 100% !important;
+  &.blog-list-page {
+    &,
+    body {
+      height: 100%;
+    }
+  }
+
+  &.editmode {
+    body {
+      height: calc(100% - 40px);
+    }
   }
 }
 
