@@ -65,7 +65,7 @@
   {% include "edicy-tools" %}
 
   <script>
-    $(window).load(function() {
+    $(window).on('load', function() {
       $('.main').lazyLoad({
         className: '--lazy',
         urlData: 'article-image',

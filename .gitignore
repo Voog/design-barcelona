@@ -1,15 +1,12 @@
-bourbon/
-
-bower_components/
-
-node_modules/
-
+# Hidden files
 .DS_Store
-
-.voog
-
 .sass-cache
+.voog
+.voog-node
+.voog-ruby
 
-sftp-config.json
+# Visible files
 
-TODO.txt
+# Folders
+bower_components/
+node_modules/
