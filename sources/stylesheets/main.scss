@@ -132,6 +132,11 @@ blockquote {
   cursor: pointer;
   background: $bg-color-dark;
 
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0
+  }
+
   &,
   &:hover {
     color: $fourth-color;
