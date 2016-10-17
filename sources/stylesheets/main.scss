@@ -945,13 +945,13 @@ a {
 }
 
 .post-nav-link-older {
-  @media screen and (min-width: $break-medium) {
+  @media screen and (min-width: $break-medium + 1) {
     padding-right: 20px;
   }
 }
 
 .post-nav-link-newer {
-  @media screen and (min-width: $break-medium) {
+  @media screen and (min-width: $break-medium + 1) {
     padding-left: 20px;
     text-align: right;
   }
