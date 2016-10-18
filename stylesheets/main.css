@@ -2394,12 +2394,11 @@ a:hover {
   padding: 0;
   border: 0;
 }
-.public .edy-ecommerce-shopping-cart-button, .public .edy-ecommerce-shopping-cart-button:hover {
+.public .edy-ecommerce-shopping-cart-button {
   color: white;
 }
 .public .edy-ecommerce-shopping-cart-button:hover {
-  background-color: #2b2b2b;
-  background-color: rgba(43, 43, 43, 0.8);
+  opacity: .8;
 }
 @media screen and (max-width: 500px) {
   .public .edy-ecommerce-shopping-cart-button {

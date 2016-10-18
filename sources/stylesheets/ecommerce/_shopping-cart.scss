@@ -14,13 +14,12 @@
       border: 0;
     }
 
-    &,
-    &:hover {
+    & {
       color: $fourth-color;
     }
 
     &:hover {
-      @include bg($bg-color-dark, .8);
+      opacity: .8;
     }
 
     @media screen and (max-width: $break-small) {
