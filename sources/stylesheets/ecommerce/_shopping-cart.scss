@@ -1,5 +1,5 @@
-.public {
-  .edy-ecommerce-shopping-cart-button {
+.edy-ecommerce-shopping-cart-button {
+  .public & {
     display: inline-block;
     padding: 8px;
     font-family: $font-main;
@@ -31,9 +31,13 @@
     @media screen and (min-width: $break-small + 1) {
       top: 64px;
     }
+  }
 
-    .edy-ecommerce-shopping-cart-button-flash {
-      line-height: 2.3;
-    }
+  .mobile-main-menu-open & {
+    z-index: -1;
+  }
+
+  .edy-ecommerce-shopping-cart-button-flash {
+    line-height: 2.3;
   }
 }
