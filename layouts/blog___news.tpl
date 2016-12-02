@@ -6,12 +6,13 @@
   {% include "edicy-tools-variables" %}
   {% include "html-head" blog_listing_page: true %}
 </head>
-<body class="main-menu-not-fitting {% if site.search.enabled %} search-enabled{% endif %}">
+<body class="sadfsdafsdaf main-menu-not-fitting {% if site.search.enabled %} search-enabled{% endif %}">
 
   <div class="holder">
+
     {% include "header" %}
 
-    <main class="main swipe" data-search-indexing-allowed="true">
+    <main class="main REEEdfasafds swipe" data-search-indexing-allowed="true">
       <a href="#" class="scroller-arrow "><span class="animated-bounce"></span></a>
       <div class="main-inner">
         {% if editmode %}
