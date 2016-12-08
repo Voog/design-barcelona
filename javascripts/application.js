@@ -10655,12 +10655,20 @@ var growTextarea=function(){sendContentToMirror(this)};var mirror=createMirror(t
     checkMainmenuFitting();
     setLayout();
 
+    document.addEventListener('voog:checkoutbutton:show', function() {
+      setLayout(true);
+    }, false);
+
+    document.addEventListener('voog:checkoutbutton:hide', function() {
+      setLayout();
+    }, false);
+
     $(window).on('resize', function() {
       debounce(checkMainmenuFitting(), 50);
       debounce(setLayout(), 50);
     });
 
-    $('.site-title-inner, .footer').contentMutations({
+    $('body', '.site-title-inner, .footer').contentMutations({
       debounceTime: 50,
       callback: function() {
         checkMainmenuFitting();
@@ -10767,11 +10775,17 @@ window.template = $.extend(window.template || {}, {
   bindCustomTexteditorStyles: bindCustomTexteditorStyles
 });
 
-var setLayout = function() {
+var setLayout = function(withShoppingCart) {
   var $m = $('.main-inner'),
   $bm = $('.blog-list-page .main-inner'),
   $h = $('.header'),
-  mh = $(window).height() - $h.height() - ($('.footer').is(':hidden') ? 0 : $('.footer').height()) - ($('html').hasClass('editmode') ? 40 : 0);
+  mh;
+
+ if (withShoppingCart == true || $('body').hasClass('edy-checkout-button-visible')) {
+   mh = $(window).height() - $h.height() - ($('.footer').is(':hidden') ? 0 : $('.footer').height()) - ($('html').hasClass('editmode') ? 40 : 0) - 41;  // 41 is the height of the checkout button.
+ } else {
+   mh = $(window).height() - $h.height() - ($('.footer').is(':hidden') ? 0 : $('.footer').height()) - ($('html').hasClass('editmode') ? 40 : 0);
+ }
 
 
 
@@ -10780,7 +10794,12 @@ var setLayout = function() {
 
   $('.header').css('position', ($('.header').height()>150 ? 'absolute' : 'fixed'));
 
-  $('.scroller-arrow').css('top', $('.header').height());
+   if (withShoppingCart == true || $('body').hasClass('edy-checkout-button-visible')) {
+     $('.scroller-arrow').css('top', $('.header').height() + 41); // 41 is the height of the checkout button.
+   } else {
+     $('.scroller-arrow').css('top', $('.header').height());
+   }
+
 };
 
 var checkMainmenuFitting = function() {

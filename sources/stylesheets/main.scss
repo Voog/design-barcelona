@@ -1759,6 +1759,10 @@ $flags:
     position: absolute;
     top: 14px;
 
+    .edy-checkout-button-visible & {
+      top: 14px + 41px; // 41 is the height of the checkout button.
+    }
+
     .lang-menu-btn {
       color: $fourth-color;
       white-space: nowrap;
@@ -1876,6 +1880,10 @@ $flags:
     &::after {
       @include rotate(-45deg);
     }
+
+    .edy-checkout-button-visible & {
+      top: 41px; // 41 is the height of the checkout button.
+    }
   }
 
   .search-container {
@@ -1891,6 +1899,10 @@ $flags:
       right: 0;
       top: $header-height;
       z-index: 1000;
+    }
+
+    .edy-checkout-button-visible & {
+      top: $header-height + 41; // 41 is the height of the checkout button.
     }
   }
 
@@ -1973,6 +1985,10 @@ $flags:
 
     .voog-search-loader {
       height: 100%;
+    }
+
+    .edy-checkout-button-visible & {
+      top: 2 * $header-height + 41; // 41 is the height of the checkout button.
     }
   }
 

@@ -9,6 +9,7 @@
 <body class="main-menu-not-fitting {% if site.search.enabled %} search-enabled{% endif %}">
 
   <div class="holder">
+
     {% include "header" %}
 
     <main class="main swipe" data-search-indexing-allowed="true">
