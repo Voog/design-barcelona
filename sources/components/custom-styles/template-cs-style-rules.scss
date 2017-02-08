@@ -343,13 +343,15 @@ main .content {
 }
 
 // FORMS
-.form_field_textfield,
-.form_field_textarea,
-.form_submit input,
-input[type=submit],
-input[type=text],
-textarea {
-  font-family: var(--font-main);
+.formatted {
+  .form_field_textfield,
+  .form_field_textarea,
+  .form_submit input,
+  input[type=submit],
+  input[type=text],
+  textarea {
+    font-family: var(--font-main);
+  }
 }
 
 // scss-lint:disable SelectorFormat, ImportantRule

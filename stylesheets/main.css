@@ -55,9 +55,9 @@ table th {
   padding: 0;
 }
 
-input[type=submit],
-input[type=text],
-textarea {
+.formatted input[type=submit],
+.formatted input[type=text],
+.formatted textarea {
   -webkit-appearance: none;
   border-radius: 0;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;

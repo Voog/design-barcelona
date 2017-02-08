@@ -276,12 +276,12 @@ main .content table th {
   border-color: var(--content-color);
 }
 
-.form_field_textfield,
-.form_field_textarea,
-.form_submit input,
-input[type=submit],
-input[type=text],
-textarea {
+.formatted .form_field_textfield,
+.formatted .form_field_textarea,
+.formatted .form_submit input,
+.formatted input[type=submit],
+.formatted input[type=text],
+.formatted textarea {
   font-family: var(--font-main);
 }
 

@@ -19,12 +19,14 @@
 
 // inputs
 // scss-lint:disable QualifyingElement
-input[type=submit],
-input[type=text],
-textarea {
-  -webkit-appearance: none;
-  border-radius: 0;
-  font-family: $font-main;
+.formatted {
+  input[type=submit],
+  input[type=text],
+  textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: $font-main;
+  }
 }
 
 // form
