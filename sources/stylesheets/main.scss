@@ -663,6 +663,15 @@ body {
     }
   }
 
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover:not(.post-nav-link) {
+      @include color($second-color);
+    }
+  }
+
   pre,
   code,
   iframe,
@@ -684,15 +693,6 @@ body {
 
   li {
     padding-left: 3px;
-  }
-
-  a {
-    color: $link-color;
-    text-decoration: none;
-
-    &:hover:not(.post-nav-link) {
-      @include color($second-color);
-    }
   }
 
   pre,

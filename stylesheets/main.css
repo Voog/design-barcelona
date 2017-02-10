@@ -1161,6 +1161,13 @@ body {
 .formatted .custom-btn:last-child {
   margin-bottom: 0;
 }
+.formatted a {
+  color: #818181;
+  text-decoration: none;
+}
+.formatted a:hover:not(.post-nav-link) {
+  color: black;
+}
 .formatted pre,
 .formatted code,
 .formatted iframe,
@@ -1182,13 +1189,6 @@ body {
 }
 .formatted li {
   padding-left: 3px;
-}
-.formatted a {
-  color: #818181;
-  text-decoration: none;
-}
-.formatted a:hover:not(.post-nav-link) {
-  color: black;
 }
 .formatted pre,
 .formatted .embed-container,
