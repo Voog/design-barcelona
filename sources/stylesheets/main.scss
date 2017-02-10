@@ -240,16 +240,6 @@ body {
   text-size-adjust: none;
 }
 
-// link
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  &:hover:not(.post-nav-link) {
-    @include color($second-color);
-  }
-}
-
 // holder
 .holder {
   height: 100%;
@@ -694,6 +684,15 @@ a {
 
   li {
     padding-left: 3px;
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover:not(.post-nav-link) {
+      @include color($second-color);
+    }
   }
 
   pre,

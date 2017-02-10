@@ -748,14 +748,6 @@ body {
           text-size-adjust: none;
 }
 
-a {
-  color: #818181;
-  text-decoration: none;
-}
-a:hover:not(.post-nav-link) {
-  color: black;
-}
-
 .holder {
   height: 100%;
 }
@@ -1190,6 +1182,13 @@ a:hover:not(.post-nav-link) {
 }
 .formatted li {
   padding-left: 3px;
+}
+.formatted a {
+  color: #818181;
+  text-decoration: none;
+}
+.formatted a:hover:not(.post-nav-link) {
+  color: black;
 }
 .formatted pre,
 .formatted .embed-container,
