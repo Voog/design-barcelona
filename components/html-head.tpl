@@ -25,20 +25,19 @@
 {% customstyle %}
   {% include "template-cs-main-styles" %}
   {% include "template-cs-header" %}
+  {% if front_page %}
+    {% include "template-cs-focus-area" %}
+  {% endif %}
   {% if blog_listing_page %}
     {% include "template-cs-blog-list" %}
   {% endif %}
-  {% if content_page %}
-    {% include "template-cs-content" %}
-  {% endif %}
+  {% include "template-cs-content" %}
   {% include "template-cs-footer" %}
   {% include "template-cs-headings" %}
   {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
   {% include "template-cs-style-rules" %}
-  {% comment %}
-  {% endcomment %}
 {% endcustomstyle %}
 
 {% comment %}MODERNIZR - HTML5 SUPPORT FOR OLDER BROWSERS, SVG SUPPORT DETECTION ETC{% endcomment %}
