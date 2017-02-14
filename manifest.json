@@ -15,9 +15,9 @@
     {
       "content_type": "page",
       "component": false,
-      "file": "layouts/focus_page.tpl",
+      "file": "layouts/feature_page.tpl",
       "layout_name": "page_default",
-      "title": "Focus page"
+      "title": "Feature page"
     },
     {
       "content_type": "page",
