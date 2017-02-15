@@ -35,9 +35,7 @@
      "featured": true,
      "boundVariables": [
         "--content-color",
-        "--form-field-text-color",
-        "--footer-text-color",
-        "--footer-color"
+        "--footer-text-color"
      ]
   */
   --main-color: #333;
@@ -63,7 +61,7 @@
      "featured": true,
      "boundVariables": [
       "--blog-list-headings-color",
-      "--form-field-background-color",
+      "--focus-area-color",
       "--header-background-color",
       "--footer-background-color"
     ]

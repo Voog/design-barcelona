@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
-<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
+<html class="content-page {% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% assign content_page = true %}
   {% include "edicy-tools-variables" %}
-  {% include "html-head" content_page: true %}
+  {% include "html-head" common_page: true %}
 </head>
 <body class="main-menu-not-fitting{% if site.search.enabled %} search-enabled{% endif %}">
 
@@ -18,7 +17,7 @@
           <div class="wrap">
 
             <div class="content formatted cfx">
-              <div class="content-header" {{ edy_intro_edit_text }}>{% contentblock name="content_header" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
+              <div class="content-header">{% contentblock name="content_header" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
               {% include "submenu" %}
               <div class="content-body" {{ edy_intro_edit_text }}>{% content %}</div>
             </div>

@@ -1,5 +1,3 @@
-{% comment %}FACEBOOK OPEN GRAPH META TAGS{% endcomment%}
-{% comment %}https://developers.facebook.com/tools/debug - Debug after each modification{% endcomment %}
 {% if site.data.fb_admin %}<meta property="fb:admins" content="{{ site.data.fb_admin }}">{% endif %}
 <meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ site.url }}{% if article %}{{ article.url | remove_first:'/' }}{% else %}{{ page.url | remove_first:'/' }}{% endif %}">
@@ -7,24 +5,20 @@
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
-{% if front_page %}
-  {% if page.image != nil %}
-    {% assign og_image = page.image.for-width-1200 %}
-  {% else %}
-    {% for article in site.latest_articles %}
-      {% if article.data.background.image and article.data.background.image != '' %}
-        {% assign og_image = article.data.background %}
+{% if page.image == nil and front_page %}
+  {% if content_left_bg_image_sizes != nil and content_left_bg_image_sizes != '' %}
+    {% for size in content_left_bg_image_sizes reversed %}
+      {% if size.width <= 1280 %}
+        {% assign og_image = size %}
+      {% else %}
         {% break %}
       {% endif %}
     {% endfor %}
-  {% endif %}
-{% elsif blog_page %}
-  {% if page.image != nil %}
-    {% assign og_image = page.image.for-width-1200 %}
-  {% else %}
-    {% for article in articles %}
-      {% if article.data.background.image %}
-        {% assign og_image = article.data.background %}
+  {% elsif content_right_bg_image_sizes != nil and content_right_bg_image_sizes != '' %}
+    {% for size in content_right_bg_image_sizes reversed %}
+      {% if size.width <= 1280 %}
+        {% assign og_image = size %}
+      {% else %}
         {% break %}
       {% endif %}
     {% endfor %}
@@ -40,18 +34,11 @@
 {% endif %}
 
 {% if og_image %}
-  {% if og_image.image %}
-    {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
-    <meta property="og:image" content="{{ og_image.image | replace_first: "http:", "" | replace_first: "https:", "" | prepend: "https:" }}">
-    {% if og_image.imagesizes[2].width %}<meta property="og:image:width" content="{{ og_image.imagesizes[2].width }}">{% endif %}
-    {% if og_image.imagesizes[2].height %}<meta property="og:image:height" content="{{ og_image.imagesizes[2].height }}">{% endif %}
-  {% elsif og_image.url %}
-    {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
-    {% if og_image.url %}<meta property="og:image" content="{{ og_image.url | replace_first: "http:", "" | replace_first: "https:", "" | prepend: "https:" }}">{% endif %}
-    {% if og_image.content_type %}<meta property="og:image:type" content="{{ og_image.content_type }}">{% endif %}
-    {% if og_image.width %}<meta property="og:image:width" content="{{ og_image.width }}">{% endif %}
-    {% if og_image.height %}<meta property="og:image:height" content="{{ og_image.height }}">{% endif %}
-  {% endif %}
+  {% comment %}"http:" and "https:" strings are removed and readded to ensure that older bg-picker images will have protocol.{% endcomment %}
+  {% if og_image.url %}<meta property="og:image" content="{{ og_image.url | replace_first: "http:", "" | replace_first: "https:", "" | prepend: "https:" }}">{% endif %}
+  {% if og_image.content_type %}<meta property="og:image:type" content="{{ og_image.content_type }}">{% endif %}
+  {% if og_image.width %}<meta property="og:image:width" content="{{ og_image.width }}">{% endif %}
+  {% if og_image.height %}<meta property="og:image:height" content="{{ og_image.height }}">{% endif %}
 {% endif %}
 
 {% comment %}Open Graph description{% endcomment %}

@@ -6,15 +6,13 @@
 
             <div class="tbl">
               <div class="tbl-row">
-                <div class="tbl-cell">
+                <div class="tbl-cell lang-menu-wrap">
                   {% include "langmenu" %}
                 </div>
                 <div class="tbl-cell">
-                  
-                  <div class="formatted">
-                    {% xcontent name="footer" %}
-                  </div>
-                  
+
+                  <div class="formatted">{% xcontent name="footer" %}</div>
+
                   <div class="voog-reference">
                     {% loginblock %}
                       <div class="no-svg">{{ "footer_login_link" | lc }}</div>
@@ -26,7 +24,7 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>

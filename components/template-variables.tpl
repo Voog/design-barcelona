@@ -1,4 +1,10 @@
 {% capture dont_render %}
+  {% if site.visible_menuitems == blank and site.root_item.hidden? %}
+    {% assign show_menu_btn = false %}
+  {% else %}
+    {% assign show_menu_btn = true %}
+  {% endif %}
+
   {% comment %}
   ===================================================================
   || Design editor variables.
@@ -103,7 +109,7 @@
   ]
   {% endcapture %}
 
-  {% capture base_alignment_set %}
+  {% capture base_alignment_horizontal_set %}
     [
       {
         "titleI18n": "left",
@@ -116,6 +122,23 @@
       {
         "titleI18n": "right",
         "value": "right"
+      }
+    ]
+  {% endcapture %}
+
+  {% capture base_alignment_vertical_set %}
+    [
+      {
+        "titleI18n": "top",
+        "value": "top"
+      },
+      {
+        "titleI18n": "middle",
+        "value": "middle"
+      },
+      {
+        "titleI18n": "bottom",
+        "value": "bottom"
       }
     ]
   {% endcapture %}

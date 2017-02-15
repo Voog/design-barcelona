@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
-<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
+<html class="content-page {% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% assign content_page = true %}
   {% include "edicy-tools-variables" %}
-  {% include "html-head" content_page: true %}
+  {% include "html-head" %}
 </head>
 <body class="main-menu-not-fitting{% if site.search.enabled %} search-enabled{% endif %}">
 
@@ -78,18 +77,17 @@
 
   {% include "langmenu-mobile" %}
   {% include "javascripts" %}
-  {% include "edicy-tools" with 'article' %}
+  {% include "edicy-tools" %}
 
   <script>
-  $(function() {
+    $(function() {
+      var langCode ='{% if page.language_code == 'zh'%}zh-cn{% else %}{{ page.language_code }}{% endif %}';
 
-    var langCode ='{% if page.language_code == 'zh'%}zh-cn{% else %}{{ page.language_code }}{% endif %}';
-
-    $('.comment-created').each(function() {
-      var $el = $(this);
-      $el.text(moment($el.data('date'), "YYYY-MM-DD HH:mm:ss Z").locale(langCode).fromNow())
+      $('.comment-created').each(function() {
+        var $el = $(this);
+        $el.text(moment($el.data('date'), "YYYY-MM-DD HH:mm:ss Z").locale(langCode).fromNow())
+      });
     });
-  });
   </script>
 </body>
 </html>
