@@ -33,7 +33,9 @@
         {% if editmode %}
           {% for item in site.menuitems_with_hidden %}
             {% if item.blog? %}
-              <div class="new-article{% if article_boxes_count < 7 %} article-total-{{ article_boxes_count }}{% endif %}" data-href="{{ item.url }}?new">
+              <div class="new-article-button-wrapper js-new-article-btn-wrapper">{% addbutton %}</div>
+
+              <div class="new-article{% if article_boxes_count < 7 %} article-total-{{ article_boxes_count }}{% endif %}">
                 <div class="tbl">
                   <div class="tbl-row">
                     <div class="tbl-cell">

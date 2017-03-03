@@ -950,6 +950,10 @@ $header-inner-height: 28px;
   }
 
   .blog-list-page.editmode & {
+    .new-article-button-wrapper {
+      display: none;
+    }
+
     .article,
     .new-article {
       &.article-total-6 {
@@ -1205,6 +1209,10 @@ $header-inner-height: 28px;
   .formatted {
     @include hyphenate(true);
 
+    &:empty {
+      display: none;
+    }
+
     h1,
     h2,
     h3,
@@ -1214,8 +1222,21 @@ $header-inner-height: 28px;
     p,
     ul,
     ol,
+    dl,
+    table,
     pre,
-    code {
+    code,
+    iframe,
+    table,
+    form,
+    .table-container,
+    .edy-positionable-container-left-block,
+    .edy-positionable-container-center-block,
+    .edy-positionable-container-right-block,
+    .edy-texteditor-container-wrapper-left-block,
+    .edy-texteditor-container-wrapper-center,
+    .edy-texteditor-container-wrapper-right-block,
+    .edy-positionable-container-maxwidth {
       &:first-child {
         margin-top: 0;
       }
