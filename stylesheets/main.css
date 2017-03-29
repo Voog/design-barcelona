@@ -1,16 +1,4 @@
 /* Voog.com template: Barcelona */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../assets/montserrat-regular.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-regular.woff2") format("woff2"), url("../assets/montserrat-regular.woff") format("woff"), url("../assets/montserrat-regular.ttf") format("truetype"), url("../assets/montserrat-regular.svg#Montserrat") format("svg");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/montserrat-bold.eot?#iefix") format("embedded-opentype"), url("../assets/montserrat-bold.woff2") format("woff2"), url("../assets/montserrat-bold.woff") format("woff"), url("../assets/montserrat-bold.ttf") format("truetype"), url("../assets/montserrat-bold.svg#Montserrat") format("svg");
-}
 .formatted .edy-buy-button-variations {
   margin-bottom: 12px;
 }
@@ -227,7 +215,7 @@ body, .lang-menu-btn {
   cursor: pointer;
   border: none;
   background: none;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 .search .search-submit:focus, .lang-menu-btn:focus, .lang-options .option-btn:focus, .voog-bg-picker-btn:focus {
   outline: none;
@@ -256,12 +244,12 @@ ol {
 .formatted textarea {
   border-radius: 0;
   -webkit-appearance: none;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 /* paragraphs */
 h1, h2, h3 {
-  font: bold 40px/1.1 "Montserrat", Helvetica, Arial, sans-serif;
+  font: bold 40px/1.1 Montserrat, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -283,7 +271,7 @@ h2 {
 
 h3 {
   margin: 40px 0 20px;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
@@ -347,7 +335,7 @@ blockquote {
 .custom-btn {
   display: inline-block;
   padding: 12px;
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  font: 18px/1.45 Montserrat, sans-serif;
   color: white;
   background: #2b2b2b;
 }
@@ -373,7 +361,7 @@ blockquote {
 /* select */
 .jq-select {
   position: relative;
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  font: 18px/1.45 Montserrat, sans-serif;
   cursor: pointer;
   color: #333;
   background: white;
@@ -388,7 +376,7 @@ blockquote {
   height: 100%;
   margin: 0;
   padding: 0;
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  font: 18px/1.45 Montserrat, sans-serif;
   cursor: pointer;
   opacity: 0;
   color: #333;
@@ -461,7 +449,7 @@ blockquote {
 .form_field_textarea {
   width: 30%;
   padding: 4px 10px;
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  font: 18px/1.45 Montserrat, sans-serif;
   color: #333;
   border: none;
   outline: none;
@@ -524,7 +512,7 @@ blockquote {
 .form_submit input,
 .submit {
   height: 45px;
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  font: 18px/1.45 Montserrat, sans-serif;
   cursor: pointer;
   border: 0;
   outline: 0;
@@ -627,7 +615,7 @@ table th {
 /* body */
 html,
 body {
-  font: 18px/1.45 "Montserrat", Helvetica, Arial, sans-serif;
+  font: 18px/1.45 Montserrat, sans-serif;
 }
 
 html.front-page,

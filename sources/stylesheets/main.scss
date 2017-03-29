@@ -5,10 +5,6 @@
 @import 'mixins';
 @import 'modules/variables';
 
-// FONTS
-@include font-face('Montserrat', '../assets/montserrat-regular', 400);
-@include font-face('Montserrat', '../assets/montserrat-bold', 700);
-
 // CONTENT AREAS
 @import 'content/tables';
 @import 'content/forms';
