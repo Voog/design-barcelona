@@ -3,6 +3,15 @@
 // =============================================================================
 .formatted {
   .edy-buy-button-variants {
-    margin-bottom: 12px;
+    // sass-lint:disable class-name-format
+    .form_field {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    .form_field_select {
+      width: initial;
+    }
+    // sass-lint:enable class-name-format
   }
 }
