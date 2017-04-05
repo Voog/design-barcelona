@@ -1,4 +1,7 @@
 /* Voog.com template: Barcelona */
+.formatted .edy-buy-button-container .form_field {
+  padding-top: 12px;
+}
 .formatted .edy-buy-button-variants .form_field {
   padding-top: 6px;
   padding-bottom: 6px;
