@@ -20,7 +20,7 @@
         // String for feedback if no results are found.
         noResults: noResultsString
       });
-    } 
+    }
   };
 
   // Returns the suitable version of the image depending on the viewport width.
