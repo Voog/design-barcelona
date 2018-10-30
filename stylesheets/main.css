@@ -1598,7 +1598,7 @@ body {
 .post-bottom {
   padding: 20px 0 0;
 }
-.post-bottom.hide-article-comment {
+.post-bottom.hide-article-comments {
   display: none;
 }
 .post-bottom .left, .post-bottom .right {
