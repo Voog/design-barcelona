@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
+{% include "blog-settings-variables" %}
 <html class="content-page {% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "edicy-tools-variables" %}
@@ -26,7 +27,12 @@
                   {% assign article_date_format = "long" %}
                 {% endif %}
 
-                <h1>{% editable article.title %}<time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time></h1>
+                <h1>{% editable article.title %}
+                  <time class="post-date {{toggle_article_date}}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  {% if editmode %}
+                    {% include "article-settings-editor" %}
+                  {% endif %}
+                </h1>
               </header>
               <section class="post-content">
                 <div class="post-excerpt cfx formatted" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
@@ -72,7 +78,7 @@
                 </div>
               {% endif %}
 
-              <section class="post-bottom formatted cfx">
+              <section class="post-bottom formatted cfx {{toggle_article_comment}}">
                 {% include "comment-form" %}
                 {% include "comments" %}
               </section>

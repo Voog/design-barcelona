@@ -5,6 +5,7 @@
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_page = true %}
   {% include "edicy-tools-variables" %}
+  {% include "blog-settings-variables" %}
   {% include "html-head" blog_listing_page: true %}
 </head>
 <body class="main-menu-not-fitting {% if site.search.enabled %} search-enabled{% endif %}">
@@ -15,6 +16,9 @@
     <main class="main swipe" data-search-indexing-allowed="true">
       <a href="#" class="scroller-arrow "><span class="animated-bounce"></span></a>
       <div class="main-inner">
+        {% if editmode %}
+          {% include "blog-settings-editor" %}
+        {% endif %}
         {% assign article_boxes_count = 0 %}
 
         {% for article in articles %}
@@ -97,7 +101,7 @@
                     {% assign article_date_format = "long" %}
                   {% endif %}
 
-                  <time class="article-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  <time class="article-date {{toggle_article_date}}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
                 </div>
               </div>
             </div>
