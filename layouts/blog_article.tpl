@@ -28,7 +28,7 @@
                 {% endif %}
 
                 <h1>{% editable article.title %}
-                  <time class="post-date {{toggle_article_date}}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
                   {% if editmode %}
                     {% include "article-settings-editor" %}
                   {% endif %}
@@ -78,7 +78,7 @@
                 </div>
               {% endif %}
 
-              <section class="post-bottom formatted cfx {{toggle_article_comment}}">
+              <section class="post-bottom formatted cfx{% if show_article_comments == false %} hide-article-comments{% endif %}">
                 {% include "comment-form" %}
                 {% include "comments" %}
               </section>
