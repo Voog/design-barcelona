@@ -1415,6 +1415,10 @@ $header-inner-height: 28px;
   .post-header {
     @include hyphenate(true);
 
+    &.hide-article-date {
+      padding-bottom: 20px;
+    }
+
     .post-date {
       display: block;
       font-weight: normal;
@@ -1424,6 +1428,9 @@ $header-inner-height: 28px;
 
       &.hide-article-date {
         display: none;
+        &:before {
+          padding-bottom: 20px;
+        }
       }
     }
   }
@@ -2735,4 +2742,10 @@ $header-inner-height: 28px;
 .article-settings-wrap {
   line-height: 0px;
   padding-bottom: 16px;
+}
+
+.hide-article-date {
+  .article-settings-wrap {
+    padding-top: 16px;
+  }
 }

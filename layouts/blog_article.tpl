@@ -18,7 +18,7 @@
           <div class="wrap">
             <div class="content formatted cfx">
 
-              <header class="post-header ">
+              <header class="post-header{% if show_article_date == false %} hide-article-date{% endif %}">
 
                 {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
                 {% if article_year == current_year %}

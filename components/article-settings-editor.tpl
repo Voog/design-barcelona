@@ -87,11 +87,16 @@
 
       preview: function(data) {
        var $articleDate = $('.post-date'),
+        $articleHeader = $('.post-header'),
         $articleComment =$('.post-bottom');
         if (data.show_date == true) {
           $articleDate.removeClass('hide-article-date');
           $articleDate.addClass('show-article-date');
+          $articleHeader.removeClass('hide-article-date');
+          $articleHeader.addClass('show-article-date');
         } else if (data.show_date == false) {
+          $articleHeader.removeClass('show-article-date');
+          $articleHeader.addClass('hide-article-date');
           $articleDate.removeClass('show-article-date');
           $articleDate.addClass('hide-article-date');
         }

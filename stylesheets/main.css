@@ -1560,6 +1560,9 @@ body {
   -ms-hyphens: auto;
   hyphens: auto;
 }
+.post-header.hide-article-date {
+  padding-bottom: 20px;
+}
 .post-header .post-date {
   display: block;
   font-weight: normal;
@@ -1569,6 +1572,9 @@ body {
 }
 .post-header .post-date.hide-article-date {
   display: none;
+}
+.post-header .post-date.hide-article-date:before {
+  padding-bottom: 20px;
 }
 
 .post-body {
@@ -2886,4 +2892,8 @@ body {
 .article-settings-wrap {
   line-height: 0px;
   padding-bottom: 16px;
+}
+
+.hide-article-date .article-settings-wrap {
+  padding-top: 16px;
 }
