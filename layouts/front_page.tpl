@@ -108,7 +108,7 @@
                     {% assign article_date_format = "long" %}
                   {% endif %}
 
-                  <time class="article-date{% if article_data_show_date_defined == false %} site-data{% endif %}{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  <time class="article-date{% if article_data_show_date_defined != true %} site-data{% endif %}{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
               </div>
               </div>
             </div>
