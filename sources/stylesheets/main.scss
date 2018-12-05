@@ -1114,6 +1114,10 @@ $header-inner-height: 28px;
           right: 30px;
           bottom: 50px;
           z-index: 10;
+
+          .hide-article-date {
+            display: none;
+          }
         }
 
         img {
@@ -1411,12 +1415,23 @@ $header-inner-height: 28px;
   .post-header {
     @include hyphenate(true);
 
+    &.hide-article-date {
+      padding-bottom: 20px;
+    }
+
     .post-date {
       display: block;
       font-weight: normal;
       font-size: 18px;
       color: $third-color;
       padding-top: 10px;
+
+      &.hide-article-date {
+        display: none;
+        &:before {
+          padding-bottom: 20px;
+        }
+      }
     }
   }
 
@@ -1445,6 +1460,11 @@ $header-inner-height: 28px;
 
   .post-bottom {
     padding: 20px 0 0;
+
+    &.hide-article-comments {
+      display: none;
+    }
+
 
     .left, .right {
       width: 50%;
@@ -2712,5 +2732,22 @@ $header-inner-height: 28px;
   .form_field_select,
   .form_field .jq-select {
     width: 100% !important;
+  }
+}
+
+.blog-settings-wrap {
+  position: absolute;
+  margin: 16px 0 0 10px;
+  z-index: 50;
+}
+
+.article-settings-wrap {
+  line-height: 0px;
+  padding-bottom: 16px;
+}
+
+.hide-article-date {
+  .article-settings-wrap {
+    padding-top: 16px;
   }
 }

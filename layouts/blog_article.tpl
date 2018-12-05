@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% include "template-variables" %}
 {% include "blog-article-variables" %}
+{% include "blog-settings-variables" %}
 <html class="content-page {% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "edicy-tools-variables" %}
@@ -17,7 +18,7 @@
           <div class="wrap">
             <div class="content formatted cfx">
 
-              <header class="post-header ">
+              <header class="post-header{% if show_article_date == false %} hide-article-date{% endif %}">
 
                 {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
                 {% if article_year == current_year %}
@@ -26,7 +27,12 @@
                   {% assign article_date_format = "long" %}
                 {% endif %}
 
-                <h1>{% editable article.title %}<time class="post-date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time></h1>
+                <h1>{% editable article.title %}
+                  <time class="post-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  {% if editmode %}
+                    {% include "article-settings-editor" %}
+                  {% endif %}
+                </h1>
               </header>
               <section class="post-content">
                 <div class="post-excerpt cfx formatted" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
@@ -72,7 +78,7 @@
                 </div>
               {% endif %}
 
-              <section class="post-bottom formatted cfx">
+              <section class="post-bottom formatted cfx{% if show_article_comments == false %} hide-article-comments{% endif %}">
                 {% include "comment-form" %}
                 {% include "comments" %}
               </section>
