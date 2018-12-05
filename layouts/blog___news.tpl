@@ -5,7 +5,6 @@
 <head prefix="og: http://ogp.me/ns#">
   {% assign blog_page = true %}
   {% include "edicy-tools-variables" %}
-  {% include "blog-settings-variables" %}
   {% include "html-head" blog_listing_page: true %}
 </head>
 <body class="main-menu-not-fitting {% if site.search.enabled %} search-enabled{% endif %}">
@@ -22,6 +21,7 @@
         {% assign article_boxes_count = 0 %}
 
         {% for article in articles %}
+        {% include "blog-settings-variables" %}
           {% capture dont_render %}
             {% if forloop.first %}
               {% if editmode %}
@@ -60,6 +60,7 @@
         {% endif %}
 
         {% for article in articles %}
+        {% include "blog-settings-variables" %}
           {% capture dont_render %}
             {% if forloop.first %}
               {% if editmode %}
@@ -101,7 +102,7 @@
                     {% assign article_date_format = "long" %}
                   {% endif %}
 
-                  <time class="article-date{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
+                  <time class="article-date{% if article_data_show_date_defined == false %} site-data{% endif %}{% if show_article_date == false %} hide-article-date{% endif %}" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
                 </div>
               </div>
             </div>
