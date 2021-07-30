@@ -27,18 +27,18 @@ module.exports = function(grunt) {
 
     // Concatenates the javascript source files to the javascripts folder.
     concat: {
-      build: {
-        src: [
-          'sources/javascripts/concat/global/*.js'
-        ],
-        dest: 'javascripts/application.js'
+      global: {
+       src: [
+         'sources/javascripts/concat/global/*.js'
+       ],
+       dest: 'javascripts/application.js'
       },
       editmode: {
-        src: [
-          'sources/javascripts/concat/editmode/*.js'
-        ],
-        dest: 'javascripts/editmode.js'
-       },
+       src: [
+         'sources/javascripts/concat/editmode/*.js'
+       ],
+       dest: 'javascripts/editmode.js'
+      },
     },
 
     // Minifies the javascript files.
@@ -235,7 +235,7 @@ module.exports = function(grunt) {
 
       js_concat: {
         files: 'sources/javascripts/concat/**/*.js',
-        tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
+        tasks: ['concat', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
       css_main: {
