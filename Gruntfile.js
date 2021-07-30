@@ -29,10 +29,16 @@ module.exports = function(grunt) {
     concat: {
       build: {
         src: [
-          'sources/javascripts/concat/*.js'
+          'sources/javascripts/concat/global/*.js'
         ],
         dest: 'javascripts/application.js'
-      }
+      },
+      editmode: {
+        src: [
+          'sources/javascripts/concat/editmode/*.js'
+        ],
+        dest: 'javascripts/editmode.js'
+       },
     },
 
     // Minifies the javascript files.
@@ -228,7 +234,7 @@ module.exports = function(grunt) {
       },
 
       js_concat: {
-        files: 'sources/javascripts/concat/*.js',
+        files: 'sources/javascripts/concat/**/*.js',
         tasks: ['concat:build', 'uglify:build', 'exec:kitmanifest', 'exec:kit:javascripts/*.js']
       },
 
