@@ -144,7 +144,7 @@
 
 .search-results {
   @include bg($white, .95);
-  @include box-shadow(0, 0, 40px, rgba($color-black, .1));
+  @include box-shadow(0, 0, 40px, rgba($black, .1));
   @include hyphenate(true);
   box-sizing: border-box;
   display: none;

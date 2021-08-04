@@ -1431,6 +1431,88 @@ var growTextarea=function(){sendContentToMirror(this)};var mirror=createMirror(t
       return this;
     });
   };
+
+  // ===========================================================================
+  // Load product cover images only when they are close or appearing in the
+  // viewport.
+  // ===========================================================================
+  var callback_loaded = function (element) {
+    var $contentItemBox = $(element).closest('.js-content-item-box');
+    $contentItemBox.removeClass('not-loaded with-error').addClass('is-loaded');
+  };
+
+  var bindContentItemImageLazyload = new LazyLoad({
+    threshold: 500,
+    elements_selector: ".js-lazyload",
+    callback_loaded: callback_loaded
+  });
+
+  $('.js-cart-btn').click(function() {
+    if ($(this).data('product-id')) {
+      Voog.ShoppingCart.addProductById($(this).data('product-id'))
+    }
+  });
+
+  var bindSideClicks = function () {
+    $('.container').on('mousedown', function (event) {
+      if (!$(event.target).closest('.js-prevent-sideclick').length) {
+        $('.js-image-settings-popover').toggleClass('active');
+      };
+    });
+  };
+
+  var handleWindowScroll = function() {
+    window.addEventListener('scroll', function(e) {
+      var wrapperHeight = $('.header_fixed').height();
+      $('.t-sticky').css('top', $('.header_fixed').outerHeight() + 32);
+
+      if (window.scrollY > wrapperHeight) {
+        $('.header_fixed:not(.relative)').addClass('scroll');
+        $('body').addClass('scroll');
+      } else {
+        $('.header_fixed').removeClass('scroll');
+        $('body').removeClass('scroll');
+      }
+    });
+  };
+
+  var handleProductPageContent = function() {
+    $(document).ready(function() {
+      changeProductImagePos();
+    });
+
+    $(window).resize(debounce(function() {
+      changeProductImagePos();
+    }, 25));
+
+    var changeProductImagePos = function() {
+      var paroductImage = $('.js-product-page-image');
+      var paroductImageWrap = $('.js-product-page-image-wrap');
+      var buyBtnContent = $('.js-buy-btn-content');
+
+      if ($('.js-buy-btn-content .edy-buy-button-container').length >= 1) {
+        if ($( window ).width() <= 752) {
+          if ($('.js-buy-btn-content .js-product-page-image').length <= 0) {
+            buyBtnContent.prepend(paroductImage);
+          }
+        } else {
+          if ($('.js-product-page-image-wrap .js-product-page-image').length <= 0) {
+            paroductImageWrap.prepend(paroductImage);
+          }
+        }
+      }
+    }
+  }
+
+  var init = function() {
+    handleWindowScroll();
+  };
+
+  window.site = $.extend(window.site || {}, {
+    handleProductPageContent: handleProductPageContent
+  });
+
+  init();
 })(jQuery);
 
 //! moment.js
