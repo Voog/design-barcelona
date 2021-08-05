@@ -101,7 +101,7 @@
   font-family: $font-primary;
   font-size: 14px;
   line-height: 24px;
-  transition: $bezier-default;
+  transition: all .3s $bezier-default;
   display: flex;
   background-color: #fff;
   border: 1px solid #efefef;
@@ -115,8 +115,8 @@
   label {
     pointer-events: none;
     position: absolute;
-    top: 16px;
-    left: 9px;
+    top: 20px;
+    left: 18px;
     font-size: 14px;
     font-weight: inherit;
     white-space: nowrap;
@@ -124,7 +124,7 @@
     background-color: transparent;
     line-height: 16px;
     color: #8d9091;
-    transition: $bezier-default;
+    transition: all .3s $bezier-default;
   }
 
   input::-webkit-input-placeholder {
