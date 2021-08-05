@@ -31,6 +31,7 @@
   {% if blog_listing_page %}
     {% include "template-cs-blog-list" %}
   {% endif %}
+  {% include "template-cs-product-list" %}
   {% include "template-cs-content" %}
   {% include "template-cs-footer" %}
   {% include "template-cs-headings" %}
@@ -49,7 +50,11 @@
 {% include "template-meta" %}
 
 {% comment %}BREADCRUMBS{% endcomment %}
-{% sd_breadcrumbs %}
+{%- capture breadcrumbsScript -%}
+  {%- sd_breadcrumbs -%}
+{%- endcapture -%}
+
+{{ breadcrumbsScript }}
 
 {% if blog %}{{ blog.rss_link }}{% endif %}
 {{ site.stats_header }}
