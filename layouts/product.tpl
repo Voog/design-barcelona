@@ -10,7 +10,7 @@
     <div class="holder">
       {% include "header" %}
 
-      <main class="main" data-search-indexing-allowed="true">
+      <main class="main">
         <div class="main-inner">
           <div class="content-wrap">
             {% include "submenu" %}

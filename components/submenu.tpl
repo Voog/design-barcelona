@@ -4,7 +4,7 @@
       {% if editmode or item.children? %}
         <ul>
           {% for level1 in item.visible_children %}
-            {% if level1.layout_title != 'Product' and level1.layout_title != "Product list" %}
+            {% if level1.layout_title != product_layout and level1.layout_title != product_list_layout %}
               <li><a  href="{{level1.url}}"{% if level1.selected? %} class="active"{% endif %}{% unless level1.translated? %} class="untranslated fci-editor-menuadd"{% endunless %}>{{level1.title}}</a></li>
             {% endif %}
           {% endfor %}
@@ -23,10 +23,10 @@
       {% assign page_lvl = i | plus: 1 %}
       {% if item.selected? and page.level == page_lvl %}
         {% if editmode or item.children? %}
-          {% if item.layout_title == 'Product' or item.layout_title == 'Product list' %}
+          {% if item.layout_title == product_layout or item.layout_title == product_list_layout %}
             <ul>
               {% for child in item.visible_children %}
-                {% if child.layout_title != 'Product' and child.layout_title != "Product list" %}
+                {% if child.layout_title != product_layout and child.layout_title != product_list_layout %}
                   <li><a href="{{child.url}}"{% if child.selected? %} class="active"{% endif %}{% unless child.translated? %} class="untranslated fci-editor-menuadd"{% endunless %}>{{child.title}}</a></li>
                 {% endif %}
               {% endfor %}

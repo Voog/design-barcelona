@@ -10,14 +10,18 @@
     <div class="holder">
       {% include "header" %}
 
-      <main class="main" data-search-indexing-allowed="true">
+      <main class="main">
         <div class="main-inner">
           <div class="content-wrap">
             {% include "submenu" %}
             <div class="wrap">
 
               <div class="content formatted cfx">
-                <div class="content-header">{% contentblock name="content_header" publish_default_content="true" %}<h1>{{ page.title }}</h1>{% endcontentblock %}</div>
+                <div class="content-header" data-search-indexing-allowed="true">
+                  {% contentblock name="content_header" publish_default_content="true" %}
+                    <h1>{{ page.title }}</h1>
+                  {% endcontentblock %}
+                </div>
                   {% include 'menu-breadcrumbs' %}
                   {% include 'product-list-block' %}
                   <div class="product-list-content" data-search-indexing-allowed="true">
