@@ -32,6 +32,7 @@
     {% include "template-cs-blog-list" %}
   {% endif %}
   {% include "template-cs-product-list" %}
+  {% include "template-cs-product" %}
   {% include "template-cs-content" %}
   {% include "template-cs-footer" %}
   {% include "template-cs-headings" %}

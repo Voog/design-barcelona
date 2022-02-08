@@ -22,8 +22,12 @@
 @import 'components/navigation-menus';
 
 @import 'layouts/product-list';
+@import 'layouts/auto-generated-product';
 
 @import 'utils/flex';
 @import 'utils/margins';
 @import 'utils/paddings';
 @import 'utils/utils';
+
+// Browser hacks
+@import 'browser-hacks';
