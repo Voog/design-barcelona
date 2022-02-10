@@ -3781,6 +3781,10 @@ body {
   margin-bottom: 12px;
 }
 
+.editmode .item-page .product-content .product-image {
+  cursor: pointer;
+}
+
 .item-page .product-content .without-image .item-top {
   background-image: url("../assets/ico-placeholder.svg");
   background-size: 40px;
@@ -3967,6 +3971,10 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 32px;
+}
+
+.product-page .t-sticky {
+  top: 104px;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
