@@ -15,4 +15,8 @@
 .t-sticky {
   position: sticky;
   top: 32px;
+
+  .product-page & {
+    top: 104px;
+  }
 }

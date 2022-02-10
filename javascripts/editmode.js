@@ -486,6 +486,16 @@
     });
   };
 
+  // ===========================================================================
+  // Opens product admin view on product image click
+  // ===========================================================================
+
+  var handleProductImageClick = function(product_id) {
+    $('.product-content .product-image').click(function() {
+      window.open('/admin/ecommerce/products/' + product_id, '_blank').focus();
+    });
+  };
+
   handleProductImage = function(placeholderText, pageId, event, el) {
     var productId = $('.js-buy-btn-content  .partial .edy-buy-button-container').data( "product-id" );
     var productImageEl = $('.js-product-page-image .image-drop-area');
@@ -634,7 +644,8 @@
     bgPickerColorScheme: bgPickerColorScheme,
     bindContentItemImgDropAreas: bindContentItemImgDropAreas,
     bindContentItemImageCropToggle: bindContentItemImageCropToggle,
-    bindProductListeners: bindProductListeners
+    bindProductListeners: bindProductListeners,
+    handleProductImageClick: handleProductImageClick
   });
   init();
 })(jQuery);

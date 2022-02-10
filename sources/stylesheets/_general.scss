@@ -165,7 +165,8 @@ blockquote {
 
   &-disabled {
     // scss-lint:disable NestingDepth
-    .public & {
+    .public &,
+    .product-page & {
       cursor: default;
       background-color: rgba($disabled-color, 1);
     }
