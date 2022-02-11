@@ -509,3 +509,11 @@ label {
   font-style: var(--product-price-font-style);
   text-decoration: var(--product-price-font-text-decoration);
 }
+
+.menu-item {
+  &.current-page {
+    a {
+      color: var(--main-color);
+    }
+  }
+}

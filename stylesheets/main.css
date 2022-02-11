@@ -3971,6 +3971,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 32px;
+  z-index: 10601;
 }
 
 .product-page .t-sticky {

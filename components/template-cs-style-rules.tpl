@@ -448,3 +448,7 @@ label .form_field_radio:checked + .form_control_indicator::before {
   -webkit-text-decoration: var(--product-price-font-text-decoration);
           text-decoration: var(--product-price-font-text-decoration);
 }
+
+.menu-item.current-page a {
+  color: var(--main-color);
+}
