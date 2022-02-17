@@ -492,6 +492,7 @@ label {
   font-style: var(--product-title-font-style);
   text-decoration: var(--product-title-font-text-decoration);
   color: var(--product-title-color);
+  text-align: var(--product-title-alignment);
 }
 
 .product-page .content-formatted .content-product-description {
@@ -508,4 +509,12 @@ label {
   font-weight: var(--product-price-font-weight);
   font-style: var(--product-price-font-style);
   text-decoration: var(--product-price-font-text-decoration);
+}
+
+.menu-item {
+  &.current-page {
+    a {
+      color: var(--main-color);
+    }
+  }
 }
