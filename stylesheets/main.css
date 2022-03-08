@@ -3820,6 +3820,15 @@ body {
   margin-bottom: 24px;
 }
 
+.dark-background .edy-product-widget-filter-sort,
+.dark-background .edy-product-widget-filter-search-input {
+  opacity: .7;
+}
+
+.dark-background .edy-product-widget-filter-label {
+  opacity: .5;
+}
+
 .flex_box {
   display: -webkit-box;
   display: -ms-flexbox;
