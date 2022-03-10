@@ -139,7 +139,8 @@ blockquote {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.custom-btn {
+.custom-btn,
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   display: inline-block;
   padding: 12px;
   font-family: "Montserrat", sans-serif;
@@ -149,26 +150,34 @@ blockquote {
   background: #2b2b2b;
 }
 
-.custom-btn::-moz-focus-inner {
+.custom-btn::-moz-focus-inner,
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-.custom-btn, .custom-btn:hover {
+.custom-btn, .custom-btn:hover,
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn,
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   color: white;
 }
 
-.custom-btn:hover {
+.custom-btn:hover,
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   background-color: #2b2b2b;
   background-color: rgba(43, 43, 43, 0.8);
 }
 
-.public .custom-btn {
+.public .custom-btn, .public
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   cursor: pointer;
 }
 
 .public .custom-btn-disabled,
-.product-page .custom-btn-disabled {
+.product-page .custom-btn-disabled, .public
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled,
+.product-page
+.edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled {
   cursor: default;
   background-color: #cccccc;
 }
@@ -966,16 +975,19 @@ body {
   color: white;
 }
 
-.main .content-half .dark-background .custom-btn {
+.main .content-half .dark-background .custom-btn,
+.main .content-half .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   color: black;
   background-color: white;
 }
 
-.main .content-half .dark-background .custom-btn:hover {
+.main .content-half .dark-background .custom-btn:hover,
+.main .content-half .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.public .main .content-half .dark-background .custom-btn-disabled {
+.public .main .content-half .dark-background .custom-btn-disabled, .public
+.main .content-half .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled {
   color: white;
   background-color: #cccccc;
 }
@@ -1360,20 +1372,20 @@ body {
   margin-bottom: 0;
 }
 
-.formatted a {
+.formatted a:not(.custom-btn) {
   color: rgba(0, 0, 0, 0.43);
   text-decoration: none;
 }
 
-.formatted a:hover:not(.post-nav-link) {
+.formatted a:not(.custom-btn):hover:not(.post-nav-link) {
   color: black;
 }
 
-.dark-background .formatted a {
+.dark-background .formatted a:not(.custom-btn) {
   color: rgba(255, 255, 255, 0.43);
 }
 
-.dark-background .formatted a:hover:not(.post-nav-link) {
+.dark-background .formatted a:not(.custom-btn):hover:not(.post-nav-link) {
   color: white;
 }
 
@@ -3806,6 +3818,15 @@ body {
 
 .item-page .product-content .buy-btn-content {
   margin-bottom: 24px;
+}
+
+.dark-background .edy-product-widget-filter-sort,
+.dark-background .edy-product-widget-filter-search-input {
+  opacity: .7;
+}
+
+.dark-background .edy-product-widget-filter-label {
+  opacity: .5;
 }
 
 .flex_box {
