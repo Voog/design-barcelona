@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {%- include "template-settings" -%}
-{%- include "template-variables" -}
+{%- include "template-variables" -%}
 {%- include "blog-article-variables" -%}
 <html class="blog-list-page height-calculation {% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
