@@ -19,14 +19,23 @@
 
               <div class="content formatted cfx">
                 <div class="content-header" data-search-indexing-allowed="true">
-                  {% contentblock name="content_header" publish_default_content="true" %}
+                  {%- assign page_title_content_title = "title" | lce -%}
+                  {%- assign page_title_content_title_tooltip = "content_tooltip_current_page_title" | lce -%}
+                  {% contentblock
+                    name="content_header"
+                    publish_default_content="true"
+                    title=page_title_content_title
+                    title_tooltip=page_title_content_title_tooltip
+                  %}
                     <h1>{{ page.title }}</h1>
                   {% endcontentblock %}
                 </div>
                   {% include 'menu-breadcrumbs' %}
                   {% include 'product-list-block' %}
                   <div class="product-list-content" data-search-indexing-allowed="true">
-                    {% content %}
+                    {%- assign content_default_title = "content" | lce -%}
+                    {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+                    {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
                   </div>
               </div>
             </div>

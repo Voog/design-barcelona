@@ -38,7 +38,16 @@
               <section class="post-content">
                 <div class="post-excerpt cfx formatted" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
                 <div class="post-body cfx formatted">{% editable article.body %}</div>
-                <div class="post-body cfx formatted">{% content name="additional_body" bind="Article" %}</div>
+                <div class="post-body cfx formatted">
+                  {%- assign bottom_content_title = "additional_content" | lce -%}
+                  {%- assign bottom_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
+                  {% content
+                    name="additional_body"
+                    bind="Article"
+                    title=bottom_content_title
+                    title_tooltip=bottom_content_title_tooltip
+                  %}
+                </div>
 
                 {% if editmode or article.tags.size > 0 %}
                 <div class="post-tags">
