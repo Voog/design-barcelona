@@ -5,6 +5,8 @@
   <head prefix="og: http://ogp.me/ns#">
     {% include "edicy-tools-variables" %}
     {% include "html-head" common_page: true %}
+
+    {% sd_product %}
   </head>
   <body class="item-page product-page main-menu-not-fitting{% if site.search.enabled %} search-enabled{% endif %}">
 
