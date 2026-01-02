@@ -77,7 +77,8 @@ main .post-content {
 
 main .content-body a,
 main .post-content a,
-main .footer-content a {
+main .footer-content a,
+footer .footer-content a {
   color: var(--content-links-color);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
@@ -88,7 +89,8 @@ main .footer-content a {
 
 main .content-body a:hover,
 main .post-content a:hover,
-main .footer-content a:hover {
+main .footer-content a:hover,
+footer .footer-content a:hover {
   color: var(--content-links-hover-color);
   font-style: var(--content-links-hover-font-style);
   font-weight: var(--content-links-hover-font-weight);
