@@ -1,3 +1,3 @@
 {
-  "version": "barcelona-2.5.2"
+  "version": "barcelona-2.5.3"
 }
